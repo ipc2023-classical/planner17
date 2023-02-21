@@ -36,6 +36,7 @@ Stage: run
     apt-get -y install --no-install-recommends python3.11
     rm -rf /var/lib/apt/lists/*
 
+
 %runscript
     DOMAINFILE="$1"
     PROBLEMFILE="$2"
@@ -50,7 +51,7 @@ Stage: run
 %labels
 Name        Odin
 Description Classical planning system with transition cost partitioning algorithms
-Authors     Dominik Drexler <dominik.drexler@liu.se> and Jendrik Seipp <jendrik.seipp@liu.se> and David Speck <david.speck@li.se>
+Authors     Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>
 License     GPL 3
 Tracks      optimal
 SupportsDerivedPredicates                       no
