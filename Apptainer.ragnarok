@@ -4,22 +4,24 @@ From: ubuntu:22.04
 Stage: build
 
 %files
-    . /
+    planners /planners
 
 %post
     ## Install all necessary dependencies.
     apt-get update
     apt-get -y install --no-install-recommends cmake g++ make python3.11 autoconf automake
 
-    ## Clear build directory.
-    rm -rf /planners/odin/builds
+    ## Clear local build directories.
+    rm -rf /planners/*/builds
 
-    ## Build planner.
-    cd /planners/odin
-    python3.11 build.py
+    ## Build planners.
+    for planner in {odin, scorpion}; do
+        pushd /planners/${planner}
+        python3.11 build.py
+        popd
 
     ## Strip binaries.
-    strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
+    strip --strip-all /planners/*/builds/release/bin/{downward,preprocess-h2}
 
 # Stage 2: Run the planner
 Bootstrap: docker

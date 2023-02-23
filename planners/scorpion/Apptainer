@@ -34,6 +34,7 @@ Stage: run
 %post
     apt-get update
     apt-get -y install --no-install-recommends python3.11
+    apt-get clean
     rm -rf /var/lib/apt/lists/*
 
 %runscript
