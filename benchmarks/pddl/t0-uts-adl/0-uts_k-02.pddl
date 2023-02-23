@@ -1,0 +1,15 @@
+(define (problem K4)
+	(:domain UTS)
+(:init 
+ (kAT_N4__AT_N4)
+ (kAT_N3__AT_N3)
+ (kAT_N2__AT_N2)
+ (kAT_N1__AT_N1)
+)
+(:goal (and 
+ (kVISITED_N4)
+ (kVISITED_N3)
+ (kVISITED_N2)
+ (kVISITED_N1)
+))
+)

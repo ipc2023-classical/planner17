@@ -1,0 +1,5 @@
+(define (problem NONAME)
+    (:domain NONAME)
+    (:init (K_agent-y_y1__tag0) (K_unused0) (K_unused1) (K_unused2) (K_unused3) (K_unused4) (K_unused5) (K_unused6) (K_unused7) (K_unused8) (K_unused9) (K_agent-y_y1__tag1) (K_agent-x_x3__tag1) (K_null-obs__tag1) (K_q0__tag1) (K_agent-y_y1__tag2) (K_agent-x_x2__tag2) (K_null-obs__tag2) (K_q0__tag2) (K_agent-y_y1__tag3) (K_agent-x_x1__tag3) (K_at-corner_x1_y1__tag3) (K_q0__tag3))
+    (:goal (and (K_agent-y_y1__tag0) (K_agent-x_x1__tag0) (K_visited_x1_y1__tag0) (K_visited_x4_y1__tag0) (K_visited_x1_y4__tag0) (K_visited_x4_y4__tag0)))
+)

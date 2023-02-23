@@ -1,0 +1,442 @@
+(define (domain SORTNET)
+(:requirements :negative-preconditions :conditional-effects)
+	(:predicates
+(kend_0)
+(kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_0__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_0__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_1)
+(kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_1__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_2)
+(kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kend_2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kend_2__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kHIGH_L1)
+(k-HIGH_L1)
+(kHIGH_L2)
+(k-HIGH_L2)
+(k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kFOO)
+(kHIGH_L3)
+(k-HIGH_L3)
+(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L3__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L4)
+(k-HIGH_L4)
+(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L4__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+(kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)
+(kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)
+(kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)
+)
+(:action make_end_disj_goal
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(kFOO))
+(when (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L2) (and (kend_0) (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1))) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2) (and (kend_1) (kend_1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1))) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3) (and (kend_1) (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1))) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_1__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3) (and (kend_2) (kend_2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1))) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kend_2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kend_2__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action CMPSWAP_L3_L4
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (not(kHIGH_L3)) (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3) (and (kHIGH_L4) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(k-HIGH_L3))  (not(k-HIGH_L4))) ;; Cancellation. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L4) (and (k-HIGH_L3) (not(kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (and (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (not(kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+))
+(:action CMPSWAP_L2_L4
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (not(kHIGH_L2))
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2) (and (kHIGH_L4) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(k-HIGH_L2))  (not(k-HIGH_L4))) ;; Cancellation. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L4) (and (k-HIGH_L2) (not(kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action CMPSWAP_L2_L3
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2) (and (kHIGH_L3) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(k-HIGH_L2))  (not(k-HIGH_L3))) ;; Cancellation. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (and (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L3__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3) (and (k-HIGH_L2) (not(kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(kHIGH_L3))  (not(kHIGH_L2))) ;; Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action CMPSWAP_L1_L4
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (not(k-HIGH_L4)) (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kHIGH_L4__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1))
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L1) (and (kHIGH_L4) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)) ;; Support. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L4__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L4) (and (k-HIGH_L1) (not(kHIGH_L1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L4__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action CMPSWAP_L1_L3
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (kHIGH_L3__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (not(k-HIGH_L3))
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (kHIGH_L1) (and (kHIGH_L3) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)  (kHIGH_L3__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3) (and (k-HIGH_L1) (not(kHIGH_L1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(kHIGH_L3))  (not(kHIGH_L1))) ;; Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L3__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action CMPSWAP_L1_L2
+:parameters ()
+:precondition (and (kFOO))
+
+:effect (and  (k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (not(k-HIGH_L2)) (kHIGH_L2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)
+(when (k-HIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1) (and (kHIGH_L2) (not(k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (kHIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (kHIGH_L1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (kHIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(k-HIGH_L2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2) (and (k-HIGH_L1) (not(kHIGH_L1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (not(kHIGH_L2))  (not(kHIGH_L1))) ;; Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (and (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (not(kHIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1)))) ;; Support.  Cancellation. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1)) ;; Support. 
+(when (k-HIGH_L2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)  (k-HIGH_L1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1)) ;; Support. 
+))
+(:action MERGE_CLAUSES
+:parameters ()
+:precondition (and)
+
+:effect (and 
+(when (kHIGH_L1)  (kHIGH_L1)) ;;reasoning over static clause. 
+(when (kHIGH_L2)  (kHIGH_L2)) ;;reasoning over static clause. 
+(when (k-HIGH_L2)  (k-HIGH_L2)) ;;reasoning over static clause. 
+(when (kHIGH_L3)  (kHIGH_L3)) ;;reasoning over static clause. 
+(when (k-HIGH_L3)  (k-HIGH_L3)) ;;reasoning over static clause. 
+(when (k-HIGH_L4)  (k-HIGH_L4)) ;;reasoning over static clause. 
+))
+(:action MERGE_end_2
+:parameters ()
+:precondition (and)
+
+:effect (and 
+(when(and (kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_2__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_2__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_2__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_2__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_2__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_2__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_2__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_2__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_2__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1))  (kend_2)) ;;MERGE. 
+))
+(:action MERGE_end_1
+:parameters ()
+:precondition (and)
+
+:effect (and 
+(when(and (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_1__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_1__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_1__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_1__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_1__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_1__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_1__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_1__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1))  (kend_1)) ;;MERGE. 
+))
+(:action MERGE_end_0
+:parameters ()
+:precondition (and)
+
+:effect (and 
+(when(and (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_0__HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_0__-HIGH_L4_-HIGH_L3_-HIGH_L2_HIGH_L1) (kend_0__-HIGH_L4_-HIGH_L3_HIGH_L2_HIGH_L1) (kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_0__-HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1) (kend_0__-HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_HIGH_L1) (kend_0__HIGH_L4_HIGH_L3_HIGH_L2_HIGH_L1) (kend_0__HIGH_L4_HIGH_L3_HIGH_L2_-HIGH_L1) (kend_0__HIGH_L4_HIGH_L3_-HIGH_L2_-HIGH_L1))  (kend_0)) ;;MERGE. 
+))
+)
