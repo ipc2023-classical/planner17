@@ -1,3 +1,4 @@
+from collections import namedtuple
 from pathlib import Path
 import platform
 import re
@@ -30,6 +31,8 @@ assert (
     and TetralithEnvironment
 )
 
+User = namedtuple(
+    "User", ["scp_login", "project_handle", "email", "remote_repo"])
 
 DIR = Path(__file__).resolve().parent
 NODE = platform.node()
@@ -40,7 +43,8 @@ REMOTE = NODE.endswith((".scicore.unibas.ch", ".cluster.bc2.ch")) or re.match(
 
 
 def parse_args():
-    ARGPARSER.add_argument("--tex", action="store_true", help="produce LaTeX output")
+    ARGPARSER.add_argument("--tex", action="store_true",
+                           help="produce LaTeX output")
     ARGPARSER.add_argument(
         "--relative", action="store_true", help="make relative scatter plots"
     )
@@ -62,6 +66,7 @@ SUITE_ADL = ['airport-adl', 'assembly-adl', 'briefcaseworld-adl', 'caldera-adl',
 
 SUITE_STRIPS_AND_ADL = sorted(SUITE_STRIPS + SUITE_ADL)
 # fmt: on
+
 
 def get_portfolio_attributes(portfolio):
     attributes = {}
@@ -192,11 +197,12 @@ def add_scatter_plot_reports(exp, algorithm_pairs, attributes, *, filter=None):
     for algo1, algo2 in algorithm_pairs:
         for attribute in attributes:
             exp.add_report(ScatterPlotReport(
-                    relative=RELATIVE,
-                    get_category=None if TEX else lambda run1, run2: run1["domain"],
-                    attributes=[attribute],
-                    filter_algorithm=[algo1, algo2],
-                    filter=[add_evaluations_per_time, group_domains] + tools.make_list(filter),
-                    format="tex" if TEX else "png",
-                ),
+                relative=RELATIVE,
+                get_category=None if TEX else lambda run1, run2: run1["domain"],
+                attributes=[attribute],
+                filter_algorithm=[algo1, algo2],
+                filter=[add_evaluations_per_time, group_domains] +
+                tools.make_list(filter),
+                format="tex" if TEX else "png",
+            ),
                 name=f"{exp.name}-{algo1}-{algo2}-{attribute}{'-relative' if RELATIVE else ''}")
