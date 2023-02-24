@@ -36,8 +36,8 @@ REVISION_CACHE = Path(get_default_data_dir()) / "revision-cache"
 if project.REMOTE:
     ENV = project.TetralithEnvironment(
         memory_per_cpu="9G",
-        # email=USER.email
-        extra_options=f"#SBATCH -A {project.USER.project_handle}")
+        # email=USER.email,
+        extra_options=f"#SBATCH -A {USER.project_handle}")
 else:
     ENV = project.LocalEnvironment(processes=8)
     SUITE = ["gripper-strips:0-p01.pddl", "assembly-adl:0-prob01.pddl"]
