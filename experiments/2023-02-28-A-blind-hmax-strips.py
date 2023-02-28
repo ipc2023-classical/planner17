@@ -18,6 +18,8 @@ from lab.experiment import Experiment
 
 import project
 
+### Specify the user, benchmark suite, planner and configs ###
+
 USER = project.User(
     scp_login="x_davsp@tetralith.nsc.liu.se",
     project_handle="snic2022-5-341",
@@ -25,26 +27,32 @@ USER = project.User(
     email="david.speck@liu.se",
 )
 
+PLANNER_NAME = "scorpion"
+SUITE = project.SUITE_STRIPS
+CONFIGS = [
+    ("astar-blind", ["--search", "astar(blind())"]),
+    ("astar-hmax", ["--search", "astar(hmax())"]),
+]
+
+###############################################################
+
 REPO = project.get_repo_base()
-PLANNER = REPO / "planners" / "scorpion"
-BENCHMARKS_DIR = project.SAS_BENCHMARK_DIR
+PLANNER = REPO / "planners" / PLANNER_NAME
 SCP_LOGIN = "nsc"
 REMOTE_REPOS_DIR = USER.remote_repo
-SUITE = project.SUITE_STRIPS
 
 if project.REMOTE:
+    BENCHMARKS_DIR = project.SAS_BENCHMARK_DIR
     ENV = project.TetralithEnvironment(
         memory_per_cpu="9G",
         # email=USER.email,
         extra_options=f"#SBATCH -A {USER.project_handle}")
 else:
+    BENCHMARKS_DIR = REPO / "benchmarks" / "sas"
     ENV = project.LocalEnvironment(processes=2)
-    SUITE = ["depots-strips:0-p01.sas", "miconic-strips:0-p01.sas"]
+    SUITE = ["gripper-strips:0-p01.sas", "gripper-strips:0-p02.sas",
+             "airport-adl:0-p01-airport1-p1.sas"]
 
-CONFIGS = [
-    ("astar-blind", ["--search", "astar(blind())"]),
-    ("astar-hmax", ["--search", "astar(hmax())"]),
-]
 BUILD_OPTIONS = []
 DRIVER_OPTIONS = [
     "--validate",
@@ -55,7 +63,9 @@ DRIVER_OPTIONS = [
     "--overall-memory-limit", "8G",
 ]
 exp = Experiment(environment=ENV)
-exp.add_step("build_planner", subprocess.call, [os.path.join(PLANNER, "build.py")] + BUILD_OPTIONS)
+exp.add_step("build_planner", subprocess.call, [
+             os.path.join(PLANNER, "build.py")] + BUILD_OPTIONS)
+
 
 @dataclass
 class MockCachedRevision:
@@ -65,13 +75,16 @@ class MockCachedRevision:
     global_rev: str
     build_options: list[str]
 
+
 rev = "ipc2023-classical"
 cached_rev = MockCachedRevision(
-    name="scorpion", repo=str(PLANNER), local_rev=rev, global_rev=get_global_rev(REPO, rev=rev), build_options=BUILD_OPTIONS)
+    name=PLANNER_NAME, repo=str(PLANNER), local_rev=rev, global_rev=get_global_rev(REPO, rev=rev), build_options=BUILD_OPTIONS)
 
 exp.add_resource("", os.path.join(PLANNER, "driver"), "code/driver")
-exp.add_resource(_get_solver_resource_name(cached_rev), Path(PLANNER) / "fast-downward.py", "code/fast-downward.py")
-exp.add_resource("", Path(PLANNER) / "builds" / "release" / "bin", "code/builds/release/bin")
+exp.add_resource(_get_solver_resource_name(cached_rev), Path(
+    PLANNER) / "fast-downward.py", "code/fast-downward.py")
+exp.add_resource("", Path(PLANNER) / "builds" / "release" /
+                 "bin", "code/builds/release/bin")
 
 for config_nick, config in CONFIGS:
 
@@ -94,19 +107,20 @@ exp.add_step("start", exp.start_runs)
 exp.add_fetcher(name="fetch")
 
 if not project.REMOTE:
-    exp.add_step("remove-eval-dir", shutil.rmtree, exp.eval_dir, ignore_errors=True)
+    exp.add_step("remove-eval-dir", shutil.rmtree,
+                 exp.eval_dir, ignore_errors=True)
     project.add_scp_step(exp, SCP_LOGIN, REMOTE_REPOS_DIR)
 
 ATTRIBUTES = [
     "error",
     "run_dir",
-    #"search_start_memory",
-    #"score_total_time",
+    # "search_start_memory",
+    # "score_total_time",
     "search_time",
     "total_time",
     "coverage",
-    #"expansions_until_last_jump",
-    #"memory",
+    # "expansions_until_last_jump",
+    # "memory",
 ]
 
 project.add_absolute_report(
