@@ -1,7 +1,5 @@
 #! /usr/bin/env python
 
-from dataclasses import dataclass
-from pathlib import Path
 import shutil
 import subprocess
 import sys
@@ -17,28 +15,47 @@ from lab.experiment import Experiment
 
 import project
 
+### Specify the user, benchmark suite, planner and configs ###
 
-REPO = project.get_repo_base()
-PLANNER = REPO / "planners" / "scorpion"
-BENCHMARKS_DIR = REPO / "benchmarks" / "pddl"  # TODO: use SAS+ versions directly
-SCP_LOGIN = "nsc"
-REMOTE_REPOS_DIR = "/proj/dfsplan/users/x_jense/"
-#SUITE = ["depot:p01.pddl", "grid:prob01.pddl", "gripper:prob01.pddl"]
-SUITE = ["miconic-strips:0-p01.pddl"]
-if project.REMOTE:
-    ENV = project.BaselSlurmEnvironment(email="jendrik.seipp@liu.se", memory_per_cpu="9G", partition="infai_2")
-    SUITE = project.SUITE_STRIPS
-else:
-    ENV = project.LocalEnvironment(processes=2)
+USER = project.User(
+    scp_login="x_jense@tetralith.nsc.liu.se",
+    project_handle="snic2022-5-341",
+    remote_repo="/proj/snic2022-5-341/users/x_jense/",
+    email="jendrik.seipp@liu.se",
+)
 
+PLANNER_NAME = "scorpion"
+SUITE = project.SUITE_STRIPS
 SYS_SCP_MAX_TIME = 60 if project.REMOTE else 1
 CONFIGS = [
-    ("scorpion", ["--search", "astar(scp_online(["
+    ("sys-scp-cartesian", ["--search", "astar(scp_online(["
         f"projections(sys_scp(max_time={SYS_SCP_MAX_TIME}, max_time_per_restart=6)), "
         "cartesian()], "
         "saturator=perimstar, max_time=60, interval=10K, orders=greedy_orders()), "
         "pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"]),
 ]
+
+###############################################################
+
+REPO = project.get_repo_base()
+PLANNER = REPO / "planners" / PLANNER_NAME
+SCP_LOGIN = USER.scp_login
+REMOTE_REPOS_DIR = USER.remote_repo
+
+if project.REMOTE:
+    BENCHMARKS_DIR = project.SAS_BENCHMARK_DIR
+    ENV = project.TetralithEnvironment(
+        memory_per_cpu="9G",
+        email=USER.email,
+        extra_options=f"#SBATCH -A {USER.project_handle}")
+else:
+    BENCHMARKS_DIR = REPO / "benchmarks" / "sas"
+    ENV = project.LocalEnvironment(processes=2)
+    SUITE = [
+        "gripper-strips:0-p01.sas",
+        #"airport-adl:0-p01-airport1-p1.sas",
+    ]
+
 BUILD_OPTIONS = []
 DRIVER_OPTIONS = [
     "--validate",
@@ -64,24 +81,15 @@ subprocess.run([sys.executable, "build.py"] + BUILD_OPTIONS, cwd=PLANNER)
 
 exp = Experiment(environment=ENV)
 
-@dataclass
-class MockCachedRevision:
-    name: str
-    repo: str
-    local_rev: str
-    global_rev: str
-    build_options: list[str]
-
 rev = "ipc2023-classical"
-cached_rev = MockCachedRevision(
-    name="scorpion", repo=str(PLANNER), local_rev=rev, global_rev=get_global_rev(REPO, rev=rev), build_options=BUILD_OPTIONS)
+cached_rev = project.MockCachedRevision(
+    name=PLANNER_NAME, repo=str(PLANNER), local_rev=rev, global_rev=get_global_rev(REPO, rev=rev), build_options=BUILD_OPTIONS)
 
 exp.add_resource("", PLANNER / "driver", "code/driver")
 exp.add_resource(_get_solver_resource_name(cached_rev), PLANNER / "fast-downward.py", "code/fast-downward.py")
 exp.add_resource("", PLANNER / "builds" / "release" / "bin", "code/builds/release/bin")
 
 for config_nick, config in CONFIGS:
-
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         algo = _DownwardAlgorithm(
             f"{cached_rev.name}:{config_nick}",
@@ -93,10 +101,8 @@ for config_nick, config in CONFIGS:
         exp.add_run(run)
 
 exp.add_parser(project.FastDownwardExperiment.EXITCODE_PARSER)
-#exp.add_parser(project.FastDownwardExperiment.TRANSLATOR_PARSER)
 exp.add_parser(project.FastDownwardExperiment.SINGLE_SEARCH_PARSER)
 exp.add_parser(project.DIR / "parser.py")
-#exp.add_parser(project.FastDownwardExperiment.PLANNER_PARSER)
 
 exp.add_step("build", exp.build)
 exp.add_step("start", exp.start_runs)

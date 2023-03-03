@@ -1,4 +1,5 @@
 from collections import namedtuple
+from dataclasses import dataclass
 from pathlib import Path
 import platform
 import re
@@ -33,6 +34,14 @@ assert (
 
 User = namedtuple(
     "User", ["scp_login", "project_handle", "email", "remote_repo"])
+
+@dataclass
+class MockCachedRevision:
+    name: str
+    repo: str
+    local_rev: str
+    global_rev: str
+    build_options: list[str]
 
 DIR = Path(__file__).resolve().parent
 NODE = platform.node()
