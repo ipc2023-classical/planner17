@@ -7,21 +7,22 @@ Stage: build
     planners /planners
 
 %post
-    ## Install all necessary dependencies.
+    ## Install all dependencies.
     apt-get update
-    apt-get -y install --no-install-recommends cmake g++ make python3.11 autoconf automake
+    apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake
 
     ## Clear local build directories.
     rm -rf /planners/*/builds
 
     ## Build planners.
-    for planner in {odin, scorpion}; do
-        pushd /planners/${planner}
-        python3.11 build.py
-        popd
+    for planner in odin scorpion; do
+        cd /planners/${planner}
+        pypy3 build.py
+    done
 
-    ## Strip binaries.
-    strip --strip-all /planners/*/builds/release/bin/{downward,preprocess-h2}
+    ## Strip binaries (shell globs don't work).
+    strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
+    strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
 
 # Stage 2: Run the planner
 Bootstrap: docker
@@ -33,27 +34,37 @@ Stage: run
     /planners/odin/fast-downward.py
     /planners/odin/builds/release/bin
 
+    /planners/scorpion/driver
+    /planners/scorpion/fast-downward.py
+    /planners/scorpion/builds/release/bin
+
 %post
     apt-get update
-    apt-get -y install --no-install-recommends python3.11
+    apt-get -y install --no-install-recommends pypy3
+    apt-get clean
     rm -rf /var/lib/apt/lists/*
-
 
 %runscript
     DOMAINFILE="$1"
     PROBLEMFILE="$2"
     PLANFILE="$3"
 
-    python3.11 /planners/odin/fast-downward.py \
+    pypy3 /planners/odin/fast-downward.py \
         --plan-file "$PLANFILE" \
         "$DOMAINFILE" \
         "$PROBLEMFILE" \
         --search "astar(stcp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=100000),pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
 
+    pypy3 /planners/scorpion/fast-downward.py \
+        --plan-file "$PLANFILE" \
+        "$DOMAINFILE" \
+        "$PROBLEMFILE" \
+        --search "astar(scp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
+
 %labels
-Name        Odin
-Description Classical planning system with transition cost partitioning algorithms
-Authors     Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>
+Name        Ragnarok
+Description Sequential portfolio of optimal planners developed at Linköping University
+Authors     TODO, Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>
 License     GPL 3
 Tracks      optimal
 SupportsDerivedPredicates                       no
