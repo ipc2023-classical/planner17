@@ -63,7 +63,7 @@ def adapt_args(args, search_cost_type, heuristic_cost_type, plan_manager):
 
 
 def run_search(executable, args, sas_file, plan_manager, time, memory):
-    complete_args = [executable] + args + [
+    complete_args = [sys.executable, executable] + args + [
         "--internal-plan-file", plan_manager.get_plan_prefix()]
     print("args: %s" % complete_args)
 
