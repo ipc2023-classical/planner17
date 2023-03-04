@@ -1,16 +1,17 @@
 SAS_FILE = "output.sas"
 OPTIMAL = True
 
+# TODO: Fill in real planners and configs.
 CONFIGS_STRIPS = [
     (542, ['scorpion', '--search', 'astar(lmcut())']),
 ]
 
 CONFIGS_COND_EFFS = [
-    (229, ['--search', 'astar(hmax())']),
+    (229, ['odin', '--search', 'astar(hmax())']),
 ]
 
 CONFIGS_AXIOMS = [
-    (1800, ['--search', 'astar(blind())']),
+    (1800, ['symk', '--search', 'astar(blind())']),
 ]
 
 
