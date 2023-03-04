@@ -12,14 +12,14 @@ Stage: build
     apt-get -y install --no-install-recommends cmake g++ make python3.11 autoconf automake
 
     ## Clear build directory.
-    rm -rf /planners/odin/builds
+    rm -rf /planner/odin/builds
 
     ## Build planner.
-    cd /planners/odin
+    cd /planner/odin
     python3.11 build.py
 
     ## Strip binaries.
-    strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
+    strip --strip-all /planner/odin/builds/release/bin/downward /planner/odin/builds/release/bin/preprocess-h2
 
 # Stage 2: Run the planner
 Bootstrap: docker
@@ -27,9 +27,9 @@ From: ubuntu:22.04
 Stage: run
 
 %files from build
-    /planners/odin/driver
-    /planners/odin/fast-downward.py
-    /planners/odin/builds/release/bin
+    /planner/odin/driver
+    /planner/odin/fast-downward.py
+    /planner/odin/builds/release/bin
 
 %post
     apt-get update
@@ -42,11 +42,11 @@ Stage: run
     PROBLEMFILE="$2"
     PLANFILE="$3"
 
-    python3.11 /planners/odin/fast-downward.py \
+    python3.11 /planner/odin/fast-downward.py \
         --plan-file "$PLANFILE" \
         "$DOMAINFILE" \
         "$PROBLEMFILE" \
-        --search "astar(stcp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=100000),pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
+        --search "astar(stcp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=40000),pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
 
 %labels
 Name        Odin
@@ -61,5 +61,5 @@ SupportsUniversallyQuantifiedEffects            yes
 SupportsNegativePreconditions                   yes
 SupportsEqualityPreconditions                   yes
 SupportsInequalityPreconditions                 yes
-SupportsConditionalEffects                      yes
+SupportsConditionalEffects                      no
 SupportsImplyPreconditions                      yes
