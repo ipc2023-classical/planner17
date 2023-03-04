@@ -1,6 +1,7 @@
 import errno
 import logging
 import os.path
+from pathlib import Path
 import shutil
 import signal
 import subprocess
@@ -12,6 +13,11 @@ from . import portfolio_runner
 from . import returncodes
 from . import util
 from .plan_manager import PlanManager
+
+DRIVER_DIR = Path(__file__).resolve().parent
+REPO = DRIVER_DIR.parent
+TRANSLATE_PATH = REPO / "planners" / "scorpion" / "src" / "translate" / "translate.py"
+assert TRANSLATE_PATH.is_file()
 
 # TODO: We might want to turn translate into a module and call it with "python3 -m translate".
 REL_TRANSLATE_PATH = os.path.join("translate", "translate.py")
@@ -55,7 +61,7 @@ def run_translate(args):
         args.translate_time_limit, args.overall_time_limit)
     memory_limit = limits.get_memory_limit(
         args.translate_memory_limit, args.overall_memory_limit)
-    translate = get_executable(args.build, REL_TRANSLATE_PATH)
+    translate = str(TRANSLATE_PATH)
     assert sys.executable, "Path to interpreter could not be found"
     cmd = [sys.executable] + [translate] + args.translate_inputs + args.translate_options
 
