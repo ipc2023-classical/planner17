@@ -15,7 +15,7 @@ Stage: build
     rm -rf /planners/*/builds
 
     ## Build planners.
-    for planner in odin scorpion; do
+    for planner in odin scorpion symk; do
         cd /planners/${planner}
         pypy3 build.py
     done
@@ -23,6 +23,7 @@ Stage: build
     ## Strip binaries (shell globs don't work).
     strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
     strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
+    strip --strip-all /planners/symk/builds/release/bin/downward /planners/symk/builds/release/bin/preprocess
 
 # Stage 2: Run the planner
 Bootstrap: docker
@@ -42,6 +43,10 @@ Stage: run
     /planners/scorpion/driver
     /planners/scorpion/fast-downward.py
     /planners/scorpion/builds/release/bin
+
+    /planners/symk/driver
+    /planners/symk/fast-downward.py
+    /planners/symk/builds/release/bin
 
 %post
     apt-get update
@@ -66,6 +71,13 @@ Stage: run
         "$PROBLEMFILE" \
         --search "astar(scp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
 
+    pypy3 /planners/symk/fast-downward.py \
+        --overall-memory-limit "8G" \
+        --plan-file "$PLANFILE" \
+        "$DOMAINFILE" \
+        "$PROBLEMFILE" \
+        --search "sym-bd()"
+
     pypy3 plan.py \
         --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
         --alias seq-opt-ragnarok \
@@ -80,7 +92,7 @@ Description Sequential portfolio of optimal planners developed at Linköping Uni
 Authors     TODO, Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>
 License     GPL 3
 Tracks      optimal
-SupportsDerivedPredicates                       no
+SupportsDerivedPredicates                       yes
 SupportsUniversallyQuantifiedPreconditions      yes
 SupportsExistentiallyQuantifiedPreconditions    yes
 SupportsUniversallyQuantifiedEffects            yes
