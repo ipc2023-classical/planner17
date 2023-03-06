@@ -21,6 +21,7 @@ from lab.environments import (
 from lab.experiment import ARGPARSER
 from lab.reports import Attribute, geometric_mean
 from lab import tools
+from typing import List
 
 
 # Silence import-unused messages. Experiment scripts may use these imports.
@@ -33,8 +34,8 @@ assert (
     and TetralithEnvironment
 )
 
-User = namedtuple(
-    "User", ["scp_login", "project_handle", "email", "remote_repo"])
+User = namedtuple("User", ["scp_login", "project_handle", "email", "remote_repo"])
+
 
 @dataclass
 class MockCachedRevision:
@@ -42,7 +43,8 @@ class MockCachedRevision:
     repo: str
     local_rev: str
     global_rev: str
-    build_options: list[str]
+    build_options: List[str]
+
 
 DIR = Path(__file__).resolve().parent
 NODE = platform.node()
@@ -53,8 +55,7 @@ REMOTE = NODE.endswith((".scicore.unibas.ch", ".cluster.bc2.ch")) or re.match(
 
 
 def parse_args():
-    ARGPARSER.add_argument("--tex", action="store_true",
-                           help="produce LaTeX output")
+    ARGPARSER.add_argument("--tex", action="store_true", help="produce LaTeX output")
     ARGPARSER.add_argument(
         "--relative", action="store_true", help="make relative scatter plots"
     )
@@ -91,7 +92,8 @@ def get_portfolio_attributes(portfolio):
             raise ImportError(
                 "The portfolio %s could not be loaded. Maybe it still "
                 "uses the old portfolio syntax? See the FDSS portfolios "
-                "for examples using the new syntax." % portfolio)
+                "for examples using the new syntax." % portfolio
+            )
     if "CONFIGS" not in attributes:
         raise ValueError("portfolios must define CONFIGS")
     if "OPTIMAL" not in attributes:
@@ -157,7 +159,19 @@ def add_evaluations_per_time(run):
 
 def strip_properties(run):
     stripped_run = {}
-    for attribute in ["id", "error", "domain", "problem", "algorithm", "component_options", "cost", "coverage", "memory", "run_dir", "total_time"]:
+    for attribute in [
+        "id",
+        "error",
+        "domain",
+        "problem",
+        "algorithm",
+        "component_options",
+        "cost",
+        "coverage",
+        "memory",
+        "run_dir",
+        "total_time",
+    ]:
         if attribute in run:
             stripped_run[attribute] = run[attribute]
     return stripped_run
@@ -214,8 +228,10 @@ def fetch_algorithms(exp, expname, *, algos=None, name=None, filters=None):
     algos = set(algos or [])
     filters = filters or []
     if algos:
+
         def algo_filter(run):
             return run["algorithm"] in algos
+
         filters.append(algo_filter)
 
     exp.add_fetcher(
@@ -242,28 +258,33 @@ def add_absolute_report(exp, *, name=None, outfile=None, **kwargs):
     exp.add_report(report, name=name, outfile=outfile)
     if not REMOTE:
         exp.add_step(f"open-{name}", subprocess.call, ["xdg-open", outfile])
-    #exp.add_step(f"publish-{name}", subprocess.call, ["publish", outfile])
+    # exp.add_step(f"publish-{name}", subprocess.call, ["publish", outfile])
 
 
 def add_scatter_plot_reports(exp, algorithm_pairs, attributes, *, filter=None):
     for algo1, algo2 in algorithm_pairs:
         for attribute in attributes:
-            exp.add_report(ScatterPlotReport(
-                relative=RELATIVE,
-                get_category=None if TEX else lambda run1, run2: run1["domain"],
-                attributes=[attribute],
-                filter_algorithm=[algo1, algo2],
-                filter=[add_evaluations_per_time, group_domains] +
-                tools.make_list(filter),
-                format="tex" if TEX else "png",
-            ),
-                name=f"{exp.name}-{algo1}-{algo2}-{attribute}{'-relative' if RELATIVE else ''}")
+            exp.add_report(
+                ScatterPlotReport(
+                    relative=RELATIVE,
+                    get_category=None if TEX else lambda run1, run2: run1["domain"],
+                    attributes=[attribute],
+                    filter_algorithm=[algo1, algo2],
+                    filter=[add_evaluations_per_time, group_domains]
+                    + tools.make_list(filter),
+                    format="tex" if TEX else "png",
+                ),
+                name=(
+                    f"{exp.name}-{algo1}-{algo2}-{attribute}{'-relative' if RELATIVE else ''}"
+                ),
+            )
 
 
 class Hardest30Report(PlanningReport):
     """
     Keep the 30 tasks from each domain that are solved by the fewest number of planners.
     """
+
     def get_text(self):
         solved_by = defaultdict(int)
         for run in self.props.values():
@@ -271,7 +292,9 @@ class Hardest30Report(PlanningReport):
                 solved_by[(run["domain"], run["problem"])] += 1
         hardest_tasks = {}
         for domain, problems in sorted(self.domains.items()):
-            solved_problems = [problem for problem in problems if solved_by[(domain, problem)] > 0]
+            solved_problems = [
+                problem for problem in problems if solved_by[(domain, problem)] > 0
+            ]
             solved_problems.sort(key=lambda problem: solved_by[(domain, problem)])
             hardest_tasks[domain] = set(solved_problems[:30])
         for domain, problems in sorted(self.domains.items()):
