@@ -71,12 +71,12 @@ AutomaticSuccessorGenerator::get_applicable_actions(const std::vector<ActionSche
 
         if ((first_generator_count_ >= num_samples_) && (second_generator_count_ >= num_samples_)) {
             if (first_generator_ns_ < second_generator_ns_) {
-                cout << "[AutomaticSuccessorGenerator] Selected first generator: " << first_generator_ns_.count() << "ns vs. " << second_generator_ns_.count() << "ns" << endl;
+                cout << "[AutomaticSuccessorGenerator] Selected '" << first_name_ << "': " << first_generator_ns_.count() << "ns vs. " << second_generator_ns_.count() << "ns" << endl;
                 delete second_generator_;
                 second_generator_ = nullptr;
             }
             else {
-                cout << "[AutomaticSuccessorGenerator] Selected second generator: " << first_generator_ns_.count() << "ns vs. " << second_generator_ns_.count() << "ns" << endl;
+                cout << "[AutomaticSuccessorGenerator] Selected '" << first_name_ << "': " << first_generator_ns_.count() << "ns vs. " << second_generator_ns_.count() << "ns" << endl;
                 delete first_generator_;
                 first_generator_ = nullptr;
             }
