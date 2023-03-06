@@ -76,7 +76,7 @@ Stage: run
         --plan-file "$PLANFILE" \
         "$DOMAINFILE" \
         "$PROBLEMFILE" \
-        --search "sym-bd()"
+        --search "sym-bd(silent=true)"
 
     pypy3 plan.py \
         --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
