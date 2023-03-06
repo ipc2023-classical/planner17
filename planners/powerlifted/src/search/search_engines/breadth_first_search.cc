@@ -33,7 +33,7 @@ utils::ExitCode BreadthFirstSearch<PackedStateT>::search(const Task &task,
 
     if (check_goal(task, generator, timer_start, task.initial_state, root_node, space)) return utils::ExitCode::SUCCESS;
 
-    while ((not queue.empty()) && (statistics.get_generated() < 1000000)) {
+    while (not queue.empty()) {
         StateID sid = queue.front();
         queue.pop();
         SearchNode &node = space.get_node(sid);
