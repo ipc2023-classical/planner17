@@ -31,6 +31,7 @@ PLANNER_NAME = "scorpion"
 SUITE = project.SUITE_STRIPS
 CONFIGS = [
     ("astar-blind", ["--search", "astar(blind())"]),
+    ("astar-hmax", ["--search", "astar(hmax())"]),
 ]
 
 ###############################################################
