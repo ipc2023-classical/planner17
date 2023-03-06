@@ -2,6 +2,8 @@ SAS_FILE = "output.sas"
 OPTIMAL = True
 
 # TODO: Fill in real planners and configs.
+# Simon: I'm not sure how to add my config: 'python3', 'powerlifted.py', '-s', 'bfs', '-e', 'blind', '-g', 'automatic', '-d', 'DOMAIN FILE', -i', 'PROBLEM FILE'
+
 CONFIGS_STRIPS = [
     (542, ['scorpion', '--search', 'astar(lmcut())']),
 ]
