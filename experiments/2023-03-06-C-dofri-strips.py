@@ -22,7 +22,7 @@ import project
 USER = project.User(
     scp_login="x_pauho@tetralith.nsc.liu.se",
     project_handle="snic2022-5-341",
-    remote_repo="/proj/snic2022-5-341/users/x_pauho/",
+    remote_repo="/proj/dfsplan/users/x_pauho/",
     email="paul.hoft@liu.se",
 )
 
