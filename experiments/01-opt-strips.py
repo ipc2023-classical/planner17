@@ -23,8 +23,11 @@ ATTRIBUTES = [
 exp = Experiment()
 exp.add_step("remove-combined-properties", project.remove_properties, Path(exp.eval_dir))
 
-project.fetch_algorithms(exp, "2023-02-28-A-blind-hmax-strips", filters=[project.strip_properties])
-project.fetch_algorithms(exp, "2023-03-01-B-symk-strips", filters=[project.strip_properties])
+project.fetch_algorithms(exp, "2023-03-04-B-odin-strips-30m", filters=[project.strip_properties])
+project.fetch_algorithms(exp, "2023-03-05-B-decstar-strips", filters=[project.strip_properties])
+project.fetch_algorithms(exp, "2023-03-06-A-blind-hmax-strips-30m", filters=[project.strip_properties])
+project.fetch_algorithms(exp, "2023-03-06-C-dofri-strips", filters=[project.strip_properties])
+project.fetch_algorithms(exp, "2023-03-07-A-symk-strips-30m", filters=[project.strip_properties])
 
 project.add_absolute_report(
     exp, attributes=ATTRIBUTES, name=f"{exp.name}-full"
