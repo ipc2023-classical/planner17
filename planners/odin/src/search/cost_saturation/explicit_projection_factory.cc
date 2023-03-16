@@ -240,7 +240,6 @@ void ExplicitProjectionFactory::add_transitions(
     }
     // Apply all subsets of possible effects and add transitions.
     int powerset_size = 1 << possible_effects.size();
-    int transition_id = 0;
     for (int mask = 0; mask < powerset_size; ++mask) {
         UnrankedState possible_dest_values = definite_dest_values;
         int i = 0;
@@ -258,7 +257,7 @@ void ExplicitProjectionFactory::add_transitions(
         } else {
             has_outgoing[op_id] = true;
             ++num_transitions_by_operator[op_id];
-            backward_graph[dest_rank].emplace_back(transition_id++, op_id, src_rank);
+            backward_graph[dest_rank].emplace_back(num_transitions++, op_id, src_rank);
 #ifndef NDEBUG
             vector<Successor> copied_transitions = backward_graph[dest_rank];
             sort(copied_transitions.begin(), copied_transitions.end());

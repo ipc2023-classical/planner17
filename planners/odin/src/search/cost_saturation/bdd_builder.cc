@@ -2,9 +2,11 @@
 
 #include "utils.h"
 #include "task_info.h"
+#include "gamer_variable_order.h"
 
 #include "../task_utils/task_properties.h"
 #include "../utils/logging.h"
+#include "../tasks/root_task.h"
 
 #include <math.h>
 
@@ -17,10 +19,15 @@ namespace cost_saturation {
 
 // ____________________________________________________________________________
 BddBuilder::BddBuilder(
-    std::shared_ptr<TaskInfo> task_info) :
+    std::shared_ptr<TaskInfo> task_info,
+    bool use_gamer_order) :
     task_info(task_info),
     mbr(Cudd(0,0)) {
     int num_variables = task_info->get_num_variables();
+    var_remapping = vector<int>(num_variables, 0);
+    iota(var_remapping.begin(), var_remapping.end(), 0);
+    if (use_gamer_order) symbolic::InfluenceGraph::compute_gamer_ordering(var_remapping, TaskProxy(*tasks::g_root_task));
+    cout << "Variable order: " << var_remapping << endl;
     int num_bdd_vars = 1;
     vector<int> var_offset;
     var_offset.reserve(num_variables);
@@ -30,7 +37,7 @@ BddBuilder::BddBuilder(
     // topdown construction of variables
     // TODO: Construction of bdds that represent cartesian sets should depend on this order,
     // i.e., variable with large index should come first.
-    for (int var_id = 0; var_id < num_variables; ++var_id) {
+    for (int var_id : var_remapping) {
     // for (int var_id = num_variables - 1; var_id >= 0; --var_id) {
         int domain_size = task_info->get_domain_size(var_id);
         int req_bdd_vars = static_cast<int>(ceil(log2(domain_size)));
@@ -96,7 +103,7 @@ BddBuilder::BddBuilder(
     op_eff_cube.reserve(num_ops);
     for (int op_id = 0; op_id < num_ops; ++op_id) {
         BDD result = make_one();
-        for (int var_id = 0; var_id < num_variables; ++var_id) {
+        for (int var_id : var_remapping) {
             if (task_info->operator_mentions_variable(op_id, var_id)) {
                 for (int bdd_var_id = var_offset[var_id]; bdd_var_id < var_offset[var_id] + var_size[var_id]; ++bdd_var_id) {
                     result *= mbr.bddVar(bdd_var_id);
@@ -109,7 +116,7 @@ BddBuilder::BddBuilder(
     op_pre_cube.reserve(num_ops);
     for (int op_id = 0; op_id < num_ops; ++op_id) {
         BDD result = make_one();
-        for (int var_id = 0; var_id < num_variables; ++var_id) {
+        for (int var_id : var_remapping) {
             if (task_info->operator_has_precondition(op_id, var_id)) {
                 for (int bdd_var_id = var_offset[var_id]; bdd_var_id < var_offset[var_id] + var_size[var_id]; ++bdd_var_id) {
                     result *= mbr.bddVar(bdd_var_id);
@@ -122,7 +129,7 @@ BddBuilder::BddBuilder(
     preconditions.reserve(num_ops);
     for (int op_id = 0; op_id < num_ops; ++op_id) {
         BDD result = make_one();
-        for (int var_id = 0; var_id < num_variables; ++var_id) {
+        for (int var_id : var_remapping) {
             int pre = task_info->get_precondition_value(op_id, var_id);
             if (pre != UNDEFINED) {
                 result *= var_val_bdds[var_id][pre];
@@ -134,7 +141,7 @@ BddBuilder::BddBuilder(
     loops.reserve(num_ops);
     for (int op_id = 0; op_id < num_ops; ++op_id) {
         BDD result = make_one();
-        for (int var_id = 0; var_id < num_variables; ++var_id) {
+        for (int var_id : var_remapping) {
             int pre = task_info->get_precondition_value(op_id, var_id);
             int post = task_info->get_postcondition_value(op_id, var_id);
             // case 1: The operator has no loop.

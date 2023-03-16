@@ -214,4 +214,9 @@ static Plugin<Evaluator> _plugin("stcp", _parse, "heuristics_cost_partitioning")
 
 /*
 ./fast-downward.py --debug --keep-sas-file --transform-task preprocess-h2 ../../benchmarks/downward-benchmarks-master/gripper/prob01.pddl --search "astar(stcp([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()], saturator=all, max_time=1, orders=greedy_orders(), max_orders=2), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
+
+ml buildenv-intel/2018a-eb
+ml Automake/1.16.1
+ml CMake/3.23.2
+
 */

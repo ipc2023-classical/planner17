@@ -442,8 +442,6 @@ PatternCollectionInformation PatternCollectionGeneratorSystematicSCP::compute_pa
     TaskProxy task_proxy(*task);
     shared_ptr<cost_saturation::TaskInfo> task_info =
         make_shared<cost_saturation::TaskInfo>(task_proxy);
-    shared_ptr<cost_saturation::BddBuilder> bdd_builder =
-        make_shared<cost_saturation::BddBuilder>(task_info);
     TaskInfo evaluator_task_info(task_proxy);
     if (ignore_useless_patterns) {
         relevant_operators_per_variable = get_relevant_operators_per_variable(task_proxy);
@@ -464,7 +462,7 @@ PatternCollectionInformation PatternCollectionGeneratorSystematicSCP::compute_pa
     while (!limit_reached) {
         int num_patterns_before = projections->size();
         limit_reached = select_systematic_patterns(
-            task, task_info, bdd_builder, evaluator_task_info, pattern_generator,
+            task, task_info, nullptr, evaluator_task_info, pattern_generator,
             dead_ends,
             pq, projections, pattern_set, patterns_checked_for_dead_ends,
             collection_size, timer.get_remaining_time());

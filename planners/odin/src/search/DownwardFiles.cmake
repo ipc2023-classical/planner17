@@ -747,6 +747,7 @@ fast_downward_plugin(
         cost_saturation/explicit_abstraction_projection
         cost_saturation/explicit_abstraction
         cost_saturation/explicit_projection_factory
+        cost_saturation/gamer_variable_order
         cost_saturation/greedy_order_utils
         cost_saturation/max_cost_partitioning_heuristic
         cost_saturation/max_heuristic

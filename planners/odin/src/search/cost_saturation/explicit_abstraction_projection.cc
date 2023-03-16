@@ -49,7 +49,8 @@ ExplicitAbstractionProjection::ExplicitAbstractionProjection(
         move(has_outgoing)),
         pattern(pattern),
         hash_multipliers(hash_multipliers),
-        pattern_domain_sizes(pattern_domain_sizes) { }
+        pattern_domain_sizes(pattern_domain_sizes) {
+}
 
 // ____________________________________________________________________________
 BDD ExplicitAbstractionProjection::make_bdd(int state_id) const {

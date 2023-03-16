@@ -67,11 +67,18 @@ class BddBuilder {
      */
     vector<BDD> outgoings;
 
+    /**
+     * Remapping of the variables.
+     */
+    std::vector<int> var_remapping;
+
   public:
     /**
      * R6: Moveable and not copyable.
      */
-    explicit BddBuilder(std::shared_ptr<TaskInfo> task_info);
+    explicit BddBuilder(
+        std::shared_ptr<TaskInfo> task_info,
+        bool use_gamer_order=true);
     BddBuilder(const BddBuilder &other) = delete;
     BddBuilder& operator=(const BddBuilder &other) = delete;
     BddBuilder(BddBuilder &&other) = default;

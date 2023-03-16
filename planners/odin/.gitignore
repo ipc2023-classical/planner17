@@ -33,19 +33,17 @@
 
 # Scorpion
 __pycache__/
-/planner/scorpion/output.sas
-/planner/scorpion/sas_plan
-/planner/scorpion/sas_plan.*
-/planner/scorpion/builds/
-/planner/scorpion/experiments/*/.venv/
-/planner/scorpion/experiments/*/data/
-/planner/scorpion/misc/.tox/
-/planner/scorpion/misc/autodoc/downward-xmlrpc.secret
+output.sas
+sas_plan
+sas_plan.*
+builds/
+misc/.tox/
+misc/autodoc/downward-xmlrpc.secret
 
 # CUDD
-/planner/scorpion/src/dd_libs/cudd-3.0.0/autom4te.cache/
-/planner/scorpion/src/dd_libs/cudd-3.0.0/Makefile.in
-/planner/scorpion/src/dd_libs/cudd-3.0.0/aclocal.m4
-/planner/scorpion/src/dd_libs/cudd-3.0.0/configure
-/planner/scorpion/src/dd_libs/cudd-3.0.0/config.h.in
-/planner/scorpion/src/dd_libs/cudd-3.0.0/config.h.in~
+src/dd_libs/cudd-3.0.0/autom4te.cache/
+src/dd_libs/cudd-3.0.0/Makefile.in
+src/dd_libs/cudd-3.0.0/aclocal.m4
+src/dd_libs/cudd-3.0.0/configure
+src/dd_libs/cudd-3.0.0/config.h.in
+src/dd_libs/cudd-3.0.0/config.h.in~
