@@ -1565,584 +1565,146 @@ zenotravel-strips:2-p14.sas: 1 different costs from 30 to 30
 946.00 score by symk:sym-bd
 Max problems solved by single config: 1166
 Max score by single config: 1166.0
-Computing portfolio using IPC scores...
-portfolio for 0.00 seconds solves 0 problems with score 0.00:
-      0.00 seconds for decstar:ds
-      0.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-      0.00 seconds for symk:sym-bd
+Computing portfolio...
+portfolio for 0.00 seconds solves 0 problems with score 0.00
 
-portfolio for 90.00 seconds solves 671 problems with score 671.00:
-      0.00 seconds for decstar:ds
-      0.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-     90.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-      0.00 seconds for symk:sym-bd
+run config 12 for 1 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1.00 seconds solves 318 problems with score 318.00
 
-portfolio for 180.00 seconds solves 879 problems with score 879.00:
-      0.00 seconds for decstar:ds
-      0.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-     90.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-     90.00 seconds for symk:sym-bd
+run config 15 for 1 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 2.00 seconds solves 387 problems with score 387.00
 
-portfolio for 270.00 seconds solves 1033 problems with score 1033.00:
-      0.00 seconds for decstar:ds
-      0.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    180.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-     90.00 seconds for symk:sym-bd
+run config 0 for 1 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 3.00 seconds solves 423 problems with score 423.00
 
-portfolio for 360.00 seconds solves 1099 problems with score 1099.00:
-      0.00 seconds for decstar:ds
-      0.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    270.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-     90.00 seconds for symk:sym-bd
+run config 15 for 2 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 4.00 seconds solves 458 problems with score 458.00
 
-portfolio for 450.00 seconds solves 1140 problems with score 1140.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    270.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-     90.00 seconds for symk:sym-bd
+run config 15 for 5 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 7.00 seconds solves 504 problems with score 504.00
 
-portfolio for 540.00 seconds solves 1167 problems with score 1167.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-     90.00 seconds for symk:sym-bd
+run config 12 for 3 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 9.00 seconds solves 527 problems with score 527.00
 
-portfolio for 630.00 seconds solves 1194 problems with score 1194.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    180.00 seconds for symk:sym-bd
+run config 1 for 4 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 13.00 seconds solves 547 problems with score 547.00
 
-portfolio for 720.00 seconds solves 1223 problems with score 1223.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    270.00 seconds for symk:sym-bd
+run config 11 for 1 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 14.00 seconds solves 551 problems with score 551.00
 
-portfolio for 810.00 seconds solves 1244 problems with score 1244.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    450.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    270.00 seconds for symk:sym-bd
+run config 15 for 14 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 23.00 seconds solves 601 problems with score 601.00
 
-portfolio for 900.00 seconds solves 1267 problems with score 1267.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    540.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    270.00 seconds for symk:sym-bd
+run config 14 for 121 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 144.00 seconds solves 882 problems with score 882.00
 
-portfolio for 990.00 seconds solves 1278 problems with score 1278.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    540.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    360.00 seconds for symk:sym-bd
+run config 0 for 2 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 145.00 seconds solves 886 problems with score 886.00
 
-portfolio for 1080.00 seconds solves 1288 problems with score 1288.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    630.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    360.00 seconds for symk:sym-bd
+run config 15 for 40 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 171.00 seconds solves 931 problems with score 931.00
 
-portfolio for 1170.00 seconds solves 1300 problems with score 1300.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    360.00 seconds for symk:sym-bd
+run config 0 for 4 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 173.00 seconds solves 934 problems with score 934.00
 
-portfolio for 1260.00 seconds solves 1309 problems with score 1309.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    450.00 seconds for symk:sym-bd
+run config 14 for 280 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 332.00 seconds solves 1098 problems with score 1098.00
 
-portfolio for 1350.00 seconds solves 1319 problems with score 1319.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    540.00 seconds for symk:sym-bd
+run config 11 for 2 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 333.00 seconds solves 1099 problems with score 1099.00
 
-portfolio for 1440.00 seconds solves 1327 problems with score 1327.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    630.00 seconds for symk:sym-bd
+run config 15 for 135 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 428.00 seconds solves 1147 problems with score 1147.00
 
-portfolio for 1530.00 seconds solves 1341 problems with score 1341.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    720.00 seconds for symk:sym-bd
+run config 1 for 67 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 491.00 seconds solves 1169 problems with score 1169.00
 
-portfolio for 1620.00 seconds solves 1346 problems with score 1346.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    810.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    720.00 seconds for symk:sym-bd
+run config 11 for 10 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 499.00 seconds solves 1171 problems with score 1171.00
 
-portfolio for 1710.00 seconds solves 1360 problems with score 1360.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    900.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    720.00 seconds for symk:sym-bd
+run config 13 for 644 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1143.00 seconds solves 1264 problems with score 1264.00
 
-portfolio for 1800.00 seconds solves 1375 problems with score 1375.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    990.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    720.00 seconds for symk:sym-bd
+run config 15 for 469 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1477.00 seconds solves 1313 problems with score 1313.00
 
-Time for computing portfolio: 0.15776706200000024s
+run config 12 for 10 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1484.00 seconds solves 1314 problems with score 1314.00
 
-Reducing portfolio...
-portfolio for 1782.00 seconds solves 1375 problems with score 1375.00:
-      0.00 seconds for decstar:ds
-     79.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    987.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    716.00 seconds for symk:sym-bd
+run config 0 for 23 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1503.00 seconds solves 1316 problems with score 1316.00
 
-Sort by decreasing coverage
+run config 11 for 26 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1519.00 seconds solves 1318 problems with score 1318.00
+
+run config 2 for 75 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1594.00 seconds solves 1322 problems with score 1322.00
+
+run config 0 for 119 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1690.00 seconds solves 1326 problems with score 1326.00
+
+run config 12 for 78 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1758.00 seconds solves 1327 problems with score 1327.00
+
+Improvement below 0.0001
+portfolio for 1758.00 seconds solves 1327 problems with score 1327.00
+
+Time for computing portfolio: 4.60s
+
+Configs: 8
+Unique configs: 8
+Min time limit: 26
+Max time limit: 644
+Final score:  1327.0
+
 """
-Coverage: 1375
-Granularity: 90s
-Runtime: 1782s
-Score: 1375.0
+Coverage: 1327
+Runtime: 1758s
+Score: 1327.0
 """
 
 TRACK = "opt"
 CONFIGS = [
-    # scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    (987, ['scorpion:sys-scp-interesting_non_negative-60s-cartesian-single']),
+    # scorpion:bjolp-scp
+    (78, ['scorpion:bjolp-scp']),
     # symk:sym-bd
-    (716, ['symk:sym-bd']),
+    (469, ['symk:sym-bd']),
+    # decstar:ds
+    (119, ['decstar:ds']),
     # decstar:ds-sss-oss
-    (79, ['decstar:ds-sss-oss']),
+    (67, ['decstar:ds-sss-oss']),
+    # scorpion:astar-hmax
+    (26, ['scorpion:astar-hmax']),
+    # scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+    (280, ['scorpion:sys-scp-interesting_non_negative-60s-cartesian-single']),
+    # scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+    (644, ['scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch']),
+    # decstar:fork-optimized
+    (75, ['decstar:fork-optimized']),
 ]
-
-Unsolved problems:
-   agricola-strips:0-p13.sas           {symk:sym-bd: 1392.21}
-   agricola-strips:0-p23.sas           {symk:sym-bd: 1409.88}
-   agricola-strips:0-p24.sas           {symk:sym-bd: 1523.87}
-   agricola-strips:1-p04.sas           {symk:sym-bd: 731.10}
-   agricola-strips:1-p05.sas           {symk:sym-bd: 1561.66}
-   agricola-strips:2-p13.sas           {symk:sym-bd: 928.08}
-   agricola-strips:2-p14.sas           {symk:sym-bd: 1286.60}
-   agricola-strips:2-p16.sas           {symk:sym-bd: 1702.15}
-   airport-strips:0-p15.sas            {dofri:max_cluster: 177.35, dofri:percent_sa: 190.75, dofri:pho_offline: 386.68, dofri:pho_online: 155.86, dofri:range_sa: 196.82, dofri:tuple: 166.52, scorpion:bjolp-scp: 2.06}
-   airport-strips:0-p25.sas            {dofri:pho_online: 134.30}
-   airport-strips:0-p29.sas            {dofri:max_cluster: 259.02, dofri:percent_sa: 364.41, dofri:pho_online: 217.49, dofri:range_sa: 368.66, dofri:tuple: 312.88}
-   barman-strips:3-p536-2.sas          {symk:sym-bd: 1215.67}
-   barman-strips:5-pfile03-009.sas     {symk:sym-bd: 1256.11}
-   barman-strips:5-pfile03-011.sas     {symk:sym-bd: 1268.11}
-   barman-strips:5-pfile03-012.sas     {symk:sym-bd: 1656.52}
-   barman-strips:7-p016.sas            {symk:sym-bd: 1532.54}
-   barman-strips:7-p030.sas            {symk:sym-bd: 1306.79}
-   childsnack-strips:0-p26.sas         {decstar:ds-sss-oss: 148.93}
-   childsnack-strips:0-p27.sas         {decstar:ds-sss-oss: 1269.39}
-   childsnack-strips:2-child-snack_pfile04-2.sas {decstar:ds-sss-oss: 713.97}
-   childsnack-strips:2-child-snack_pfile04.sas {decstar:ds-sss-oss: 611.79}
-   data-network-strips:0-p23.sas       {symk:sym-bd: 1277.95}
-   data-network-strips:2-p19.sas       {decstar:ds: 812.98, decstar:ds-sss-oss: 857.59}
-   depots-strips:0-p19.sas             {odin:sys-stcp-cartesian: 1349.18, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1464.17, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1183.31}
-   driverlog-strips:0-p17.sas          {scorpion:bjolp-scp: 77.47}
-   driverlog-strips:0-p30.sas          {scorpion:bjolp-scp: 9.43}
-   elevators-strips:0-p06.sas          {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1222.40}
-   elevators-strips:1-p02.sas          {odin:sys-stcp-cartesian: 1399.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1556.10, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1534.73}
-   ferry-strips:0-p033.sas             {odin:sys-stcp-cartesian: 635.27, scorpion:bjolp-scp: 1017.56, symk:sym-bd: 1449.92}
-   ferry-strips:0-p044.sas             {odin:sys-stcp-cartesian: 466.67}
-   ferry-strips:0-p054.sas             {odin:sys-stcp-cartesian: 303.96, scorpion:bjolp-scp: 170.91, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1184.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1480.83, symk:sym-bd: 1165.51}
-   ferry-strips:0-p055.sas             {odin:sys-stcp-cartesian: 1558.29, scorpion:bjolp-scp: 1332.10}
-   ferry-strips:0-p066.sas             {odin:sys-stcp-cartesian: 621.63, scorpion:bjolp-scp: 458.88}
-   ferry-strips:0-p087.sas             {odin:sys-stcp-cartesian: 1027.58, scorpion:bjolp-scp: 766.46}
-   ferry-strips:0-p088.sas             {odin:sys-stcp-cartesian: 1693.69, scorpion:bjolp-scp: 1483.28}
-   ferry-strips:0-p099.sas             {odin:sys-stcp-cartesian: 386.89, scorpion:bjolp-scp: 143.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 899.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1038.11}
-   ferry-strips:0-p110.sas             {odin:sys-stcp-cartesian: 899.33, scorpion:bjolp-scp: 1013.15}
-   floortile-strips:0-p14.sas          {decstar:ds-sss-oss: 550.62, scorpion:astar-hmax: 1560.47, symk:sym-bd: 1432.37}
-   floortile-strips:0-p15.sas          {decstar:ds-sss-oss: 1635.11}
-   floortile-strips:0-p16.sas          {decstar:ds-sss-oss: 1220.80}
-   floortile-strips:0-p20.sas          {decstar:ds-sss-oss: 1502.49, scorpion:astar-hmax: 1159.67, symk:sym-bd: 1415.14}
-   floortile-strips:3-p04-6-5-2.sas    {decstar:ds: 1328.72, decstar:ds-sss-oss: 448.77, odin:sys-stcp-cartesian: 1614.07, scorpion:astar-hmax: 429.76, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1243.07, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1435.03, symk:sym-bd: 727.12}
-   freecell-strips:0-p19.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1740.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1747.93}
-   freecell-strips:0-p24.sas           {dofri:pho_offline: 1263.59, dofri:pho_online: 1492.03, odin:sys-stcp-cartesian: 1437.93, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1091.02, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1630.48}
-   freecell-strips:0-p25.sas           {dofri:pho_online: 1551.39, odin:sys-stcp-cartesian: 1638.06, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1504.11, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1150.69}
-   freecell-strips:0-p26.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1492.19, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1702.70}
-   freecell-strips:1-p24.sas           {dofri:pho_offline: 1794.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1222.47}
-   freecell-strips:2-probfreecell-10-4.sas {dofri:pho_offline: 1232.46, odin:sys-stcp-cartesian: 970.00, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1709.83, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1738.51}
-   freecell-strips:2-probfreecell-11-4.sas {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1741.08}
-   ged-strips:0-p17.sas                {symk:sym-bd: 848.58}
-   ged-strips:0-p28.sas                {symk:sym-bd: 882.25}
-   goldminer-strips:0-p044.sas         {odin:sys-stcp-cartesian: 1411.36, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1279.73, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1135.79}
-   grid-strips:1-p06.sas               {decstar:ds: 1755.81, decstar:ds-sss-oss: 1654.27}
-   grid-strips:3-p078.sas              {odin:sys-stcp-cartesian: 1170.38, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 912.98, symk:sym-bd: 824.60}
-   grid-strips:3-p085.sas              {odin:sys-stcp-cartesian: 1181.84, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 705.48, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.74, symk:sym-bd: 1376.24}
-   grid-strips:3-p086.sas              {odin:sys-stcp-cartesian: 1181.07, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 693.43, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1244.33, symk:sym-bd: 1383.43}
-   gripper-strips:1-p09.sas            {symk:sym-bd: 805.92}
-   gripper-strips:1-p10.sas            {symk:sym-bd: 1674.14}
-   hanoi-strips:0-p013.sas             {symk:sym-bd: 741.54}
-   hiking-strips:0-p22.sas             {symk:sym-bd: 910.84}
-   hiking-strips:0-p23.sas             {symk:sym-bd: 1406.88}
-   hiking-strips:0-p24.sas             {symk:sym-bd: 1612.68}
-   hiking-strips:1-p05.sas             {symk:sym-bd: 1042.92}
-   hiking-strips:2-testing-3-4-4.sas   {decstar:ds-sss-oss: 576.87, symk:sym-bd: 935.67}
-   hiking-strips:2-testing-5-6-3.sas   {decstar:ds-sss-oss: 312.88}
-   logistics-strips:2-prob04.sas       {odin:sys-stcp-cartesian: 1118.96, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1098.31}
-   logistics-strips:2-prob08.sas       {odin:sys-stcp-cartesian: 175.80, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1325.13}
-   miconic-strips:1-p16.sas            {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1162.06}
-   miconic-strips:1-p24.sas            {decstar:fork-optimized: 950.11, dofri:max_cluster: 1559.35, dofri:pho_online: 330.81, dofri:tuple: 1559.25, scorpion:bjolp-scp: 142.15}
-   mprime-strips:0-p18.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1500.11, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1087.17}
-   mprime-strips:0-p24.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1354.91}
-   mprime-strips:0-p26.sas             {odin:sys-stcp-cartesian: 1299.67, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1334.29, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.67}
-   mprime-strips:1-p02.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1643.34, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1715.41}
-   no-mprime-strips:0-prob23.sas       {dofri:max_cluster: 661.18, dofri:percent_sa: 717.22, dofri:pho_offline: 704.16, dofri:pho_online: 571.91, dofri:range_sa: 681.68, dofri:tuple: 614.39, odin:sys-stcp-cartesian: 437.32, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 362.74}
-   nomystery-strips:0-p17.sas          {decstar:ds: 597.07, decstar:ds-sss-oss: 602.47, decstar:fork-optimized: 74.03}
-   nomystery-strips:0-p18.sas          {decstar:ds: 82.44, decstar:ds-sss-oss: 93.21, decstar:fork-optimized: 27.40, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1631.90, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1136.57}
-   nomystery-strips:0-p19.sas          {decstar:ds: 433.27, decstar:ds-sss-oss: 469.98, decstar:fork-optimized: 71.19}
-   nomystery-strips:0-p20.sas          {decstar:ds: 350.96, decstar:ds-sss-oss: 350.86, decstar:fork-optimized: 47.13}
-   nomystery-strips:0-p21.sas          {decstar:ds: 568.56, decstar:ds-sss-oss: 568.33, decstar:fork-optimized: 115.73}
-   nomystery-strips:0-p22.sas          {decstar:ds: 170.91, decstar:ds-sss-oss: 227.51, decstar:fork-optimized: 120.35}
-   nomystery-strips:0-p23.sas          {decstar:fork-optimized: 421.41}
-   nomystery-strips:0-p24.sas          {decstar:ds: 936.52, decstar:ds-sss-oss: 1009.93, decstar:fork-optimized: 216.01}
-   nomystery-strips:0-p25.sas          {decstar:fork-optimized: 335.61}
-   nomystery-strips:0-p26.sas          {decstar:ds: 1228.52, decstar:ds-sss-oss: 1335.27, decstar:fork-optimized: 539.87}
-   nomystery-strips:0-p30.sas          {decstar:fork-optimized: 1037.79}
-   openstacks-strips:4-p02.sas         {symk:sym-bd: 1027.01}
-   openstacks-strips:4-p05.sas         {symk:sym-bd: 1656.59}
-   openstacks-strips:7-p24.sas         {symk:sym-bd: 1737.15}
-   organic-synthesis-split-strips:0-p13.sas {scorpion:astar-hmax: 9.04}
-   organic-synthesis-split-strips:0-p15.sas {decstar:ds: 149.99, decstar:ds-sss-oss: 227.94, scorpion:astar-hmax: 21.36}
-   organic-synthesis-split-strips:0-p17.sas {decstar:ds: 655.57, decstar:ds-sss-oss: 642.86, scorpion:astar-hmax: 25.87}
-   organic-synthesis-split-strips:0-p18.sas {decstar:ds: 1478.82, decstar:ds-sss-oss: 1066.57, scorpion:astar-hmax: 401.67}
-   organic-synthesis-split-strips:0-p21.sas {decstar:ds-sss-oss: 1101.81}
-   organic-synthesis-split-strips:0-p22.sas {scorpion:astar-hmax: 159.35}
-   organic-synthesis-split-strips:0-p23.sas {decstar:ds-sss-oss: 648.60, scorpion:astar-hmax: 304.11}
-   organic-synthesis-split-strips:0-p24.sas {scorpion:astar-hmax: 969.67}
-   organic-synthesis-split-strips:0-p27.sas {scorpion:astar-hmax: 1426.65}
-   pathways-strips:0-p16.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1425.12}
-   pathways-strips:0-p18.sas           {odin:sys-stcp-cartesian: 1499.89, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1521.58, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1498.69}
-   pathways-strips:0-p22.sas           {odin:sys-stcp-cartesian: 848.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 668.17}
-   pathways-strips:0-p23.sas           {odin:sys-stcp-cartesian: 980.41}
-   pathways-strips:0-p24.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1231.84}
-   pathways-strips:0-p28.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1555.10}
-   pipesworld-notankage-strips:0-p27.sas {odin:sys-stcp-cartesian: 927.25, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 764.37}
-   pipesworld-tankage-strips:0-p21.sas {odin:sys-stcp-cartesian: 1295.83, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1154.09, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1210.95}
-   rovers-strips:0-p10.sas             {symk:sym-bd: 1096.66}
-   rovers-strips:0-p17.sas             {symk:sym-bd: 1530.88}
-   rovers-strips:0-p30.sas             {symk:sym-bd: 1090.13}
-   satellite-strips:0-p18.sas          {symk:sym-bd: 1040.45}
-   satellite-strips:0-p19.sas          {symk:sym-bd: 1275.74}
-   satellite-strips:0-p21.sas          {decstar:ds-sss-oss: 1425.99, symk:sym-bd: 1727.84}
-   satellite-strips:1-p06.sas          {decstar:ds-sss-oss: 664.88}
-   satellite-strips:2-p13-pfile13.sas  {decstar:ds-sss-oss: 1145.13}
-   satellite-strips:2-p14-pfile14.sas  {decstar:ds-sss-oss: 547.66}
-   scanalyzer-strips:0-p23.sas         {dofri:max_cluster: 1145.25, dofri:percent_sa: 1286.35, dofri:pho_offline: 357.67, dofri:pho_online: 150.50, dofri:range_sa: 1302.55, dofri:tuple: 1246.01}
-   scanalyzer-strips:2-p20.sas         {dofri:pho_offline: 470.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 550.42}
-   snake-strips:2-p08.sas              {dofri:pho_offline: 1791.58, dofri:pho_online: 1765.05, odin:sys-stcp-cartesian: 1588.73}
-   snake-strips:2-p12.sas              {dofri:pho_offline: 1268.85, dofri:pho_online: 1167.84, odin:sys-stcp-cartesian: 959.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1229.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1166.76}
-   sokoban-strips:0-p11.sas            {dofri:pho_offline: 1220.42, dofri:pho_online: 1734.85, odin:sys-stcp-cartesian: 1528.74, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1179.94, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1192.32}
-   sokoban-strips:0-p13.sas            {dofri:max_cluster: 1420.69, dofri:pho_offline: 1532.98, dofri:pho_online: 1364.02, dofri:tuple: 1490.95, odin:sys-stcp-cartesian: 1079.03, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1081.86, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1152.62}
-   spider-strips:0-p06.sas             {dofri:pho_offline: 1305.31, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1034.27, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1237.33}
-   storage-strips:0-p13.sas            {dofri:pho_offline: 892.21, dofri:pho_online: 1286.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 890.44, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1013.77}
-   termes-strips:0-p17.sas             {symk:sym-bd: 948.46}
-   termes-strips:0-p18.sas             {symk:sym-bd: 891.27}
-   termes-strips:3-p03.sas             {symk:sym-bd: 1477.75}
-   termes-strips:3-p04.sas             {symk:sym-bd: 935.07}
-   tetris-strips:0-p20.sas             {dofri:max_cluster: 601.13, dofri:pho_offline: 414.49, dofri:pho_online: 296.50, dofri:tuple: 1034.10}
-   tetris-strips:0-p27.sas             {dofri:pho_offline: 591.37, dofri:pho_online: 534.50}
-   tetris-strips:1-p12.sas             {dofri:pho_offline: 508.91, dofri:pho_online: 434.73}
-   thoughtful-strips:0-p09.sas         {odin:sys-stcp-cartesian: 1702.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1208.78}
-   thoughtful-strips:0-p15.sas         {odin:sys-stcp-cartesian: 653.29, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 604.87, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1042.58}
-   thoughtful-strips:0-p17.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1264.80}
-   tidybot-strips:0-p17.sas            {dofri:max_cluster: 467.19, dofri:percent_sa: 1080.07, dofri:pho_offline: 591.76, dofri:pho_online: 445.67, dofri:range_sa: 1395.94, dofri:tuple: 497.25, odin:sys-stcp-cartesian: 1103.12, scorpion:bjolp-scp: 1445.49, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1162.23, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1655.02}
-   tidybot-strips:0-p22.sas            {dofri:max_cluster: 391.00, dofri:percent_sa: 691.40, dofri:pho_offline: 558.93, dofri:pho_online: 356.56, dofri:range_sa: 896.93, dofri:tuple: 392.02, odin:sys-stcp-cartesian: 1467.31, scorpion:bjolp-scp: 1368.70, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1497.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1461.15}
-   tidybot-strips:0-p25.sas            {dofri:max_cluster: 615.60, dofri:percent_sa: 1080.35, dofri:pho_offline: 689.06, dofri:pho_online: 562.95, dofri:range_sa: 1401.74, dofri:tuple: 619.66}
-   tpp-strips:0-p23.sas                {decstar:ds: 22.89, decstar:ds-sss-oss: 94.88}
-   tpp-strips:0-p25.sas                {decstar:ds: 88.34}
-   tpp-strips:0-p26.sas                {decstar:ds: 90.00}
-   tpp-strips:0-p27.sas                {decstar:ds: 118.89}
-   tpp-strips:0-p28.sas                {decstar:ds: 117.52}
-   tpp-strips:0-p29.sas                {decstar:ds: 193.68}
-   tpp-strips:0-p30.sas                {decstar:ds: 221.86}
-   tpp-strips:1-p09.sas                {decstar:ds-sss-oss: 373.17}
-   tpp-strips:1-p10.sas                {decstar:ds-sss-oss: 265.39}
-   tpp-strips:2-p23.sas                {decstar:ds-sss-oss: 647.64}
-   transport-strips:0-p09.sas          {dofri:pho_offline: 799.62, dofri:pho_online: 998.45, odin:sys-stcp-cartesian: 890.47, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 799.42}
-   transport-strips:2-p09.sas          {dofri:pho_offline: 1074.56, dofri:pho_online: 1133.31, odin:sys-stcp-cartesian: 1057.70, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1109.53}
-   transport-strips:6-p07.sas          {odin:sys-stcp-cartesian: 705.05, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 724.29}
-   trucks-strips:0-p20.sas             {odin:sys-stcp-cartesian: 1681.60, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1261.92, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1634.73}
-   visitall-strips:2-p-05-9.sas        {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1190.61, symk:sym-bd: 1004.48}
-   visitall-strips:4-problem10-half.sas {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1392.62}
-   woodworking-strips:0-p25.sas        {odin:sys-stcp-cartesian: 1010.74, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 968.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1035.12}
-   woodworking-strips:0-p29.sas        {odin:sys-stcp-cartesian: 1400.07}
-   zenotravel-strips:1-p01.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1420.32}
-(154 problems)
-
-Marginal contributions:
-    33 problems / 33.00 score from decstar:ds-sss-oss
-   428 problems / 428.00 score from scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-   216 problems / 216.00 score from symk:sym-bd
-
-Final score: 1375.0    Configs: 3    Min time: 79    Max time: 987
