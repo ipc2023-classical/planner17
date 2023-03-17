@@ -5,14 +5,40 @@ Stage: build
 
 %files
     planners /planners
+    $IPC_THIRD_PARTY/ILOG_COS_20.10_LINUX_X86_64.bin ILOG_COS_20.10_LINUX_X86_64.bin
+    $IPC_THIRD_PARTY/Osi-0.107.9.tgz Osi-0.107.9.tgz
 
 %post
     ## Install all dependencies.
     apt-get update
-    apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake
+    apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake default-jre-headless zlib1g-dev
 
     ## Clear local build directories.
     rm -rf /planners/*/builds
+    
+    ## Build CPLEX
+    ./ILOG_COS_20.10_LINUX_X86_64.bin -DLICENSE_ACCEPTED=TRUE -i silent
+   
+    export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio201/cplex/
+
+    ##Build OSI
+    tar xvzf Osi-0.107.9.tgz
+    cd Osi-0.107.9
+    export DOWNWARD_COIN_ROOT=/opt/coin/
+    
+    ./configure CC="gcc"  CFLAGS="-pthread -Wno-long-long" \
+            CXX="g++" CXXFLAGS="-pthread -Wno-long-long" \
+            LDFLAGS="-L$DOWNWARD_CPLEX_ROOT/lib/x86-64_linux/static_pic" \
+            --without-lapack --enable-static=yes \
+            --prefix="$DOWNWARD_COIN_ROOT" \
+            --disable-bzlib  \
+            --with-cplex-incdir=$DOWNWARD_CPLEX_ROOT/include/ilcplex \
+            --with-cplex-lib="-lcplex -lm -ldl"
+            
+    make
+    make install
+    
+    cd ..
 
     ## Build planners.
     for planner in odin scorpion symk; do
@@ -34,6 +60,8 @@ Stage: run
     dispatch.py
     plan.py
     driver
+    /opt/ibm/ILOG/CPLEX_Studio201/cplex/
+    /opt/coin/
 
 %files from build
     /planners/odin/driver
