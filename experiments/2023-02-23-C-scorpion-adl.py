@@ -28,21 +28,11 @@ PLANNER_NAME = "scorpion"
 SUITE = project.SUITE_STRIPS
 MAX_TIME = 60 if project.REMOTE else 1
 CONFIGS = [
-    (f"sys-scp-{pattern_type}-60s-{cartesian_nick}", ["--search", "astar(scp_online(["
-        f"projections(sys_scp(max_time={MAX_TIME}, max_time_per_restart={int(MAX_TIME / 10)}, max_pdb_size=2M, max_collection_size=20M, pattern_type={pattern_type})), "
-        f"{cartesian_config}], "
-        f"saturator=perimstar, max_time={MAX_TIME}, max_size=1M, interval=10K, orders=greedy_orders()), "
-        "pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"])
-    for pattern_type in ["interesting_non_negative"]
-    for max_transitions in ["1M"]
-    for cartesian_nick, cartesian_config in [
-        ("cartesian-single", f"cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions={max_transitions}, max_time={MAX_TIME}, pick_flawed_abstract_state=first_on_shortest_path, pick_split=max_refined, tiebreak_split=min_cg, search_strategy=incremental)"),
-        ("cartesian-batch", f"cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions={max_transitions}, max_time={MAX_TIME}, pick_flawed_abstract_state=batch_min_h, pick_split=max_cover, tiebreak_split=max_refined, search_strategy=incremental)"),
-    ]
-] + [
-    (f"bjolp-scp", ["--evaluator", f"lmc=lmcount(lm_merged([lm_rhw(),lm_hm(m=1)]), admissible=true, cost_partitioning=suboptimal, greedy=true, reuse_costs=true, scoring_function=max_heuristic_per_stolen_costs)", "--search", "astar(lmc,lazy_evaluator=lmc)"]),
+    (f"sys-scp-{pattern_type}-60s", ["--search", "astar(scp_online(["
+        f"projections(sys_scp(max_time={MAX_TIME}, max_time_per_restart={int(MAX_TIME / 10)}, max_pdb_size=2M, max_collection_size=20M, pattern_type={pattern_type}), create_complete_transition_system=true)], "
+        f"saturator=perimstar, max_time={MAX_TIME}, max_size=1M, interval=10K, orders=greedy_orders()))"])
+    for pattern_type in ["interesting_non_negative", "interesting_general"]
 ]
-
 
 ###############################################################
 
@@ -62,7 +52,8 @@ else:
     ENV = project.LocalEnvironment(processes=2)
     SUITE = [
         "gripper-strips:0-p01.sas",
-        #"airport-adl:0-p01-airport1-p1.sas",
+        "airport-adl:0-p01-airport1-p1.sas",
+        "briefcaseworld-adl:0-p001.sas",
     ]
 
 BUILD_OPTIONS = []
