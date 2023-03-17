@@ -30,9 +30,9 @@ struct SenseCache {
 
     SenseCache(std::vector<int> current, std::vector<double> lower, std::vector<double> higher, std::vector<double> shadow_prices, double h);
 
-    int range_check(std::vector<int> values) const;
+    int range_check(const std::vector<int> &values) const;
 
-    int percent_check(std::vector<int> values) const;
+    int percent_check(const std::vector<int> &values) const;
 };
 
 std::ostream &operator<<(std::ostream &os, const SenseCache &cache);
@@ -45,6 +45,7 @@ class PhOAbstractionConstraints : public ConstraintGenerator {
     int num_empty_constraints;
     int num_duplicate_constraints;
     int num_constraints;
+    //int lookups;
     StateID active_state_id;
 
     cost_saturation::AbstractionFunctions abstraction_functions;
@@ -55,6 +56,7 @@ class PhOAbstractionConstraints : public ConstraintGenerator {
     utils::HashMap<std::vector<int>, int> cache;
     std::vector<int> abstract_state_ids;
     std::vector<SenseCache> rangeCache;
+    //std::vector<int> cache_hits;
 
     const double epsilon = 0.01;
 

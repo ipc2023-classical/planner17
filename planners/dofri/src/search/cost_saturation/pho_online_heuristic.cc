@@ -17,30 +17,7 @@
 using namespace std;
 
 namespace cost_saturation {
-const string OUTFILE = "training_data";
 // TODO: avoid code duplication
-/*static void extract_useful_abstraction_functions(
-    const vector<CostPartitioningHeuristic> &cp_heuristics,
-    Abstractions &abstractions,
-    AbstractionFunctions &abstraction_functions) {
-    int num_abstractions = abstractions.size();
-
-    // Collect IDs of useful abstractions.
-    vector<bool> useful_abstractions(num_abstractions, false);
-    for (const auto &cp_heuristic : cp_heuristics) {
-        cp_heuristic.mark_useful_abstractions(useful_abstractions);
-    }
-
-    abstraction_functions.reserve(num_abstractions);
-    for (int i = 0; i < num_abstractions; ++i) {
-        if (useful_abstractions[i]) {
-            abstraction_functions.push_back(abstractions[i]->extract_abstraction_function());
-        } else {
-            abstraction_functions.push_back(nullptr);
-        }
-    }
-    assert(abstraction_functions.size() == abstractions.size());
-}*/
 
 PhOOnlineHeuristic::PhOOnlineHeuristic(const options::Options &opts,
                                        Abstractions &abstractions,
