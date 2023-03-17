@@ -27,7 +27,7 @@ USER = project.User(
     email="dominik.drexler@liu.se",
 )
 
-PLANNER_NAME = "scorpion"
+PLANNER_NAME = "odin"
 SUITE = project.SUITE_ADL
 CONFIGS = [
     ("sys-stcp-cartesian", ["--search", "astar(stcp_online([projections(systematic(3), create_complete_transition_system=true)],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=40000))"]),
