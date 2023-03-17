@@ -145,8 +145,8 @@ def remove_properties(eval_dir: Path):
             pass
 
 
-def compress_properties(eval_dir: Path):
-    subprocess.run(["xz", "--force", str(eval_dir / "properties")])
+def compress(path: Path):
+    subprocess.run(["xz", "--force", str(path)])
 
 
 def add_evaluations_per_time(run):
