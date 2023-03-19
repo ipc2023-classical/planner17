@@ -85,6 +85,7 @@ add_executable(search
         utils/timer.cc utils/timer.h
         algorithms/int_hash_set.h
         algorithms/dynamic_bitset.h
+        algorithms/kpkc.cc algorithms/kpkc.h
         search_statistics.cc search_statistics.h
         options.h open_lists/greedy_open_list.h
         search_engines/breadth_first_width_search.cc search_engines/breadth_first_width_search.h
