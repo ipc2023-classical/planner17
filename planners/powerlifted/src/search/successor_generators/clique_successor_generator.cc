@@ -1,6 +1,7 @@
 #include "clique_bron_kerbosch.h"
 #include "clique_help_functions.h"
 #include "clique_successor_generator.h"
+#include "../algorithms/kpkc.h"
 
 #include <cassert>
 #include <limits>
@@ -206,10 +207,18 @@ CliqueSuccessorGenerator::CliqueSuccessorGenerator(const Task &task, const Cliqu
 
         action_objects_by_parameter_type.insert(make_pair(action, parameter_assignments));
 
+        int last_cumulative_partition_size = 0;
+        vector<int> partitions;
+        partitions.push_back(0);
         vector<Assignment> to_vertex_assignment;
 
         for (const auto &parameter : action.get_parameters()) {
-            for (const auto &object : parameter_assignments.at(parameter)) {
+            const auto compatible_objects = parameter_assignments.at(parameter);
+            const int cumulative_partition_size = last_cumulative_partition_size + (int) compatible_objects.size();
+            last_cumulative_partition_size = cumulative_partition_size;
+            partitions.push_back(cumulative_partition_size);
+
+            for (const auto &object : compatible_objects) {
                 const Assignment vertex_assignment(parameter.get_index(), object.get_index());
                 to_vertex_assignment.push_back(vertex_assignment);
             }
@@ -235,7 +244,6 @@ CliqueSuccessorGenerator::CliqueSuccessorGenerator(const Task &task, const Cliqu
         vector<AssignmentPair> statically_consistent_assignments;
 
         for (const auto &literal : literals) {
-
             if (static_predicate_names.find(literal.get_name()) != static_predicate_names.end()) {
                 static_precondition.push_back(literal);
             }
@@ -260,6 +268,7 @@ CliqueSuccessorGenerator::CliqueSuccessorGenerator(const Task &task, const Cliqu
         action_precondition.insert(make_pair(action, Precondition(static_precondition, dynamic_precondition)));
         action_statically_consistent_assignments.insert(make_pair(action, statically_consistent_assignments));
         action_to_vertex_assignment.insert(make_pair(action, to_vertex_assignment));
+        action_partitions.insert(make_pair(action, partitions));
     }
 }
 
@@ -312,6 +321,78 @@ CliqueSuccessorGenerator::applicable_actions_unary_case(const ActionSchema &acti
     return applicable_actions;
 }
 
+vector<uint32_t> CliqueSuccessorGenerator::create_adjacency_list(const Precondition& preconds,
+                                                                 const std::vector<AssignmentPair>& statically_consistent_assignments,
+                                                                 std::size_t num_parameters,
+                                                                 vector<uint32_t>* adjacency_list,
+                                                                 std::size_t num_vertices)
+{
+    for (uint32_t vertex_id = 0; vertex_id < num_vertices; ++vertex_id) {
+        adjacency_list[vertex_id] = vector<uint32_t>();
+    }
+
+    for (const auto &pair : statically_consistent_assignments) {
+        if (consistent_literals(preconds.dynamic_preconds, pair.first_assignment, pair.second_assignment)) {
+            auto &first_neighbors = adjacency_list[pair.first_position];
+            auto &second_neighbors = adjacency_list[pair.second_position];
+            first_neighbors.push_back(pair.second_position);
+            second_neighbors.push_back(pair.first_position);
+        }
+    }
+
+    // Make the graph more sparse by removing edges between vertices
+    // that has a degree less than num_parameters -1. We can safely
+    // do so since they cannot be part of any maximum clique, i.e.,
+    // complete assignment of the parameters.
+
+    bool removed_edges = true;
+    while (removed_edges) {
+        removed_edges = false;
+
+        for (uint32_t id = 0; id < num_vertices; ++id) {
+            auto &neighbors = adjacency_list[id];
+            const auto num_neighbors = neighbors.size();
+
+            if ((num_neighbors > 0) && (num_neighbors < (num_parameters - 1))) {
+                for (const auto neighbor_id : neighbors) {
+                    auto &neighbors = adjacency_list[neighbor_id];
+                    neighbors.erase(find(neighbors.begin(), neighbors.end(), id));
+                }
+
+                neighbors.clear();
+                removed_edges = true;
+            }
+        }
+    }
+
+    vector<uint32_t> vertex_ids;
+    for (uint32_t id = 0; id < num_vertices; ++id) {
+        auto& vertices = adjacency_list[id];
+        if (vertices.size() > 0) {
+            vertex_ids.push_back(id);
+            sort(vertices.begin(), vertices.end());
+        }
+    }
+
+    return vertex_ids;
+}
+
+void CliqueSuccessorGenerator::create_incidence_matrix(const Precondition& preconds,
+                                                       const std::vector<AssignmentPair>& statically_consistent_assignments,
+                                                       std::size_t num_parameters,
+                                                       bool** incidence_matrix,
+                                                       std::size_t num_vertices)
+{
+    for (const auto &pair : statically_consistent_assignments) {
+        if (consistent_literals(preconds.dynamic_preconds, pair.first_assignment, pair.second_assignment)) {
+            auto &first_incidences = incidence_matrix[pair.first_position];
+            auto &second_incidences = incidence_matrix[pair.second_position];
+            first_incidences[pair.second_position] = true;
+            second_incidences[pair.first_position] = true;
+        }
+    }
+}
+
 vector<LiftedOperatorId>
 CliqueSuccessorGenerator::applicable_actions_general_case(const ActionSchema &action, const DBState &state)
 {
@@ -341,75 +422,65 @@ CliqueSuccessorGenerator::applicable_actions_general_case(const ActionSchema &ac
     }
     else
     {
-        const auto num_vertices = to_vertex_assignment.size();
-        vector<uint32_t> adjacency_list[num_vertices];
-
-        for (uint32_t vertex_id = 0; vertex_id < num_vertices; ++vertex_id) {
-            adjacency_list[vertex_id] = vector<uint32_t>();
-        }
-
-        for (const auto &pair : statically_consistent_assignments) {
-            if (consistent_literals(preconds.dynamic_preconds, pair.first_assignment, pair.second_assignment)) {
-                auto &first_neighbors = adjacency_list[pair.first_position];
-                auto &second_neighbors = adjacency_list[pair.second_position];
-                first_neighbors.push_back(pair.second_position);
-                second_neighbors.push_back(pair.first_position);
-            }
-        }
-
-        // Make the graph more sparse by removing edges between vertices
-        // that has a degree less than num_parameters -1. We can safely
-        // do so since they cannot be part of any maximum clique, i.e.,
-        // complete assignment of the parameters.
-
-        bool removed_edges = true;
-        while (removed_edges) {
-            removed_edges = false;
-
-            for (uint32_t id = 0; id < num_vertices; ++id) {
-                auto &neighbors = adjacency_list[id];
-                const auto num_neighbors = neighbors.size();
-
-                if ((num_neighbors > 0) && (num_neighbors < (num_parameters - 1))) {
-                    for (const auto neighbor_id : neighbors) {
-                        auto &neighbors = adjacency_list[neighbor_id];
-                        neighbors.erase(find(neighbors.begin(), neighbors.end(), id));
-                    }
-
-                    neighbors.clear();
-                    removed_edges = true;
-                }
-            }
-        }
-
-        // Find all cliques of size num_parameters, their labels denote complete assignments that
-        // might yield an applicable precondition. The relatively few atoms in the state (compared
-        // to the number of possible atoms) lead to very sparse graphs, so the number of maximal
-        // cliques of maximum size (# parameters) tend to be very few. Since maximum cliques have
-        // size num_parameters, and we are only interested in them, then we do not need to consider
-        // vertices with a degree less than num_parameters - 1 (remove them from the graph).
-
-        vector<uint32_t> vertex_ids;
-        for (uint32_t id = 0; id < num_vertices; ++id) {
-            auto& vertices = adjacency_list[id];
-            if (vertices.size() > 0) {
-                vertex_ids.push_back(id);
-                sort(vertices.begin(), vertices.end());
-            }
-        }
-
         switch (pivot) {
-            case First:
+            case BronKerboschFirst:
+            {
+                const auto num_vertices = to_vertex_assignment.size();
+                vector<uint32_t> adjacency_list[num_vertices];
+                const auto vertex_ids = create_adjacency_list(preconds, statically_consistent_assignments, num_parameters, adjacency_list, num_vertices);
                 bron_kerbosch_first_pivot(adjacency_list, vertex_ids, num_parameters, cliques);
                 break;
+            }
 
-            case MaxNeighborhood:
+            case BronKerboschMaxNeighborhood:
+            {
+                const auto num_vertices = to_vertex_assignment.size();
+                vector<uint32_t> adjacency_list[num_vertices];
+                const auto vertex_ids = create_adjacency_list(preconds, statically_consistent_assignments, num_parameters, adjacency_list, num_vertices);
                 bron_kerbosch_max_neighborhood_pivot(adjacency_list, vertex_ids, num_parameters, cliques);
                 break;
+            }
 
-            case MinDifference:
+            case BronKerboschMinDifference:
+            {
+                const auto num_vertices = to_vertex_assignment.size();
+                vector<uint32_t> adjacency_list[num_vertices];
+                const auto vertex_ids = create_adjacency_list(preconds, statically_consistent_assignments, num_parameters, adjacency_list, num_vertices);
                 bron_kerbosch_min_difference_pivot(adjacency_list, vertex_ids, num_parameters, cliques);
                 break;
+            }
+
+            case KCliqueKPartite:
+            {
+                const auto num_vertices = to_vertex_assignment.size();
+                const auto size_pointers = sizeof(bool*) * num_vertices;
+                const auto size_row = sizeof(bool) * num_vertices;
+                const auto size_total = size_pointers + size_row * num_vertices;
+
+                // Allocate memory that for both the outer array and the inner arrays.
+                auto incidence_data = new uint8_t[size_total];
+                std::fill_n(incidence_data, size_total, 0);
+
+                // Split the allocated memory into a incidence matrix.
+                auto incidence_matrix = (bool**) incidence_data;
+
+                for (std::size_t index = 0; index < num_vertices; ++index)
+                {
+                    incidence_matrix[index] = (bool*) (incidence_data + size_pointers + index * size_row);
+                }
+
+                create_incidence_matrix(preconds, statically_consistent_assignments, num_parameters, incidence_matrix, num_vertices);
+
+                const auto& partitions = action_partitions[action];
+                auto clique_enumerator = kpkc::KPartiteKClique(incidence_matrix, num_vertices, &partitions[0], num_parameters);
+
+                while (clique_enumerator.next())
+                {
+                    const auto clique = clique_enumerator.k_clique();
+                    cliques.push_back(std::vector<uint32_t>(clique, clique + num_parameters));
+                }
+                break;
+            }
         }
 
         generated_total_ += cliques.size();

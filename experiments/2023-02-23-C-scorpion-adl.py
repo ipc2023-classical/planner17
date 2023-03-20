@@ -25,7 +25,7 @@ USER = project.User(
 )
 
 PLANNER_NAME = "scorpion"
-SUITE = project.SUITE_STRIPS
+SUITE = project.SUITE_ADL
 MAX_TIME = 60 if project.REMOTE else 1
 CONFIGS = [
     (f"sys-scp-{pattern_type}-60s", ["--search", "astar(scp_online(["

@@ -35,7 +35,8 @@ SUCCESSOR_GENERATOR_CHOICES = ['yannakakis',
                                'random_join',
                                'ordered_join',
                                'full_reducer',
-                               'clique_first',
+                               'clique_bk',
+                               'clique_kckp',
                                'automatic']
 
 

@@ -93,9 +93,10 @@ struct Precondition {
 };
 
 enum CliquePivot {
-    First,
-    MaxNeighborhood,
-    MinDifference
+    BronKerboschFirst,
+    BronKerboschMaxNeighborhood,
+    BronKerboschMinDifference,
+    KCliqueKPartite,
 };
 
 class CliqueSuccessorGenerator : public SuccessorGenerator {
@@ -106,6 +107,7 @@ private:
     long generated_applicable_;
     std::unordered_map<ActionSchema, std::unordered_map<Parameter, std::set<Object>>> action_objects_by_parameter_type;
     std::unordered_map<ActionSchema, std::vector<Assignment>> action_to_vertex_assignment;
+    std::unordered_map<ActionSchema, std::vector<int>> action_partitions;
     std::unordered_map<ActionSchema, std::vector<AssignmentPair>> action_statically_consistent_assignments;
     std::unordered_map<ActionSchema, Precondition> action_precondition;
 
@@ -121,6 +123,18 @@ private:
     bool consistent_literals_with_constants(const std::vector<Atom> &literals);
 
     bool test_nullary_preconditions(const ActionSchema &action, const DBState &state);
+
+    std::vector<uint32_t> create_adjacency_list(const Precondition& preconds,
+                                                const std::vector<AssignmentPair>& statically_consistent_assignments,
+                                                std::size_t num_parameters,
+                                                std::vector<uint32_t>* adjacency_list,
+                                                std::size_t num_vertices);
+
+    void create_incidence_matrix(const Precondition& preconds,
+                                 const std::vector<AssignmentPair>& statically_consistent_assignments,
+                                 std::size_t num_parameters,
+                                 bool** incidence_matrix,
+                                 std::size_t num_vertices);
 
     std::vector<LiftedOperatorId> applicable_actions_nullary_case(const ActionSchema &action,
                                                                   const DBState &state);

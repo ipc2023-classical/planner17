@@ -38,14 +38,11 @@ SuccessorGenerator *SuccessorGeneratorFactory::create(const std::string &method,
     else if (boost::iequals(method, "yannakakis")) {
         return new YannakakisSuccessorGenerator(task);
     }
-    else if (boost::iequals(method, "clique_first")) {
-        return new CliqueSuccessorGenerator(task, First);
+    else if (boost::iequals(method, "clique_bk")) {
+        return new CliqueSuccessorGenerator(task, BronKerboschFirst);
     }
-    else if (boost::iequals(method, "clique_max_neighborhood")) {
-        return new CliqueSuccessorGenerator(task, MaxNeighborhood);
-    }
-    else if (boost::iequals(method, "clique_min_difference")) {
-        return new CliqueSuccessorGenerator(task, MinDifference);
+    else if (boost::iequals(method, "clique_kckp")) {
+        return new CliqueSuccessorGenerator(task, KCliqueKPartite);
     }
     else if (boost::iequals(method, "automatic")) {
         for (const auto& action : task.get_action_schemas()) {
@@ -53,13 +50,13 @@ SuccessorGenerator *SuccessorGeneratorFactory::create(const std::string &method,
                 bool is_ineq = (p.get_name() == "=");
                 if (p.is_negated() and !is_ineq) {
                     // We assume the first generator does not support negative-preconditions but the second generator does.
-                    std::cout << "[AutomaticSuccessorGenerator] Defaulting to 'clique_first' due to negative-preconditions" << std::endl;
-                    return new CliqueSuccessorGenerator(task, First);
+                    std::cout << "[AutomaticSuccessorGenerator] Defaulting to 'clique_kckp' due to negative-preconditions" << std::endl;
+                    return new CliqueSuccessorGenerator(task, KCliqueKPartite);
                 }
             }
         }
 
-        return new AutomaticSuccessorGenerator(new FullReducerSuccessorGenerator(task), "full_reducer", new CliqueSuccessorGenerator(task, First), "clique_first", 100);
+        return new AutomaticSuccessorGenerator(new FullReducerSuccessorGenerator(task), "full_reducer", new CliqueSuccessorGenerator(task, KCliqueKPartite), "clique_kckp", 100);
     }
     else {
         std::cerr << "Invalid successor generator method \"" << method << "\"" << std::endl;
