@@ -114,6 +114,7 @@ Stage: run
         --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
         --transform-task-options h2_time_limit,180 \
         --alias seq-opt-ragnarok \
+        --plan-file "$PLANFILE" \
         "$DOMAINFILE" "$PROBLEMFILE" || echo "TODO: run lifted blind search"
 
 %labels
