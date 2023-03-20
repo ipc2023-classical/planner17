@@ -1675,7 +1675,7 @@ portfolio for 1758.00 seconds solves 1327 problems with score 1327.00
 Improvement below 0.0001
 portfolio for 1758.00 seconds solves 1327 problems with score 1327.00
 
-Time for computing portfolio: 4.60s
+Time for computing portfolio: 5.54s
 
 Configs: 8
 Unique configs: 8
@@ -1692,19 +1692,19 @@ Score: 1327.0
 TRACK = "opt"
 CONFIGS = [
     # scorpion:bjolp-scp
-    (78, ['scorpion:bjolp-scp']),
+    (78, [['scorpion', '--evaluator', 'lmc=lmcount(lm_merged([lm_rhw(),lm_hm(m=1)]), admissible=true, cost_partitioning=suboptimal, greedy=true, reuse_costs=true, scoring_function=max_heuristic_per_stolen_costs)', '--search', 'astar(lmc,lazy_evaluator=lmc)']]),
     # symk:sym-bd
-    (469, ['symk:sym-bd']),
+    (469, [['symk', '--search', 'sym-bd(silent=true)']]),
     # decstar:ds
-    (119, ['decstar:ds']),
+    (119, [['decstar', '--decoupling', 'lp_general(factoring_time_limit=30, memory_limit=7000, add_cg_sccs=true, strategy=mm_approx, min_flexibility=0.8)', '--search', 'astar(lmcut)']]),
     # decstar:ds-sss-oss
-    (67, ['decstar:ds-sss-oss']),
+    (67, [['decstar', '--decoupling', 'lp_general(factoring_time_limit=30, memory_limit=7000, add_cg_sccs=true, strategy=mm_approx, min_flexibility=0.8)', '--search', 'astar(lmcut, pruning=stubborn_sets_decoupled(min_pruning_ratio=0.25, special_case_optimizations=true, use_single_var_ifork_optimization=true), symmetry=symmetry_state_pruning(lex_prices=true, lex_num_states=false, lex_goal_cost=false))']]),
     # scorpion:astar-hmax
-    (26, ['scorpion:astar-hmax']),
+    (26, [['scorpion', '--search', 'astar(hmax())']]),
     # scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    (280, ['scorpion:sys-scp-interesting_non_negative-60s-cartesian-single']),
+    (280, [['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative)), cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions=1M, max_time=60, pick_flawed_abstract_state=first_on_shortest_path, pick_split=max_refined, tiebreak_split=min_cg, search_strategy=incremental)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))']]),
     # scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    (644, ['scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch']),
+    (644, [['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative)), cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions=1M, max_time=60, pick_flawed_abstract_state=batch_min_h, pick_split=max_cover, tiebreak_split=max_refined, search_strategy=incremental)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))']]),
     # decstar:fork-optimized
-    (75, ['decstar:fork-optimized']),
+    (75, [['decstar', '--decoupling', 'fork(search_type=asda, pruning=dominance(irrelevance=TRANSITIONS), max_leaf_size=100000)', '--search', 'astar(lmcut, pruning_heuristic=lmcut(search_type=STAR), pruning=stubborn_sets_decoupled(min_pruning_ratio=0.25, special_case_optimizations=true))']]),
 ]

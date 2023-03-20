@@ -107,6 +107,7 @@ class Results(object):
 
     def _massage_entry(self, entry, timeout):
         config = entry["algorithm"]
+        planner, _ = config.split(":")
         domain = entry["domain"]
         problem = entry["problem"]
         coverage = entry.get("coverage", 0)
@@ -128,7 +129,7 @@ class Results(object):
             cost = None
         return dict(
             config=config,
-            options=[entry["algorithm"]],
+            options=[[planner] + entry["component_options"]],
             problem="%s:%s" % (domain, problem),
             time=time,
             cost=cost)

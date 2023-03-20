@@ -15,17 +15,17 @@ Stage: build
 
     ## Clear local build directories.
     rm -rf /planners/*/builds
-    
+
     ## Build CPLEX
     ./ILOG_COS_20.10_LINUX_X86_64.bin -DLICENSE_ACCEPTED=TRUE -i silent
-   
+
     export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio201/cplex/
 
     ##Build OSI
     tar xvzf Osi-0.107.9.tgz
     cd Osi-0.107.9
     export DOWNWARD_COIN_ROOT=/opt/coin/
-    
+
     ./configure CC="gcc"  CFLAGS="-pthread -Wno-long-long" \
             CXX="g++" CXXFLAGS="-pthread -Wno-long-long" \
             LDFLAGS="-L$DOWNWARD_CPLEX_ROOT/lib/x86-64_linux/static_pic" \
@@ -34,10 +34,10 @@ Stage: build
             --disable-bzlib  \
             --with-cplex-incdir=$DOWNWARD_CPLEX_ROOT/include/ilcplex \
             --with-cplex-lib="-lcplex -lm -ldl"
-            
+
     make
     make install
-    
+
     cd ..
 
     ## Build planners.
@@ -106,12 +106,14 @@ Stage: run
         "$PROBLEMFILE" \
         --search "sym-bd(silent=true)"
 
+    # Limit memory to 7.5 GiB to enable switching away from components that run out of memory.
     pypy3 plan.py \
-        --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
-        --alias seq-opt-ragnarok \
-        --translate-time-limit 10m \
-        --transform-task-options h2_time_limit,180 \
+        --overall-memory-limit 7680M \
         --overall-time-limit 30m \
+        --translate-time-limit 15m \
+        --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
+        --transform-task-options h2_time_limit,180 \
+        --alias seq-opt-ragnarok \
         "$DOMAINFILE" "$PROBLEMFILE" || echo "TODO: run lifted blind search"
 
 %labels
