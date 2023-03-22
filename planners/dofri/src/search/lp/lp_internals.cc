@@ -178,7 +178,7 @@ tuple<vector<double>, vector<double>> getRHSSA(OsiSolverInterface *lp_solver) {
             utils::exit_with(ExitCode::SEARCH_CRITICAL_ERROR);
         }
     }
-    return make_tuple(b_lower, b_upper);
+    return make_tuple(move(b_lower), move(b_upper));
 
 #else
     utils::unused_variable(lp_solver);

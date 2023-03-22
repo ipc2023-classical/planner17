@@ -18,7 +18,7 @@
 using namespace std;
 
 namespace operator_counting {
-SenseCache::SenseCache(vector<int> current, vector<double> lower, vector<double> higher, vector<double>shadow_prices, double h)
+SenseCache::SenseCache(vector<int> &&current, vector<double> &&lower, vector<double> &&higher, vector<double> &&shadow_prices, double h)
     : lower(lower), higher(higher), current(current), shadow_prices(shadow_prices), h(h) {
 }
 
@@ -30,9 +30,6 @@ int SenseCache::range_check(const vector<int> &values) const {
     //cout << "agains: " << endl;
     for (size_t i = 0; i < values.size(); i++) {
         //cout << values[i] << ":" << "[" << lower[i] << ":" << current[i] << ":" << higher[i] << "]:" << shadow_prices[i] << endl;
-        if (values[i] == cost_saturation::INF) {
-            return -1; //detect any deadend in abstractions
-        }
         if (current[i] != values[i]) {
             if (change || values[i] < lower[i] || higher[i] < values[i]) {
                 //cout << "out of range or second change, stopping" << endl;
@@ -50,10 +47,8 @@ int SenseCache::range_check(const vector<int> &values) const {
     //cout << "change of h: " << (values[changed_constraint] - current[changed_constraint]) * shadow_prices[changed_constraint] << endl;
     int cached_h = ceil(h + h_value_change - 0.01);
     //cout << "changed h: " << cached_h << endl;
+    assert(cached_h < cost_saturation::INF);
     assert(cached_h >= 0 || (h == -1 && h == cached_h));
-    if (cached_h >= cost_saturation::INF) {
-        return -1;
-    }
     return cached_h;
 }
 
@@ -65,9 +60,6 @@ int SenseCache::percent_check(const vector<int> &values) const {
     //cout << "agains: " << endl;
     for (size_t i = 0; i < values.size(); i++) {
         //cout << values[i] << ":" << "[" << lower[i] << ":" << current[i] << ":" << higher[i] << "]:" << shadow_prices[i] << endl;
-        if (values[i] == cost_saturation::INF) {
-            return -1; //detect any deadend in abstractions
-        }
         if (current[i] != values[i]) {
             if (values[i] < lower[i] || higher[i] < values[i]) {
                 //cout << "out of range, stopping" << endl;
@@ -91,6 +83,7 @@ int SenseCache::percent_check(const vector<int> &values) const {
     //cout << "changed h: " << cached_h << endl;
     assert(cached_h >= 0 || (h == -1 && h == cached_h));
     if (cached_h >= cost_saturation::INF) {
+        assert(false);
         return -1;
     }
     return cached_h;
@@ -249,13 +242,11 @@ void PhOAbstractionConstraints::initialize_constraints(
     //h_values_by_abstraction.shrink_to_fit();
     //constraint_ids_by_abstraction.shrink_to_fit();
     distance_tuple.resize(num_constraints);
-    DEAD_END_TUPLE.resize(num_constraints);
-    fill(DEAD_END_TUPLE.begin(), DEAD_END_TUPLE.end(), -1);
     if (constraints.size() > 0) {
-        cache[distance_tuple] = 0; //add goal state cache
-        vector<double> dummy(num_constraints);
-        vector<int> agd(num_constraints);
-        rangeCache.push_back(SenseCache(agd, dummy, dummy, dummy, 0));
+        //preadd a 0 heuristic cache for states in which all abstract goal states are 0, because it is unnecessary to compute an LP in these states.
+        cache[distance_tuple] = 0;
+        //same for Sensitivity with 0 interval and 0 shadow cost.
+        rangeCache.push_back(SenseCache(vector<int>(num_constraints), vector<double>(num_constraints), vector<double>(num_constraints), vector<double>(num_constraints), 0));
         //cache_hits.push_back(0);
     }
     //cout << "setup finished" << endl;
@@ -305,12 +296,15 @@ bool PhOAbstractionConstraints::update_constraints(
     return false;
 }
 
-vector<int> PhOAbstractionConstraints::state_to_tuple(const State &state) {
+void PhOAbstractionConstraints::set_distance_tuple(const State &state) {
     //cout << "state to tuple: " << endl;
     assert(active_state_id == state.get_id());
-    assert(strategy != RecomputationStrategy::ALWAYS);
     fill(distance_tuple.begin(), distance_tuple.end(), 0);     //distance_tuple.clear(); capacity not guaranteed to stay the same for clear
     switch (strategy) {
+    case (RecomputationStrategy::ALWAYS):
+    {
+        break;
+    }
     case (RecomputationStrategy::TUPLE):
     {
         for (size_t i = 0; i < abstraction_functions.size(); ++i) {
@@ -320,10 +314,6 @@ vector<int> PhOAbstractionConstraints::state_to_tuple(const State &state) {
                 int state_id = abstract_state_ids[i];
                 assert(utils::in_bounds(i, h_values_by_abstraction));
                 assert(utils::in_bounds(state_id, h_values_by_abstraction[i]));
-                if (h_values_by_abstraction[i][state_id] == cost_saturation::INF) {
-                    distance_tuple = DEAD_END_TUPLE;
-                    break;
-                }
                 distance_tuple[constraint_ids_by_abstraction[i]] = h_values_by_abstraction[i][state_id];
             }
         }
@@ -339,10 +329,6 @@ vector<int> PhOAbstractionConstraints::state_to_tuple(const State &state) {
                 assert(utils::in_bounds(i, h_values_by_abstraction));
                 assert(utils::in_bounds(state_id, h_values_by_abstraction[i]));
                 assert(utils::in_bounds(constraint_ids_by_abstraction[i], distance_tuple));
-                if (h_values_by_abstraction[i][state_id] == cost_saturation::INF) {
-                    distance_tuple = DEAD_END_TUPLE;
-                    break;
-                }
                 distance_tuple[constraint_ids_by_abstraction[i]] = max(distance_tuple[constraint_ids_by_abstraction[i]], h_values_by_abstraction[i][state_id]);
             }
         }
@@ -366,37 +352,26 @@ vector<int> PhOAbstractionConstraints::state_to_tuple(const State &state) {
         break;
     }
     }
-    return distance_tuple;
 }
 
 void PhOAbstractionConstraints::set_active_state(const State &state) {
     active_state_id = state.get_id();
     abstract_state_ids = cost_saturation::get_abstract_state_ids(abstraction_functions, state);
+    set_distance_tuple(state);
 }
 
 void PhOAbstractionConstraints::cache_heuristic(const State &state, lp::LPSolver &lp_solver, double h) {
     if (strategy == RecomputationStrategy::TUPLE || strategy == RecomputationStrategy::MAX_CLUSTER) {
-        cache[state_to_tuple(state)] = ceil(h - 0.01);
+        cache[distance_tuple] = ceil(h - 0.01);
     } else if (strategy == RecomputationStrategy::RANGE_SA || strategy == RecomputationStrategy::PERCENT_SA) {
-        if (h == -1) {
-            vector<double> lower_bounds(num_constraints);
-            vector<double> higher_bounds(num_constraints);
-            vector<int> agd = state_to_tuple(state);
-            vector<double> shadow_prices(num_constraints);
-            rangeCache.push_back(SenseCache(agd, lower_bounds, higher_bounds, shadow_prices, h));
-            //cache_hits.push_back(0);
-        } else {
-            vector<double> lower_bounds(num_constraints);
-            vector<double> higher_bounds(num_constraints);
-            tie(lower_bounds, higher_bounds) = lp_solver.get_rhs_sa();
-            vector<int> agd = state_to_tuple(state);
-            vector<double> shadow_prices = lp_solver.get_row_price();
-            //cout << "caching: " << agd << endl;
-            //cout << "lower: " << lower_bounds << endl;
-            //cout << "higher: " << higher_bounds << endl;
-            rangeCache.push_back(SenseCache(agd, lower_bounds, higher_bounds, shadow_prices, h));
-            //cache_hits.push_back(0);
-        }
+        vector<double> lower_bounds(num_constraints);
+        vector<double> higher_bounds(num_constraints);
+        tie(lower_bounds, higher_bounds) = lp_solver.get_rhs_sa();
+        vector<double> shadow_prices = lp_solver.get_row_price();
+        //cout << "lower: " << lower_bounds << endl;
+        //cout << "higher: " << higher_bounds << endl;
+        rangeCache.push_back(SenseCache(vector<int>(distance_tuple), move(lower_bounds), move(higher_bounds), move(shadow_prices), h));
+        //cache_hits.push_back(0);
         //assert(rangeCache.size() == cache_hits.size());
     }
 }
@@ -406,7 +381,6 @@ int PhOAbstractionConstraints::get_cached_heuristic_value(const State &state) {
         cout << "acessing cache without caching strategy" << endl;
         return -2;
     }
-    vector<int> distance_tuple = state_to_tuple(state);
     //cout << "lookup:" << distance_tuple << endl;
     //for (int i = 0; i < abstraction_functions.size(); i++) {
     //    cout << h_values_by_abstraction[i][abstract_state_ids[i]];
@@ -414,6 +388,12 @@ int PhOAbstractionConstraints::get_cached_heuristic_value(const State &state) {
     //}
     //cout << endl;
     //cout << constraint_ids_by_abstraction << endl;
+    //check if any abstraction detected a dead end
+    for (int i : distance_tuple) {
+        if (i == cost_saturation::INF) {
+            return -1;
+        }
+    }
     if (strategy == RecomputationStrategy::RANGE_SA) {
         for (int i = rangeCache.size() - 1; i >= 0; i--) {
             int cache_h = rangeCache[i].range_check(distance_tuple);
@@ -422,6 +402,7 @@ int PhOAbstractionConstraints::get_cached_heuristic_value(const State &state) {
                 //assert(utils::in_bounds(i, cache_hits));
                 //cache_hits[i]++;
                 //approximate max-heap by sifting used rule up. Reduces the time spend looping over all rules.
+                //cout << "swap " << rangeCache.size() - i << "/" << rangeCache.size() << " up" << endl;
                 swap(rangeCache[i], rangeCache[(rangeCache.size() + i - 1) / 2]);
                 return cache_h;
             }

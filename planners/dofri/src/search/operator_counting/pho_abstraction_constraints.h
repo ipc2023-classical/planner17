@@ -28,7 +28,7 @@ struct SenseCache {
     std::vector<double> shadow_prices;
     double h;
 
-    SenseCache(std::vector<int> current, std::vector<double> lower, std::vector<double> higher, std::vector<double> shadow_prices, double h);
+    SenseCache(std::vector<int> &&current, std::vector<double> &&lower, std::vector<double> &&higher, std::vector<double> &&shadow_prices, double h);
 
     int range_check(const std::vector<int> &values) const;
 
@@ -75,10 +75,9 @@ public:
     virtual void set_active_state(const State &state) override;
 
     std::vector<int> distance_tuple;
-    std::vector<int> DEAD_END_TUPLE;
 
 private:
-    std::vector<int> state_to_tuple(const State &state);
+    void set_distance_tuple(const State &state);
 };
 }
 

@@ -48,7 +48,9 @@ int OperatorCountingHeuristic::compute_heuristic(const State &ancestor_state) {
     State state = convert_ancestor_state(ancestor_state);
     int h_cache = NO_VALUE;
     evaluations++;
-    constraint_generators[0]->set_active_state(state);
+    for (auto &generator:constraint_generators) {
+        generator->set_active_state(state);
+    }
     if (cache_lp) {
         //cout << "get cache" << endl;
         h_cache = constraint_generators[0]->get_cached_heuristic_value(state);
