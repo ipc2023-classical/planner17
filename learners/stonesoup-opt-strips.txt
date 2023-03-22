@@ -1944,7 +1944,7 @@ portfolio for 1800.00 seconds solves 1375 problems with score 1375.00:
     990.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     720.00 seconds for symk:sym-bd
 
-Time for computing portfolio: 0.142346407s
+Time for computing portfolio: 0.13445089499999985s
 
 Reducing portfolio...
 portfolio for 1782.00 seconds solves 1375 problems with score 1375.00:

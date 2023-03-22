@@ -129,7 +129,7 @@ class Results(object):
             cost = None
         return dict(
             config=config,
-            options=[[planner] + entry["component_options"]],
+            options=[planner] + entry["component_options"],
             problem="%s:%s" % (domain, problem),
             time=time,
             cost=cost)
