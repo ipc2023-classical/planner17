@@ -45,18 +45,7 @@ SuccessorGenerator *SuccessorGeneratorFactory::create(const std::string &method,
         return new CliqueSuccessorGenerator(task, KCliqueKPartite);
     }
     else if (boost::iequals(method, "automatic")) {
-        for (const auto& action : task.get_action_schemas()) {
-            for (const Atom &p : action.get_precondition()) {
-                bool is_ineq = (p.get_name() == "=");
-                if (p.is_negated() and !is_ineq) {
-                    // We assume the first generator does not support negative-preconditions but the second generator does.
-                    std::cout << "[AutomaticSuccessorGenerator] Defaulting to 'clique_kckp' due to negative-preconditions" << std::endl;
-                    return new CliqueSuccessorGenerator(task, KCliqueKPartite);
-                }
-            }
-        }
-
-        return new AutomaticSuccessorGenerator(new FullReducerSuccessorGenerator(task), "full_reducer", new CliqueSuccessorGenerator(task, KCliqueKPartite), "clique_kckp", 100);
+        return new AutomaticSuccessorGenerator(new CliqueSuccessorGenerator(task, BronKerboschFirst), "clique_bk", new CliqueSuccessorGenerator(task, KCliqueKPartite), "clique_kckp", 100);
     }
     else {
         std::cerr << "Invalid successor generator method \"" << method << "\"" << std::endl;
