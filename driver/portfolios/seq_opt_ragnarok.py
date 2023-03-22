@@ -18,7 +18,7 @@ CONFIGS_COND_EFFS = [
 ]
 
 CONFIGS_AXIOMS = [
-    (300, ['symk', '--search', 'astar(blind())']),
+    (300, ['scorpion', '--search', 'astar(blind())']),
     (1500, ['symk', '--search', 'sym-bd(silent=true)']),
 ]
 
