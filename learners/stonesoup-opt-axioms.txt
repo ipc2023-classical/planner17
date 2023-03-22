@@ -1,0 +1,253 @@
+airport-adl:0-p01-airport1-p1.sas: 1 different costs from 8 to 8
+airport-adl:0-p02-airport1-p1.sas: 1 different costs from 9 to 9
+airport-adl:0-p03-airport1-p2.sas: 1 different costs from 17 to 17
+airport-adl:0-p04-airport2-p1.sas: 1 different costs from 20 to 20
+airport-adl:0-p05-airport2-p1.sas: 1 different costs from 21 to 21
+airport-adl:0-p06-airport2-p2.sas: 1 different costs from 41 to 41
+airport-adl:0-p07-airport2-p2.sas: 1 different costs from 41 to 41
+airport-adl:0-p08-airport2-p3.sas: 1 different costs from 62 to 62
+airport-adl:0-p09-airport2-p4.sas: 1 different costs from 71 to 71
+airport-adl:0-p10-airport3-p1.sas: 1 different costs from 18 to 18
+airport-adl:0-p11-airport3-p1.sas: 1 different costs from 21 to 21
+airport-adl:0-p12-airport3-p2.sas: 1 different costs from 39 to 39
+airport-adl:0-p13-airport3-p2.sas: 1 different costs from 37 to 37
+airport-adl:0-p14-airport3-p3.sas: 1 different costs from 60 to 60
+airport-adl:0-p15-airport3-p3.sas: 1 different costs from 58 to 58
+airport-adl:0-p16-airport3-p4.sas: 1 different costs from 79 to 79
+airport-adl:0-p17-airport3-p5.sas: 1 different costs from 88 to 88
+airport-adl:0-p19-airport3-p6.sas: 1 different costs from 90 to 90
+airport-adl:0-p21-airport4halfMUC-p2.sas: 1 different costs from 101 to 101
+airport-adl:0-p22-airport4halfMUC-p3.sas: 1 different costs from 148 to 148
+airport-adl:0-p36-airport5MUC-p2.sas: 1 different costs from 109 to 109
+assembly-adl:0-prob01.sas: 1 different costs from 28 to 28
+assembly-adl:0-prob02.sas: 1 different costs from 27 to 27
+assembly-adl:0-prob03.sas: 1 different costs from 32 to 32
+assembly-adl:0-prob04.sas: 1 different costs from 33 to 33
+assembly-adl:0-prob05.sas: 1 different costs from 37 to 37
+assembly-adl:0-prob06.sas: 1 different costs from 36 to 36
+assembly-adl:0-prob08.sas: 1 different costs from 44 to 44
+assembly-adl:0-prob09.sas: 1 different costs from 48 to 48
+assembly-adl:0-prob10.sas: 1 different costs from 47 to 47
+assembly-adl:0-prob11.sas: 1 different costs from 55 to 55
+assembly-adl:0-prob13.sas: 1 different costs from 57 to 57
+miconic-fulladl-adl:0-f17-0.sas: 1 different costs from 52 to 52
+miconic-fulladl-adl:0-f17-3.sas: 1 different costs from 49 to 49
+miconic-fulladl-adl:0-f18-0.sas: 1 different costs from 52 to 52
+miconic-fulladl-adl:0-f18-1.sas: 1 different costs from 53 to 53
+miconic-fulladl-adl:0-f18-2.sas: 1 different costs from 52 to 52
+miconic-fulladl-adl:0-f18-3.sas: 1 different costs from 49 to 49
+miconic-fulladl-adl:0-f18-4.sas: 1 different costs from 47 to 47
+miconic-fulladl-adl:0-f19-0.sas: 1 different costs from 51 to 51
+miconic-fulladl-adl:0-f19-1.sas: 1 different costs from 48 to 48
+miconic-fulladl-adl:0-f19-2.sas: 1 different costs from 58 to 58
+miconic-fulladl-adl:0-f19-3.sas: 1 different costs from 48 to 48
+miconic-fulladl-adl:0-f19-4.sas: 1 different costs from 54 to 54
+miconic-fulladl-adl:0-f20-0.sas: 1 different costs from 62 to 62
+miconic-fulladl-adl:0-f20-1.sas: 1 different costs from 54 to 54
+miconic-fulladl-adl:0-f20-2.sas: 1 different costs from 60 to 60
+miconic-fulladl-adl:0-f20-4.sas: 1 different costs from 56 to 56
+miconic-fulladl-adl:0-f21-0.sas: 1 different costs from 62 to 62
+miconic-fulladl-adl:0-f21-1.sas: 1 different costs from 58 to 58
+miconic-fulladl-adl:0-f21-2.sas: 1 different costs from 60 to 60
+miconic-fulladl-adl:0-f22-0.sas: 1 different costs from 64 to 64
+miconic-fulladl-adl:0-f22-1.sas: 1 different costs from 66 to 66
+miconic-fulladl-adl:0-f22-2.sas: 1 different costs from 60 to 60
+miconic-fulladl-adl:0-f22-3.sas: 1 different costs from 66 to 66
+miconic-fulladl-adl:0-f22-4.sas: 1 different costs from 62 to 62
+miconic-fulladl-adl:0-f23-0.sas: 1 different costs from 66 to 66
+miconic-fulladl-adl:0-f23-2.sas: 1 different costs from 64 to 64
+miconic-fulladl-adl:0-f23-3.sas: 1 different costs from 68 to 68
+miconic-fulladl-adl:0-f24-0.sas: 1 different costs from 70 to 70
+miconic-fulladl-adl:0-f24-2.sas: 1 different costs from 62 to 62
+miconic-fulladl-adl:0-f26-3.sas: 1 different costs from 80 to 80
+openstacks-adl:0-p07.sas: 1 different costs from 13 to 13
+openstacks-adl:0-p08.sas: 1 different costs from 9 to 9
+openstacks-adl:0-p09.sas: 1 different costs from 9 to 9
+openstacks-adl:0-p10.sas: 1 different costs from 16 to 16
+openstacks-adl:0-p11.sas: 1 different costs from 13 to 13
+openstacks-adl:0-p12.sas: 1 different costs from 17 to 17
+openstacks-adl:0-p13.sas: 1 different costs from 14 to 14
+openstacks-adl:0-p14.sas: 1 different costs from 19 to 19
+openstacks-adl:0-p17.sas: 1 different costs from 18 to 18
+openstacks-adl:1-p02.sas: 1 different costs from 16 to 16
+openstacks-adl:1-p16.sas: 1 different costs from 4 to 4
+openstacks-adl:2-p24.sas: 1 different costs from 5 to 5
+openstacks-adl:2-p26.sas: 1 different costs from 5 to 5
+openstacks-adl:2-p27.sas: 1 different costs from 6 to 6
+openstacks-adl:2-p28.sas: 1 different costs from 4 to 4
+openstacks-adl:2-p29.sas: 1 different costs from 5 to 5
+openstacks-adl:2-p30.sas: 1 different costs from 4 to 4
+openstacks-adl:3-p16.sas: 1 different costs from 6 to 6
+openstacks-adl:3-p17.sas: 1 different costs from 6 to 6
+openstacks-adl:3-p18.sas: 1 different costs from 4 to 4
+openstacks-adl:3-p21.sas: 1 different costs from 6 to 6
+openstacks-adl:3-p23.sas: 1 different costs from 8 to 8
+openstacks-adl:3-p24.sas: 1 different costs from 8 to 8
+openstacks-adl:4-p08.sas: 1 different costs from 87 to 87
+openstacks-adl:4-p09.sas: 1 different costs from 87 to 87
+openstacks-adl:4-p10.sas: 1 different costs from 89 to 89
+openstacks-adl:4-p11.sas: 1 different costs from 89 to 89
+openstacks-adl:4-p12.sas: 1 different costs from 92 to 92
+openstacks-adl:4-p16.sas: 1 different costs from 94 to 94
+openstacks-adl:4-p17.sas: 1 different costs from 112 to 112
+optical-telegraphs-adl:0-p01-opt2.sas: 1 different costs from 28 to 28
+optical-telegraphs-adl:0-p02-opt3.sas: 1 different costs from 42 to 42
+optical-telegraphs-adl:0-p03-opt4.sas: 1 different costs from 56 to 56
+optical-telegraphs-adl:0-p04-opt5.sas: 1 different costs from 70 to 70
+philosophers-adl:0-p01-phil2.sas: 1 different costs from 18 to 18
+philosophers-adl:0-p02-phil3.sas: 1 different costs from 27 to 27
+philosophers-adl:0-p03-phil4.sas: 1 different costs from 36 to 36
+philosophers-adl:0-p04-phil5.sas: 1 different costs from 45 to 45
+philosophers-adl:0-p05-phil6.sas: 1 different costs from 54 to 54
+philosophers-adl:0-p06-phil7.sas: 1 different costs from 63 to 63
+philosophers-adl:0-p07-phil8.sas: 1 different costs from 72 to 72
+philosophers-adl:0-p08-phil9.sas: 1 different costs from 81 to 81
+philosophers-adl:0-p09-phil10.sas: 1 different costs from 90 to 90
+philosophers-adl:0-p10-phil11.sas: 1 different costs from 99 to 99
+philosophers-adl:0-p11-phil12.sas: 1 different costs from 108 to 108
+philosophers-adl:0-p12-phil13.sas: 1 different costs from 117 to 117
+philosophers-adl:0-p13-phil14.sas: 1 different costs from 126 to 126
+philosophers-adl:0-p14-phil15.sas: 1 different costs from 135 to 135
+psr-large-adl:0-p01-s29-n2-l5-f30.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p02-s46-n3-l5-f50.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p03-s53-n4-l3-f30.sas: 1 different costs from 11 to 11
+psr-large-adl:0-p04-s66-n5-l2-f50.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p05-s71-n5-l3-f70.sas: 1 different costs from 8 to 8
+psr-large-adl:0-p06-s74-n5-l4-f50.sas: 1 different costs from 9 to 9
+psr-large-adl:0-p07-s81-n6-l2-f30.sas: 1 different costs from 12 to 12
+psr-large-adl:0-p08-s87-n6-l3-f70.sas: 1 different costs from 3 to 3
+psr-large-adl:0-p09-s90-n6-l4-f50.sas: 1 different costs from 8 to 8
+psr-large-adl:0-p10-s93-n6-l5-f30.sas: 1 different costs from 17 to 17
+psr-large-adl:0-p11-s100-n7-l3-f10.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p12-s103-n7-l3-f70.sas: 1 different costs from 7 to 7
+psr-large-adl:0-p13-s106-n7-l4-f50.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p14-s112-n8-l2-f10.sas: 1 different costs from 9 to 9
+psr-large-adl:0-p15-s114-n8-l2-f50.sas: 1 different costs from 11 to 11
+psr-large-adl:0-p16-s119-n8-l3-f70.sas: 1 different costs from 6 to 6
+psr-large-adl:0-p17-s129-n9-l2-f30.sas: 1 different costs from 14 to 14
+psr-large-adl:0-p18-s133-n9-l3-f30.sas: 1 different costs from 16 to 16
+psr-large-adl:0-p19-s144-n10-l2-f10.sas: 1 different costs from 7 to 7
+psr-large-adl:0-p20-s149-n10-l3-f30.sas: 1 different costs from 11 to 11
+psr-large-adl:0-p21-s160-n12-l2-f10.sas: 1 different costs from 9 to 9
+psr-large-adl:0-p22-s162-n12-l3-f10.sas: 1 different costs from 9 to 9
+psr-large-adl:0-p23-s164-n15-l2-f10.sas: 1 different costs from 17 to 17
+psr-large-adl:0-p24-s166-n15-l3-f10.sas: 1 different costs from 13 to 13
+psr-large-adl:0-p25-s168-n20-l2-f10.sas: 1 different costs from 9 to 9
+psr-middle-adl:0-p01-s17-n2-l2-f30.sas: 1 different costs from 4 to 4
+psr-middle-adl:0-p02-s23-n2-l3-f70.sas: 1 different costs from 3 to 3
+psr-middle-adl:0-p03-s28-n2-l5-f10.sas: 1 different costs from 5 to 5
+psr-middle-adl:0-p04-s31-n2-l5-f70.sas: 1 different costs from 4 to 4
+psr-middle-adl:0-p05-s34-n3-l2-f50.sas: 1 different costs from 5 to 5
+psr-middle-adl:0-p06-s37-n3-l3-f30.sas: 1 different costs from 10 to 10
+psr-middle-adl:0-p07-s38-n3-l3-f50.sas: 1 different costs from 3 to 3
+psr-middle-adl:0-p08-s40-n3-l4-f10.sas: 1 different costs from 3 to 3
+psr-middle-adl:0-p09-s42-n3-l4-f50.sas: 1 different costs from 5 to 5
+psr-middle-adl:0-p10-s45-n3-l5-f30.sas: 1 different costs from 9 to 9
+psr-middle-adl:0-p12-s50-n4-l2-f50.sas: 1 different costs from 7 to 7
+psr-middle-adl:0-p14-s55-n4-l3-f70.sas: 1 different costs from 6 to 6
+psr-middle-adl:0-p17-s61-n4-l5-f30.sas: 1 different costs from 5 to 5
+psr-middle-adl:0-p18-s62-n4-l5-f50.sas: 1 different costs from 8 to 8
+psr-middle-adl:0-p20-s69-n5-l3-f30.sas: 1 different costs from 11 to 11
+psr-middle-adl:0-p21-s72-n5-l4-f10.sas: 1 different costs from 13 to 13
+psr-middle-adl:0-p23-s76-n5-l5-f10.sas: 1 different costs from 9 to 9
+psr-middle-adl:0-p24-s77-n5-l5-f30.sas: 1 different costs from 3 to 3
+psr-middle-adl:0-p26-s85-n6-l3-f30.sas: 1 different costs from 13 to 13
+psr-middle-adl:0-p29-s89-n6-l4-f30.sas: 1 different costs from 13 to 13
+psr-middle-adl:0-p31-s92-n6-l5-f10.sas: 1 different costs from 7 to 7
+psr-middle-adl:0-p34-s102-n7-l3-f50.sas: 1 different costs from 13 to 13
+psr-middle-adl:0-p37-s108-n7-l5-f10.sas: 1 different costs from 11 to 11
+psr-middle-adl:0-p38-s109-n7-l5-f30.sas: 1 different costs from 19 to 19
+psr-middle-adl:0-p41-s116-n8-l3-f10.sas: 1 different costs from 13 to 13
+psr-middle-adl:0-p42-s120-n8-l4-f10.sas: 1 different costs from 12 to 12
+psr-middle-adl:0-p43-s123-n8-l4-f70.sas: 1 different costs from 9 to 9
+psr-middle-adl:0-p45-s132-n9-l3-f10.sas: 1 different costs from 8 to 8
+psr-middle-adl:0-p46-s135-n9-l3-f70.sas: 1 different costs from 5 to 5
+psr-middle-adl:0-p50-s153-n10-l4-f30.sas: 1 different costs from 11 to 11
+trucks-adl:0-p01.sas: 1 different costs from 13 to 13
+trucks-adl:0-p02.sas: 1 different costs from 17 to 17
+trucks-adl:0-p03.sas: 1 different costs from 20 to 20
+trucks-adl:0-p04.sas: 1 different costs from 23 to 23
+trucks-adl:0-p05.sas: 1 different costs from 25 to 25
+trucks-adl:0-p06.sas: 1 different costs from 30 to 30
+trucks-adl:0-p07.sas: 1 different costs from 23 to 23
+trucks-adl:0-p08.sas: 1 different costs from 25 to 25
+trucks-adl:0-p09.sas: 1 different costs from 28 to 28
+174 problems
+2 configs
+348 results
+174 problems solved by someone
+73 problems solved by scorpion:astar-blind
+173 problems solved by symk:sym-bd
+73.00 score by scorpion:astar-blind
+173.00 score by symk:sym-bd
+Max problems solved by single config: 173
+Max score by single config: 173.0
+Computing portfolio using IPC scores...
+portfolio for 0.00 seconds solves 0 problems with score 0.00:
+      0.00 seconds for scorpion:astar-blind
+      0.00 seconds for symk:sym-bd
+
+portfolio for 220.00 seconds solves 146 problems with score 146.00:
+      0.00 seconds for scorpion:astar-blind
+    220.00 seconds for symk:sym-bd
+
+portfolio for 440.00 seconds solves 156 problems with score 156.00:
+      0.00 seconds for scorpion:astar-blind
+    440.00 seconds for symk:sym-bd
+
+portfolio for 660.00 seconds solves 162 problems with score 162.00:
+      0.00 seconds for scorpion:astar-blind
+    660.00 seconds for symk:sym-bd
+
+portfolio for 880.00 seconds solves 169 problems with score 169.00:
+      0.00 seconds for scorpion:astar-blind
+    880.00 seconds for symk:sym-bd
+
+portfolio for 1100.00 seconds solves 170 problems with score 170.00:
+      0.00 seconds for scorpion:astar-blind
+   1100.00 seconds for symk:sym-bd
+
+portfolio for 1320.00 seconds solves 171 problems with score 171.00:
+      0.00 seconds for scorpion:astar-blind
+   1320.00 seconds for symk:sym-bd
+
+portfolio for 1540.00 seconds solves 173 problems with score 173.00:
+      0.00 seconds for scorpion:astar-blind
+   1540.00 seconds for symk:sym-bd
+
+portfolio for 1760.00 seconds solves 173 problems with score 173.00:
+    220.00 seconds for scorpion:astar-blind
+   1540.00 seconds for symk:sym-bd
+
+Time for computing portfolio: 0.0026666549999998512s
+
+Reducing portfolio...
+portfolio for 1514.00 seconds solves 173 problems with score 173.00:
+      1.00 seconds for scorpion:astar-blind
+   1513.00 seconds for symk:sym-bd
+
+Sort by decreasing coverage
+"""
+Coverage: 173
+Granularity: 220s
+Runtime: 1514s
+Score: 173.0
+"""
+
+TRACK = "opt"
+CONFIGS = [
+    # symk:sym-bd
+    (1513, ['symk', '--search', 'sym-bd(silent=true)']),
+    # scorpion:astar-blind
+    (1, ['scorpion', '--search', 'astar(blind())']),
+]
+
+Unsolved problems:
+   airport-adl:0-p22-airport4halfMUC-p3.sas {scorpion:astar-blind: 532.54}
+(1 problems)
+
+Marginal contributions:
+     0 problems / 0.00 score from scorpion:astar-blind
+   136 problems / 136.00 score from symk:sym-bd
+
+Final score: 173.0    Configs: 2    Min time: 1    Max time: 1513

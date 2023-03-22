@@ -1,0 +1,348 @@
+briefcaseworld-adl:0-p001.sas: 1 different costs from 0 to 0
+briefcaseworld-adl:0-p002.sas: 1 different costs from 5 to 5
+briefcaseworld-adl:0-p003.sas: 1 different costs from 9 to 9
+briefcaseworld-adl:0-p004.sas: 1 different costs from 10 to 10
+briefcaseworld-adl:0-p005.sas: 1 different costs from 12 to 12
+briefcaseworld-adl:0-p006.sas: 1 different costs from 17 to 17
+briefcaseworld-adl:0-p007.sas: 1 different costs from 17 to 17
+briefcaseworld-adl:0-p008.sas: 1 different costs from 24 to 24
+briefcaseworld-adl:1-p01.sas: 1 different costs from 0 to 0
+briefcaseworld-adl:1-p02.sas: 1 different costs from 5 to 5
+briefcaseworld-adl:1-p03.sas: 1 different costs from 4 to 4
+briefcaseworld-adl:1-p04.sas: 1 different costs from 10 to 10
+briefcaseworld-adl:1-p05.sas: 1 different costs from 13 to 13
+briefcaseworld-adl:1-p06.sas: 1 different costs from 15 to 15
+briefcaseworld-adl:1-p07.sas: 1 different costs from 21 to 21
+briefcaseworld-adl:1-p08.sas: 1 different costs from 21 to 21
+briefcaseworld-adl:1-p09.sas: 1 different costs from 23 to 23
+caldera-adl:0-p01.sas: 1 different costs from 7 to 7
+caldera-adl:0-p02.sas: 1 different costs from 7 to 7
+caldera-adl:0-p03.sas: 1 different costs from 7 to 7
+caldera-adl:0-p04.sas: 1 different costs from 7 to 7
+caldera-adl:0-p05.sas: 1 different costs from 12 to 12
+caldera-adl:0-p06.sas: 1 different costs from 12 to 12
+caldera-adl:0-p07.sas: 1 different costs from 11 to 11
+caldera-adl:0-p08.sas: 1 different costs from 12 to 12
+caldera-adl:0-p09.sas: 1 different costs from 15 to 15
+caldera-adl:0-p10.sas: 1 different costs from 15 to 15
+caldera-adl:0-p11.sas: 1 different costs from 15 to 15
+caldera-adl:0-p12.sas: 1 different costs from 16 to 16
+caldera-adl:1-p01.sas: 1 different costs from 11 to 11
+caldera-adl:1-p02.sas: 1 different costs from 11 to 11
+caldera-adl:1-p03.sas: 1 different costs from 16 to 16
+caldera-adl:1-p04.sas: 1 different costs from 16 to 16
+caldera-split-adl:0-p01.sas: 1 different costs from 42 to 42
+caldera-split-adl:0-p02.sas: 1 different costs from 42 to 42
+caldera-split-adl:0-p03.sas: 1 different costs from 42 to 42
+caldera-split-adl:0-p04.sas: 1 different costs from 42 to 42
+caldera-split-adl:0-p05.sas: 1 different costs from 72 to 72
+caldera-split-adl:0-p06.sas: 1 different costs from 72 to 72
+caldera-split-adl:0-p07.sas: 1 different costs from 66 to 66
+caldera-split-adl:0-p08.sas: 1 different costs from 72 to 72
+caldera-split-adl:0-p09.sas: 1 different costs from 90 to 90
+caldera-split-adl:0-p10.sas: 1 different costs from 90 to 90
+caldera-split-adl:0-p12.sas: 1 different costs from 96 to 96
+caldera-split-adl:1-p01.sas: 1 different costs from 66 to 66
+caldera-split-adl:1-p02.sas: 1 different costs from 66 to 66
+caldera-split-adl:1-p03.sas: 1 different costs from 96 to 96
+caldera-split-adl:1-p04.sas: 1 different costs from 96 to 96
+caldera-split-adl:1-p05.sas: 1 different costs from 114 to 114
+caldera-split-adl:1-p06.sas: 1 different costs from 120 to 120
+cavediving-adl:0-testing05A_easy.sas: 1 different costs from 94 to 94
+cavediving-adl:0-testing06A_easy.sas: 1 different costs from 95 to 95
+cavediving-adl:0-testing07_easy.sas: 1 different costs from 131 to 131
+cavediving-adl:0-testing08_easy.sas: 1 different costs from 90 to 90
+cavediving-adl:0-testing18A_easy.sas: 1 different costs from 131 to 131
+cavediving-adl:0-testing18_easy.sas: 1 different costs from 131 to 131
+cavediving-adl:0-testing20A_easy.sas: 1 different costs from 98 to 98
+cavediving-adl:1-p-2_2-2-0.45.sas: 1 different costs from 82 to 82
+cavediving-adl:1-p-2_2-2-0.5.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-2_2-2-0.6.sas: 1 different costs from 86 to 86
+cavediving-adl:1-p-2_2_2-2-0.45.sas: 1 different costs from 86 to 86
+cavediving-adl:1-p-2_2_2-2-0.5.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-2_2_2-2-0.55.sas: 1 different costs from 83 to 83
+cavediving-adl:1-p-2_2_2-2-0.6.sas: 1 different costs from 82 to 82
+cavediving-adl:1-p-2_2_2_2-2-0.45.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-2_2_2_2-2-0.5.sas: 1 different costs from 91 to 91
+cavediving-adl:1-p-2_2_2_2-2-0.6.sas: 1 different costs from 89 to 89
+cavediving-adl:1-p-3_2-2-0.5.sas: 1 different costs from 84 to 84
+cavediving-adl:1-p-3_2-2-0.55.sas: 1 different costs from 83 to 83
+cavediving-adl:1-p-3_2-2-0.6.sas: 1 different costs from 82 to 82
+cavediving-adl:1-p-3_2_2-2-0.4.sas: 1 different costs from 88 to 88
+cavediving-adl:1-p-3_2_2-2-0.45.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-3_2_2-2-0.5.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-3_2_2-2-0.55.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-3_2_2-2-0.6.sas: 1 different costs from 81 to 81
+cavediving-adl:1-p-3_3_2-2-0.4.sas: 1 different costs from 131 to 131
+cavediving-adl:1-p-3_3_2-2-0.45.sas: 1 different costs from 87 to 87
+cavediving-adl:1-p-3_3_2-2-0.5.sas: 1 different costs from 87 to 87
+cavediving-adl:1-p-3_3_2-2-0.55.sas: 1 different costs from 83 to 83
+cavediving-adl:1-p-3_3_2-2-0.6.sas: 1 different costs from 86 to 86
+citycar-adl:0-p3-3-2-2-2.sas: 1 different costs from 92 to 92
+citycar-adl:0-p3-3-3-3-2.sas: 1 different costs from 76 to 76
+citycar-adl:2-p001.sas: 1 different costs from 98 to 98
+citycar-adl:2-p004.sas: 1 different costs from 88 to 88
+citycar-adl:2-p006.sas: 1 different costs from 96 to 96
+citycar-adl:2-p017.sas: 1 different costs from 98 to 98
+citycar-adl:2-p018.sas: 1 different costs from 88 to 88
+citycar-adl:2-p019.sas: 1 different costs from 70 to 70
+citycar-adl:2-p020.sas: 1 different costs from 92 to 92
+citycar-adl:2-p021.sas: 1 different costs from 84 to 84
+citycar-adl:2-p033.sas: 1 different costs from 92 to 92
+citycar-adl:2-p034.sas: 1 different costs from 68 to 68
+citycar-adl:2-p035.sas: 1 different costs from 88 to 88
+citycar-adl:2-p036.sas: 1 different costs from 88 to 88
+citycar-adl:2-p056.sas: 1 different costs from 78 to 78
+citycar-adl:2-p145.sas: 1 different costs from 70 to 70
+citycar-adl:2-p146.sas: 1 different costs from 110 to 110
+citycar-adl:2-p147.sas: 1 different costs from 92 to 92
+citycar-adl:2-p148.sas: 1 different costs from 88 to 88
+citycar-adl:2-p150.sas: 1 different costs from 98 to 98
+citycar-adl:2-p151.sas: 1 different costs from 86 to 86
+citycar-adl:2-p161.sas: 1 different costs from 98 to 98
+citycar-adl:2-p162.sas: 1 different costs from 92 to 92
+citycar-adl:2-p163.sas: 1 different costs from 114 to 114
+citycar-adl:2-p164.sas: 1 different costs from 80 to 80
+citycar-adl:2-p168.sas: 1 different costs from 86 to 86
+citycar-adl:2-p193.sas: 1 different costs from 72 to 72
+citycar-adl:2-p194.sas: 1 different costs from 82 to 82
+citycar-adl:2-p195.sas: 1 different costs from 94 to 94
+citycar-adl:2-p226.sas: 1 different costs from 94 to 94
+flashfill-adl:0-p16.sas: 1 different costs from 310 to 310
+flashfill-adl:0-p17.sas: 1 different costs from 310 to 310
+gedp-ds2ndp-adl:0-d-1-2.sas: 1 different costs from 1 to 1
+gedp-ds2ndp-adl:0-d-1-3.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-1-8.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-2-3.sas: 1 different costs from 3 to 3
+gedp-ds2ndp-adl:0-d-2-4.sas: 1 different costs from 2 to 2
+gedp-ds2ndp-adl:0-d-3-1.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-3-2.sas: 1 different costs from 3 to 3
+gedp-ds2ndp-adl:0-d-3-4.sas: 1 different costs from 5 to 5
+gedp-ds2ndp-adl:0-d-4-2.sas: 1 different costs from 2 to 2
+gedp-ds2ndp-adl:0-d-4-3.sas: 1 different costs from 5 to 5
+gedp-ds2ndp-adl:0-d-5-7.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-6-7.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-7-5.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-7-6.sas: 1 different costs from 4 to 4
+gedp-ds2ndp-adl:0-d-8-1.sas: 1 different costs from 4 to 4
+miconic-simpleadl-adl:0-s18-3.sas: 1 different costs from 48 to 48
+miconic-simpleadl-adl:0-s18-4.sas: 1 different costs from 42 to 42
+miconic-simpleadl-adl:0-s19-1.sas: 1 different costs from 54 to 54
+miconic-simpleadl-adl:0-s19-4.sas: 1 different costs from 50 to 50
+miconic-simpleadl-adl:0-s20-0.sas: 1 different costs from 48 to 48
+miconic-simpleadl-adl:0-s20-2.sas: 1 different costs from 46 to 46
+miconic-simpleadl-adl:0-s20-4.sas: 1 different costs from 50 to 50
+miconic-simpleadl-adl:0-s21-0.sas: 1 different costs from 56 to 56
+miconic-simpleadl-adl:0-s22-0.sas: 1 different costs from 58 to 58
+miconic-simpleadl-adl:0-s22-1.sas: 1 different costs from 53 to 53
+miconic-simpleadl-adl:0-s22-3.sas: 1 different costs from 64 to 64
+miconic-simpleadl-adl:0-s23-1.sas: 1 different costs from 60 to 60
+miconic-simpleadl-adl:0-s23-3.sas: 1 different costs from 52 to 52
+miconic-simpleadl-adl:0-s24-0.sas: 1 different costs from 62 to 62
+miconic-simpleadl-adl:0-s24-1.sas: 1 different costs from 60 to 60
+miconic-simpleadl-adl:0-s24-2.sas: 1 different costs from 60 to 60
+miconic-simpleadl-adl:0-s24-3.sas: 1 different costs from 64 to 64
+miconic-simpleadl-adl:0-s24-4.sas: 1 different costs from 60 to 60
+miconic-simpleadl-adl:0-s25-2.sas: 1 different costs from 59 to 59
+miconic-simpleadl-adl:0-s25-3.sas: 1 different costs from 70 to 70
+miconic-simpleadl-adl:0-s26-0.sas: 1 different costs from 64 to 64
+miconic-simpleadl-adl:0-s26-2.sas: 1 different costs from 76 to 76
+miconic-simpleadl-adl:0-s26-3.sas: 1 different costs from 72 to 72
+miconic-simpleadl-adl:0-s26-4.sas: 1 different costs from 62 to 62
+miconic-simpleadl-adl:0-s27-2.sas: 1 different costs from 67 to 67
+miconic-simpleadl-adl:0-s28-0.sas: 1 different costs from 78 to 78
+miconic-simpleadl-adl:0-s29-3.sas: 1 different costs from 78 to 78
+miconic-simpleadl-adl:0-s29-4.sas: 1 different costs from 82 to 82
+miconic-simpleadl-adl:0-s30-0.sas: 1 different costs from 71 to 71
+miconic-simpleadl-adl:0-s30-1.sas: 1 different costs from 77 to 77
+nurikabe-adl:0-p01.sas: 1 different costs from 7 to 7
+nurikabe-adl:0-p02.sas: 1 different costs from 9 to 9
+nurikabe-adl:0-p03.sas: 1 different costs from 11 to 11
+nurikabe-adl:0-p04.sas: 1 different costs from 16 to 16
+nurikabe-adl:0-p05.sas: 1 different costs from 15 to 15
+nurikabe-adl:0-p06.sas: 1 different costs from 27 to 27
+nurikabe-adl:0-p07.sas: 1 different costs from 29 to 29
+nurikabe-adl:0-p08.sas: 1 different costs from 38 to 38
+nurikabe-adl:0-p09.sas: 1 different costs from 38 to 38
+nurikabe-adl:0-p10.sas: 1 different costs from 45 to 45
+nurikabe-adl:0-p11.sas: 1 different costs from 55 to 55
+nurikabe-adl:0-p12.sas: 1 different costs from 60 to 60
+nurikabe-adl:0-p13.sas: 1 different costs from 67 to 67
+nurikabe-adl:0-p14.sas: 1 different costs from 75 to 75
+nurikabe-adl:1-p01.sas: 1 different costs from 32 to 32
+nurikabe-adl:1-p02.sas: 1 different costs from 38 to 38
+nurikabe-adl:1-p03.sas: 1 different costs from 42 to 42
+nurikabe-adl:1-p04.sas: 1 different costs from 52 to 52
+nurikabe-adl:1-p05.sas: 1 different costs from 56 to 56
+nurikabe-adl:1-p06.sas: 1 different costs from 59 to 59
+nurikabe-adl:1-p07.sas: 1 different costs from 68 to 68
+nurikabe-adl:1-p08.sas: 1 different costs from 71 to 71
+settlers-adl:0-p01.sas: 1 different costs from 60 to 60
+settlers-adl:0-p02.sas: 1 different costs from 115 to 115
+settlers-adl:0-p03.sas: 1 different costs from 90 to 90
+settlers-adl:0-p04.sas: 1 different costs from 115 to 115
+settlers-adl:0-p05.sas: 1 different costs from 170 to 170
+settlers-adl:0-p06.sas: 1 different costs from 125 to 125
+settlers-adl:0-p11.sas: 1 different costs from 60 to 60
+settlers-adl:0-p12.sas: 1 different costs from 70 to 70
+settlers-adl:0-p13.sas: 1 different costs from 125 to 125
+t0-coins-adl:0-coins_p-01.sas: 1 different costs from 12 to 12
+t0-coins-adl:0-coins_p-03.sas: 1 different costs from 13 to 13
+t0-coins-adl:0-coins_p-05.sas: 1 different costs from 13 to 13
+t0-coins-adl:0-coins_p-06.sas: 1 different costs from 33 to 33
+t0-coins-adl:0-coins_p-07.sas: 1 different costs from 31 to 31
+t0-coins-adl:0-coins_p-08.sas: 1 different costs from 31 to 31
+t0-coins-adl:0-coins_p-09.sas: 1 different costs from 30 to 30
+t0-coins-adl:0-coins_p-10.sas: 1 different costs from 31 to 31
+t0-coins-adl:0-coins_p-11.sas: 1 different costs from 80 to 80
+t0-coins-adl:0-coins_p-12.sas: 1 different costs from 73 to 73
+t0-coins-adl:0-coins_p-13.sas: 1 different costs from 75 to 75
+t0-coins-adl:0-coins_p-14.sas: 1 different costs from 80 to 80
+t0-coins-adl:0-coins_p-15.sas: 1 different costs from 73 to 73
+t0-coins-adl:0-coins_p-17.sas: 1 different costs from 98 to 98
+t0-comm-adl:0-comm_c-01.sas: 1 different costs from 15 to 15
+t0-comm-adl:0-comm_c-02.sas: 1 different costs from 23 to 23
+t0-comm-adl:0-comm_c-03.sas: 1 different costs from 31 to 31
+t0-comm-adl:0-comm_c-04.sas: 1 different costs from 39 to 39
+t0-comm-adl:0-comm_c-05.sas: 1 different costs from 47 to 47
+t0-comm-adl:0-comm_c-06.sas: 1 different costs from 55 to 55
+t0-comm-adl:0-comm_c-07.sas: 1 different costs from 63 to 63
+t0-comm-adl:0-comm_c-08.sas: 1 different costs from 71 to 71
+t0-comm-adl:0-comm_c-09.sas: 1 different costs from 79 to 79
+t0-comm-adl:0-comm_c-10.sas: 1 different costs from 87 to 87
+t0-comm-adl:0-comm_c-11.sas: 1 different costs from 95 to 95
+t0-comm-adl:0-comm_c-12.sas: 1 different costs from 103 to 103
+t0-comm-adl:0-comm_c-13.sas: 1 different costs from 111 to 111
+t0-comm-adl:0-comm_c-14.sas: 1 different costs from 119 to 119
+t0-comm-adl:0-comm_c-15.sas: 1 different costs from 127 to 127
+t0-grid-dispose-adl:0-family-grid-new_dispose-4-1.sas: 1 different costs from 34 to 34
+t0-sortnet-adl:0-sortnet_03.sas: 1 different costs from 9 to 9
+t0-sortnet-adl:0-sortnet_04.sas: 1 different costs from 14 to 14
+t0-sortnet-alt-adl:0-sort-num_s-2.sas: 1 different costs from 1 to 1
+t0-sortnet-alt-adl:0-sort-num_s-3.sas: 1 different costs from 3 to 3
+t0-sortnet-alt-adl:0-sort-num_s-4.sas: 1 different costs from 6 to 6
+t0-sortnet-alt-adl:0-sort-num_s-5.sas: 1 different costs from 10 to 10
+t0-uts-adl:0-uts_k-01.sas: 1 different costs from 7 to 7
+t0-uts-adl:0-uts_k-02.sas: 1 different costs from 13 to 13
+t0-uts-adl:0-uts_k-03.sas: 1 different costs from 19 to 19
+t0-uts-adl:0-uts_l-02.sas: 1 different costs from 13 to 13
+t0-uts-adl:0-uts_l-03.sas: 1 different costs from 19 to 19
+t0-uts-adl:0-uts_l-04.sas: 1 different costs from 25 to 25
+t0-uts-adl:0-uts_l-05.sas: 1 different costs from 31 to 31
+t0-uts-adl:0-uts_r-03.sas: 1 different costs from 19 to 19
+t0-uts-adl:0-uts_r-04.sas: 1 different costs from 25 to 25
+233 problems
+11 configs
+2563 results
+233 problems solved by someone
+87 problems solved by dofri:max_cluster
+86 problems solved by dofri:percent_sa
+87 problems solved by dofri:pho_offline
+79 problems solved by dofri:pho_online
+86 problems solved by dofri:range_sa
+87 problems solved by dofri:tuple
+133 problems solved by scorpion:astar-blind
+147 problems solved by scorpion:astar-hmax
+88 problems solved by scorpion:sys-scp-interesting_general-60s
+88 problems solved by scorpion:sys-scp-interesting_non_negative-60s
+217 problems solved by symk:sym-bd
+87.00 score by dofri:max_cluster
+86.00 score by dofri:percent_sa
+87.00 score by dofri:pho_offline
+79.00 score by dofri:pho_online
+86.00 score by dofri:range_sa
+87.00 score by dofri:tuple
+133.00 score by scorpion:astar-blind
+147.00 score by scorpion:astar-hmax
+88.00 score by scorpion:sys-scp-interesting_general-60s
+88.00 score by scorpion:sys-scp-interesting_non_negative-60s
+217.00 score by symk:sym-bd
+Max problems solved by single config: 217
+Max score by single config: 217.0
+Computing portfolio...
+portfolio for 0.00 seconds solves 0 problems with score 0.00
+
+run config 7 for 1 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1.00 seconds solves 54 problems with score 54.00
+
+run config 10 for 2 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 3.00 seconds solves 89 problems with score 89.00
+
+run config 10 for 3 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 4.00 seconds solves 104 problems with score 104.00
+
+run config 7 for 3 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 6.00 seconds solves 112 problems with score 112.00
+
+run config 10 for 7 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 10.00 seconds solves 126 problems with score 126.00
+
+run config 10 for 20 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 23.00 seconds solves 141 problems with score 141.00
+
+run config 6 for 5 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 28.00 seconds solves 143 problems with score 143.00
+
+run config 10 for 83 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 91.00 seconds solves 164 problems with score 164.00
+
+run config 9 for 98 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 189.00 seconds solves 177 problems with score 177.00
+
+run config 6 for 21 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 205.00 seconds solves 179 problems with score 179.00
+
+run config 10 for 430 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 552.00 seconds solves 212 problems with score 212.00
+
+run config 9 for 226 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 680.00 seconds solves 215 problems with score 215.00
+
+run config 10 for 744 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 994.00 seconds solves 221 problems with score 221.00
+
+run config 9 for 641 seconds
+Only keep longest time slice for each config, but preserve order of first occurences.
+portfolio for 1409.00 seconds solves 223 problems with score 223.00
+
+Improvement below 0.0001
+portfolio for 1409.00 seconds solves 223 problems with score 223.00
+
+Time for computing portfolio: 1.67s
+
+Configs: 4
+Unique configs: 4
+Min time limit: 3
+Max time limit: 744
+Final score:  223.0
+
+"""
+Coverage: 223
+Runtime: 1409s
+Score: 223.0
+"""
+
+TRACK = "opt"
+CONFIGS = [
+    # scorpion:astar-hmax
+    (3, ['scorpion', '--search', 'astar(hmax())']),
+    # symk:sym-bd
+    (744, ['symk', '--search', 'sym-bd(silent=true)']),
+    # scorpion:astar-blind
+    (21, ['scorpion', '--search', 'astar(blind())']),
+    # scorpion:sys-scp-interesting_non_negative-60s
+    (641, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
+]
