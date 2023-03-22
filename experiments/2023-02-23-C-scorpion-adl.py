@@ -29,7 +29,7 @@ SUITE = project.SUITE_ADL
 MAX_TIME = 60 if project.REMOTE else 1
 CONFIGS = [
     (f"sys-scp-{pattern_type}-60s", ["--search", "astar(scp_online(["
-        f"projections(sys_scp(max_time={MAX_TIME}, max_time_per_restart={int(MAX_TIME / 10)}, max_pdb_size=2M, max_collection_size=20M, pattern_type={pattern_type}), create_complete_transition_system=true)], "
+        f"projections(sys_scp(max_time={MAX_TIME}, max_time_per_restart={int(MAX_TIME / 10)}, max_pdb_size=2M, max_collection_size=20M, pattern_type={pattern_type}, create_complete_transition_system=true), create_complete_transition_system=true)], "
         f"saturator=perimstar, max_time={MAX_TIME}, max_size=1M, interval=10K, orders=greedy_orders()))"])
     for pattern_type in ["interesting_non_negative", "interesting_general"]
 ]
