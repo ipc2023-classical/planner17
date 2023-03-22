@@ -69,10 +69,8 @@ ExplicitProjectionFactory::ExplicitProjectionFactory(
     const TaskProxy &task_proxy,
     const pdbs::Pattern &pattern,
     shared_ptr<TaskInfo> task_info,
-    shared_ptr<BddBuilder> bdd_builder,
-    bool use_add_after_delete_semantics)
+    shared_ptr<BddBuilder> bdd_builder)
     : task_proxy(task_proxy),
-      use_add_after_delete_semantics(use_add_after_delete_semantics),
       pattern(pattern),
       task_info(task_info),
       bdd_builder(bdd_builder),
@@ -208,16 +206,6 @@ void ExplicitProjectionFactory::add_transitions(
         if (conditions_are_satisfied(effect.conditions, src_values)) {
             if (effect.always_triggers) {
                 definite_dest_values[effect.fact.var] = effect.fact.value;
-                if (use_add_after_delete_semantics) {
-                    // Remove all possible effects that would be overwritten by definite effects.
-                    for (auto it = possible_effects.begin(); it != possible_effects.end();) {
-                        if (it->var == effect.fact.var) {
-                            it = possible_effects.erase(it);
-                        } else {
-                            ++it;
-                        }
-                    }
-                }
             } else {
                 possible_effects.insert(effect.fact);
             }
@@ -256,6 +244,7 @@ void ExplicitProjectionFactory::add_transitions(
             has_loop[op_id] = true;
         } else {
             has_outgoing[op_id] = true;
+            ++num_transitions_by_operator[op_id];
             ++num_transitions_by_operator[op_id];
             backward_graph[dest_rank].emplace_back(num_transitions++, op_id, src_rank);
 #ifndef NDEBUG

@@ -23,7 +23,7 @@ def has_conditional_effects(task):
 
 
 if has_conditional_effects(SAS_FILE):
-    CALLSTRING = "astar(stcp_online([projections(systematic(3), create_complete_transition_system=true)],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=40000))"
+    CALLSTRING = "astar(stcp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_general), create_complete_transition_system=true)],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=40000, transform=multiply_out_conditional_effects()))"
 else:
     CALLSTRING = "astar(stcp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)), cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=40000),pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
 

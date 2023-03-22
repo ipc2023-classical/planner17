@@ -17,6 +17,7 @@ namespace cost_saturation {
 class Abstraction;
 class TaskInfo;
 class BddBuilder;
+class Projection;
 
 /**
  * Factory for constructing Projections.

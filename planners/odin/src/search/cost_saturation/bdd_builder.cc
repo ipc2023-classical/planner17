@@ -132,6 +132,7 @@ BddBuilder::BddBuilder(
         for (int var_id : var_remapping) {
             int pre = task_info->get_precondition_value(op_id, var_id);
             if (pre != UNDEFINED) {
+                assert(task_info->operator_has_precondition(op_id, var_id));
                 result *= var_val_bdds[var_id][pre];
             }
         }

@@ -633,6 +633,7 @@ fast_downward_plugin(
         tasks/cost_adapted_task
         tasks/delegating_task
         tasks/root_task
+        tasks/multiply_out_conditional_effects_task
     CORE_PLUGIN
 )
 
@@ -771,7 +772,7 @@ fast_downward_plugin(
         cost_saturation/unsolvability_heuristic
         cost_saturation/utils
         cost_saturation/zero_one_cost_partitioning_heuristic
-    DEPENDS CEGAR LP_SOLVER PDBS PARTIAL_STATE_TREE PRIORITY_QUEUES SAMPLING TASK_PROPERTIES
+    DEPENDS CEGAR LP_SOLVER PDBS PARTIAL_STATE_TREE PRIORITY_QUEUES SAMPLING TASK_PROPERTIES CORE_TASKS
 )
 
 fast_downward_plugin(
