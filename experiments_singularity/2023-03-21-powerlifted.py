@@ -23,7 +23,7 @@ SUITE = project.SUITE_STRIPS
 
 REPO = project.get_repo_base()
 if project.REMOTE:
-    BENCHMARKS_DIR = project.PDDL_BENCHMARK_DIR
+    BENCHMARKS_DIR = REPO / "benchmarks" / "pddl"
     ENV = TetralithEnvironment(
         memory_per_cpu="9G",
         email="simon.stahlberg@liu.se",
@@ -45,26 +45,25 @@ exp.add_resource("planner_image", PLANNER, symlink=True)
 exp.add_resource("", "common_parser.py")
 exp.add_resource("", "solution_parser_powerlifted.py")
 
-for generator in ["yannakakis", "clique_bk", "clique_kckp", "automatic"]:
-    for state in ["sparse", "extensional"]:
-        for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
-            domain_name = task.domain
-            problem_name = task.problem[:-5]
-            run = exp.add_run()
-            run.add_resource("domain", task.domain_file, symlink=True)
-            run.add_resource("problem", task.problem_file, symlink=True)
-            run.add_command(
-                "run_planner",
-                project.get_bind_cmd() +
-                ["{planner_image}"] +
-                ["-d", "{domain}", "-i", "{problem}"] +
-                ["--state", state] +
-                ["-s", "bfs", "-g", generator],
-                time_limit=int(0.5*3600),
-                memory_limit=int(8*1024)
-            )
-            project.set_run_properties(
-                run, "{}_s-{}_g-{}".format(ALGO_NAME, state, generator), domain_name, problem_name, "ipc2023-classical", "", "")
+for generator, state in [("full_reducer", "sparse"), ("yannakakis", "sparse"), ("clique_bk", "sparse"), ("clique_kckp", "sparse"), ("automatic", "sparse"), ("automatic", "extensional")]:
+    for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
+        domain_name = task.domain
+        problem_name = task.problem[:-5]
+        run = exp.add_run()
+        run.add_resource("domain", task.domain_file, symlink=True)
+        run.add_resource("problem", task.problem_file, symlink=True)
+        run.add_command(
+            "run_planner",
+            project.get_bind_cmd() +
+            ["{planner_image}"] +
+            ["-d", "{domain}", "-i", "{problem}"] +
+            ["--state", state] +
+            ["-s", "bfs", "-g", generator],
+            time_limit=int(0.5*3600),
+            memory_limit=int(8*1024)
+        )
+        project.set_run_properties(
+            run, "{}_s-{}_g-{}".format(ALGO_NAME, state, generator), domain_name, problem_name, "ipc2023-classical", "", "")
 
 ATTRIBUTES = [
     "cost",

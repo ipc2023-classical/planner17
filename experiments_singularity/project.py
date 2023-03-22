@@ -13,13 +13,13 @@ import subprocess
 import sys
 
 
-@dataclass
-class MockCachedRevision:
-    name: str
-    repo: str
-    local_rev: str
-    global_rev: str
-    build_options: list[str]
+#@dataclass
+#class MockCachedRevision:
+#    name: str
+#    repo: str
+#    local_rev: str
+#    global_rev: str
+#    build_options: list[str]
 
 
 # general help variables
@@ -64,10 +64,10 @@ def get_repo_base() -> Path:
 
 # planners
 PLANNER_REPO = get_repo_base() / "planners"
-POWER_LIFTED = "/home/simon/powerlifted.sif"
+POWER_LIFTED = "/proj/dfsplan/users/x_simst/powerlifted.sif"
 
 def get_bind_cmd():
-    cmd = ["apptainer", "run"]
+    cmd = ["singularity", "run"]
     if REMOTE:
         return cmd + ["--bind", "/proj:/proj/"]
     return cmd
