@@ -21,6 +21,7 @@ Stage: build
     ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
 
     export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+    export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
 
     ##Build OSI
     tar xvzf Osi-0.108.6.tgz
@@ -41,13 +42,22 @@ Stage: build
 
     cd ..
 
+    ## Build bliss
+    cd planners/decstar/third-party/bliss-0.73
+    make clean
+    make
+    make lib
+    export PATH="/planners/decstar/third-party/bliss-0.73:$PATH"
+    cd ../../../..
+
     ## Build planners.
-    for planner in scorpion symk powerlifted; do
+    for planner in decstar scorpion symk powerlifted; do
         cd /planners/${planner}
         pypy3 build.py
     done
 
     ## Strip binaries (shell globs don't work).
+    strip --strip-all /planners/decstar/builds/release64/bin/downward /planners/decstar/builds/release64/bin/preprocess-h2
     strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
     strip --strip-all /planners/symk/builds/release/bin/downward /planners/symk/builds/release/bin/preprocess
     strip --strip-all /planners/powerlifted/builds/release/search/search
@@ -64,7 +74,13 @@ Stage: run
 
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+    /opt/ibm/ILOG/CPLEX_Studio2211/concert/
     /opt/coin/
+
+    /planners/decstar/driver
+    /planners/decstar/fast-downward.py
+    /planners/decstar/builds/release64/bin
+    /planners/decstar/third-party/bliss-0.73/
 
     /planners/scorpion/driver
     /planners/scorpion/fast-downward.py
