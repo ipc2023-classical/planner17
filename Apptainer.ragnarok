@@ -119,7 +119,7 @@ Stage: run
         --overall-memory-limit 7680M \
         --overall-time-limit 30m \
         --translate-time-limit 15m \
-        --transform-task planners/scorpion/builds/release/bin/preprocess-h2 \
+        --transform-task /planners/scorpion/builds/release/bin/preprocess-h2 \
         --transform-task-options h2_time_limit,180 \
         --alias seq-opt-ragnarok \
         --plan-file "$PLANFILE" \
