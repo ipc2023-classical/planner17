@@ -1,0 +1,51 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Scorpion
+__pycache__/
+/planner/scorpion/output.sas
+/planner/scorpion/sas_plan
+/planner/scorpion/sas_plan.*
+/planner/scorpion/builds/
+/planner/scorpion/experiments/*/.venv/
+/planner/scorpion/experiments/*/data/
+/planner/scorpion/misc/.tox/
+/planner/scorpion/misc/autodoc/downward-xmlrpc.secret
+
+# CUDD
+/planner/scorpion/src/dd_libs/cudd-3.0.0/autom4te.cache/
+/planner/scorpion/src/dd_libs/cudd-3.0.0/Makefile.in
+/planner/scorpion/src/dd_libs/cudd-3.0.0/aclocal.m4
+/planner/scorpion/src/dd_libs/cudd-3.0.0/configure
+/planner/scorpion/src/dd_libs/cudd-3.0.0/config.h.in
+/planner/scorpion/src/dd_libs/cudd-3.0.0/config.h.in~
