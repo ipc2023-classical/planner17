@@ -81,14 +81,15 @@ def generate_portfolio_exitcode(exitcodes):
 
     # At least one plan was found.
     if SUCCESS in exitcodes:
-        if SEARCH_OUT_OF_MEMORY in exitcodes and SEARCH_OUT_OF_TIME in exitcodes:
-            return (SEARCH_PLAN_FOUND_AND_OUT_OF_MEMORY_AND_TIME, True)
-        elif SEARCH_OUT_OF_MEMORY in exitcodes:
-            return (SEARCH_PLAN_FOUND_AND_OUT_OF_MEMORY, True)
-        elif SEARCH_OUT_OF_TIME in exitcodes:
-            return (SEARCH_PLAN_FOUND_AND_OUT_OF_TIME, True)
-        else:
-            return (SUCCESS, True)
+        return (SUCCESS, True)
+        #if SEARCH_OUT_OF_MEMORY in exitcodes and SEARCH_OUT_OF_TIME in exitcodes:
+        #    return (SEARCH_PLAN_FOUND_AND_OUT_OF_MEMORY_AND_TIME, True)
+        #elif SEARCH_OUT_OF_MEMORY in exitcodes:
+        #    return (SEARCH_PLAN_FOUND_AND_OUT_OF_MEMORY, True)
+        #elif SEARCH_OUT_OF_TIME in exitcodes:
+        #    return (SEARCH_PLAN_FOUND_AND_OUT_OF_TIME, True)
+        #else:
+        #    return (SUCCESS, True)
 
     # A config proved unsolvability or did not find a plan.
     for code in [SEARCH_UNSOLVABLE, SEARCH_UNSOLVED_INCOMPLETE]:
