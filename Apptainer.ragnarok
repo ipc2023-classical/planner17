@@ -5,7 +5,7 @@ Stage: build
 
 %files
     planners /planners
-    /home/simon/git/work/IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
+    $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
     Osi-0.108.6.tgz
 
 %post
@@ -74,6 +74,8 @@ Stage: run
     /planners/scorpion/driver
     /planners/scorpion/fast-downward.py
     /planners/scorpion/builds/release/bin
+    # /driver/run_components.py is points to the src directory.
+    /planners/scorpion/src/translate
 
     /planners/symk/driver
     /planners/symk/fast-downward.py

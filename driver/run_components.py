@@ -17,7 +17,7 @@ from .plan_manager import PlanManager
 DRIVER_DIR = Path(__file__).resolve().parent
 REPO = DRIVER_DIR.parent
 TRANSLATE_PATH = REPO / "planners" / "scorpion" / "src" / "translate" / "translate.py"
-assert TRANSLATE_PATH.is_file()
+assert TRANSLATE_PATH.is_file(), str(TRANSLATE_PATH)
 
 # TODO: We might want to turn translate into a module and call it with "python3 -m translate".
 REL_TRANSLATE_PATH = os.path.join("translate", "translate.py")
