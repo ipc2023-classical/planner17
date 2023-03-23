@@ -8,12 +8,9 @@ AXIOMS_DATA=../experiments/data/03-opt-axioms-eval/properties-hardest.json.xz
 
 #./batch-stonesoup.sh ${STRIPS_DATA} opt 1800 | tee batch-stonesoup-opt-strips.txt
 ./stonesoup.py --track opt ${STRIPS_DATA} 90 | tee stonesoup-opt-strips.txt
-./greedy.py ${STRIPS_DATA} --track opt | tee greedy-opt-strips.txt
 
 #./batch-stonesoup.sh ${COND_EFF_DATA} opt 1800 | tee batch-stonesoup-opt-cond-effs.txt
-./stonesoup.py --track opt ${COND_EFF_DATA} 140 | tee stonesoup-opt-cond-effs.txt
-./greedy.py ${COND_EFF_DATA} --track opt | tee greedy-opt-cond-effs.txt
+#./stonesoup.py --track opt ${COND_EFF_DATA} 140 | tee stonesoup-opt-cond-effs.txt
 
 #./batch-stonesoup.sh ${AXIOMS_DATA} opt 1800 | tee batch-stonesoup-opt-axioms.txt
-./stonesoup.py --track opt ${AXIOMS_DATA} 220 | tee stonesoup-opt-axioms.txt
-./greedy.py ${AXIOMS_DATA} --track opt | tee greedy-opt-axioms.txt
+#./stonesoup.py --track opt ${AXIOMS_DATA} 220 | tee stonesoup-opt-axioms.txt

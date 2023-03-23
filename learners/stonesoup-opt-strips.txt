@@ -53,19 +53,19 @@ airport-strips:0-p25.sas: 1 different costs from 251 to 251
 airport-strips:0-p26.sas: 1 different costs from 292 to 292
 airport-strips:0-p29.sas: 1 different costs from 455 to 455
 airport-strips:2-p01-airport1-p1.sas: 1 different costs from 8 to 8
+airport-strips:2-p02-airport1-p1.sas: 1 different costs from 9 to 9
 airport-strips:2-p03-airport1-p2.sas: 1 different costs from 17 to 17
-airport-strips:2-p06-airport2-p2.sas: 1 different costs from 41 to 41
-airport-strips:2-p08-airport2-p3.sas: 1 different costs from 62 to 62
-airport-strips:2-p17-airport3-p5.sas: 1 different costs from 88 to 88
-airport-strips:2-p18-airport3-p6.sas: 1 different costs from 107 to 107
+airport-strips:2-p11-airport3-p1.sas: 1 different costs from 21 to 21
+airport-strips:2-p12-airport3-p2.sas: 1 different costs from 39 to 39
+airport-strips:2-p15-airport3-p3.sas: 1 different costs from 58 to 58
 barman-strips:0-p06.sas: 1 different costs from 40 to 40
 barman-strips:0-p16.sas: 1 different costs from 30 to 30
 barman-strips:0-p24.sas: 1 different costs from 62 to 62
+barman-strips:3-p435-3.sas: 1 different costs from 49 to 49
 barman-strips:3-p536-1.sas: 1 different costs from 62 to 62
 barman-strips:3-p536-2.sas: 1 different costs from 62 to 62
 barman-strips:3-p536-3.sas: 1 different costs from 62 to 62
-barman-strips:5-pfile02-006.sas: 1 different costs from 121 to 121
-barman-strips:5-pfile02-007.sas: 1 different costs from 121 to 121
+barman-strips:5-pfile02-008.sas: 1 different costs from 121 to 121
 barman-strips:5-pfile03-009.sas: 1 different costs from 152 to 152
 barman-strips:5-pfile03-011.sas: 1 different costs from 152 to 152
 barman-strips:5-pfile03-012.sas: 1 different costs from 152 to 152
@@ -88,15 +88,17 @@ barman-strips:7-p027.sas: 1 different costs from 38 to 38
 barman-strips:7-p028.sas: 1 different costs from 38 to 38
 barman-strips:7-p029.sas: 1 different costs from 39 to 39
 barman-strips:7-p030.sas: 1 different costs from 39 to 39
-blocksworld-strips:0-p04.sas: 1 different costs from 24 to 24
+blocksworld-strips:0-p03.sas: 1 different costs from 12 to 12
 blocksworld-strips:0-p07.sas: 1 different costs from 30 to 30
 blocksworld-strips:0-p08.sas: 1 different costs from 28 to 28
 blocksworld-strips:0-p09.sas: 1 different costs from 46 to 46
 blocksworld-strips:0-p10.sas: 1 different costs from 32 to 32
+blocksworld-strips:0-p11.sas: 1 different costs from 40 to 40
 blocksworld-strips:0-p12.sas: 1 different costs from 36 to 36
 blocksworld-strips:0-p13.sas: 1 different costs from 40 to 40
-blocksworld-strips:0-p20.sas: 1 different costs from 18 to 18
-blocksworld-strips:0-p23.sas: 1 different costs from 22 to 22
+blocksworld-strips:0-p18.sas: 1 different costs from 10 to 10
+blocksworld-strips:0-p19.sas: 1 different costs from 14 to 14
+blocksworld-strips:0-p21.sas: 1 different costs from 12 to 12
 blocksworld-strips:0-p24.sas: 1 different costs from 32 to 32
 blocksworld-strips:0-p25.sas: 1 different costs from 36 to 36
 blocksworld-strips:0-p26.sas: 1 different costs from 38 to 38
@@ -114,9 +116,7 @@ blocksworld-strips:2-probBLOCKS-13-1.sas: 1 different costs from 44 to 44
 blocksworld-strips:2-probBLOCKS-14-0.sas: 1 different costs from 38 to 38
 blocksworld-strips:2-probBLOCKS-14-1.sas: 1 different costs from 36 to 36
 blocksworld-strips:2-probBLOCKS-15-0.sas: 1 different costs from 40 to 40
-blocksworld-strips:2-probBLOCKS-4-1.sas: 1 different costs from 10 to 10
 blocksworld-strips:2-probBLOCKS-5-0.sas: 1 different costs from 12 to 12
-blocksworld-strips:2-probBLOCKS-6-0.sas: 1 different costs from 12 to 12
 blocksworld-strips:2-probBLOCKS-7-0.sas: 1 different costs from 20 to 20
 childsnack-strips:0-p01.sas: 1 different costs from 7 to 7
 childsnack-strips:0-p02.sas: 1 different costs from 11 to 11
@@ -178,29 +178,29 @@ data-network-strips:2-p13.sas: 1 different costs from 104 to 104
 data-network-strips:2-p15.sas: 1 different costs from 50 to 50
 data-network-strips:2-p17.sas: 1 different costs from 127 to 127
 data-network-strips:2-p19.sas: 1 different costs from 169 to 169
-depots-strips:0-p02.sas: 1 different costs from 14 to 14
+depots-strips:0-p01.sas: 1 different costs from 11 to 11
 depots-strips:0-p03.sas: 1 different costs from 25 to 25
-depots-strips:0-p04.sas: 1 different costs from 23 to 23
 depots-strips:0-p05.sas: 1 different costs from 27 to 27
 depots-strips:0-p06.sas: 1 different costs from 34 to 34
 depots-strips:0-p07.sas: 1 different costs from 35 to 35
-depots-strips:0-p16.sas: 1 different costs from 19 to 19
+depots-strips:0-p15.sas: 1 different costs from 21 to 21
 depots-strips:0-p17.sas: 1 different costs from 31 to 31
 depots-strips:0-p18.sas: 1 different costs from 39 to 39
 depots-strips:0-p19.sas: 1 different costs from 44 to 44
 depots-strips:0-p20.sas: 1 different costs from 34 to 34
-depots-strips:0-p23.sas: 1 different costs from 26 to 26
 depots-strips:0-p24.sas: 1 different costs from 26 to 26
 depots-strips:0-p25.sas: 1 different costs from 36 to 36
 depots-strips:0-p26.sas: 1 different costs from 37 to 37
 depots-strips:0-p27.sas: 1 different costs from 36 to 36
+depots-strips:1-p01.sas: 1 different costs from 12 to 12
+depots-strips:1-p02.sas: 1 different costs from 21 to 21
 depots-strips:1-p03.sas: 1 different costs from 23 to 23
 depots-strips:1-p04.sas: 1 different costs from 33 to 33
 depots-strips:1-p05.sas: 1 different costs from 34 to 34
 depots-strips:1-p06.sas: 1 different costs from 52 to 52
-depots-strips:2-p03.sas: 1 different costs from 27 to 27
 depots-strips:2-p04.sas: 1 different costs from 30 to 30
 depots-strips:2-p05.sas: 1 different costs from 43 to 43
+depots-strips:2-p07.sas: 1 different costs from 21 to 21
 depots-strips:2-p08.sas: 1 different costs from 33 to 33
 depots-strips:2-p11.sas: 1 different costs from 46 to 46
 depots-strips:2-p13.sas: 1 different costs from 25 to 25
@@ -230,36 +230,36 @@ driverlog-strips:0-p26.sas: 1 different costs from 40 to 40
 driverlog-strips:0-p27.sas: 1 different costs from 46 to 46
 driverlog-strips:0-p28.sas: 1 different costs from 49 to 49
 driverlog-strips:0-p30.sas: 1 different costs from 52 to 52
-driverlog-strips:2-p06.sas: 1 different costs from 11 to 11
 driverlog-strips:2-p08.sas: 1 different costs from 22 to 22
 driverlog-strips:2-p09.sas: 1 different costs from 22 to 22
 driverlog-strips:2-p10.sas: 1 different costs from 17 to 17
+driverlog-strips:2-p11.sas: 1 different costs from 19 to 19
 driverlog-strips:2-p12.sas: 1 different costs from 35 to 35
 driverlog-strips:2-p13.sas: 1 different costs from 26 to 26
 driverlog-strips:2-p14.sas: 1 different costs from 28 to 28
 driverlog-strips:2-p15.sas: 1 different costs from 32 to 32
+elevators-strips:0-p02.sas: 1 different costs from 53 to 53
 elevators-strips:0-p03.sas: 1 different costs from 68 to 68
 elevators-strips:0-p04.sas: 1 different costs from 76 to 76
 elevators-strips:0-p05.sas: 1 different costs from 87 to 87
 elevators-strips:0-p06.sas: 1 different costs from 83 to 83
 elevators-strips:0-p12.sas: 1 different costs from 64 to 64
 elevators-strips:0-p18.sas: 1 different costs from 74 to 74
+elevators-strips:0-p20.sas: 1 different costs from 42 to 42
 elevators-strips:0-p26.sas: 1 different costs from 39 to 39
-elevators-strips:1-p01.sas: 1 different costs from 74 to 74
 elevators-strips:1-p02.sas: 1 different costs from 106 to 106
-elevators-strips:2-p01.sas: 1 different costs from 56 to 56
-elevators-strips:2-p02.sas: 1 different costs from 48 to 48
-elevators-strips:2-p05.sas: 1 different costs from 59 to 59
+elevators-strips:2-p03.sas: 1 different costs from 54 to 54
+elevators-strips:2-p04.sas: 1 different costs from 55 to 55
 elevators-strips:2-p07.sas: 1 different costs from 48 to 48
+elevators-strips:2-p08.sas: 1 different costs from 55 to 55
 elevators-strips:2-p09.sas: 1 different costs from 54 to 54
 elevators-strips:2-p13.sas: 1 different costs from 62 to 62
 elevators-strips:2-p14.sas: 1 different costs from 53 to 53
 elevators-strips:2-p15.sas: 1 different costs from 78 to 78
-elevators-strips:2-p16.sas: 1 different costs from 66 to 66
 elevators-strips:2-p17.sas: 1 different costs from 78 to 78
 elevators-strips:2-p18.sas: 1 different costs from 61 to 61
 elevators-strips:2-p19.sas: 1 different costs from 69 to 69
-elevators-strips:2-p20.sas: 1 different costs from 56 to 56
+elevators-strips:4-p01.sas: 1 different costs from 42 to 42
 elevators-strips:4-p10.sas: 1 different costs from 69 to 69
 elevators-strips:4-p16.sas: 1 different costs from 87 to 87
 elevators-strips:4-p25.sas: 1 different costs from 63 to 63
@@ -295,8 +295,8 @@ ferry-strips:0-p088.sas: 1 different costs from 52 to 52
 ferry-strips:0-p099.sas: 1 different costs from 49 to 49
 ferry-strips:0-p109.sas: 1 different costs from 47 to 47
 ferry-strips:0-p110.sas: 1 different costs from 48 to 48
-ferry-strips:0-p120.sas: 1 different costs from 47 to 47
 ferry-strips:0-p130.sas: 1 different costs from 46 to 46
+ferry-strips:0-p131.sas: 1 different costs from 43 to 43
 ferry-strips:0-p132.sas: 1 different costs from 51 to 51
 floortile-strips:0-p09.sas: 1 different costs from 74 to 74
 floortile-strips:0-p10.sas: 1 different costs from 75 to 75
@@ -328,23 +328,22 @@ floortile-strips:5-seq-p05-009.sas: 1 different costs from 106 to 106
 floortile-strips:5-seq-p05-010.sas: 1 different costs from 105 to 105
 floortile-strips:5-seq-p06-011.sas: 1 different costs from 102 to 102
 floortile-strips:5-seq-p06-012.sas: 1 different costs from 115 to 115
-freecell-strips:0-p11.sas: 1 different costs from 51 to 51
-freecell-strips:0-p13.sas: 1 different costs from 75 to 75
-freecell-strips:0-p14.sas: 1 different costs from 112 to 112
+freecell-strips:0-p09.sas: 1 different costs from 58 to 58
+freecell-strips:0-p12.sas: 1 different costs from 77 to 77
 freecell-strips:0-p16.sas: 1 different costs from 65 to 65
-freecell-strips:0-p17.sas: 1 different costs from 76 to 76
 freecell-strips:0-p19.sas: 1 different costs from 128 to 128
 freecell-strips:0-p22.sas: 1 different costs from 73 to 73
 freecell-strips:0-p24.sas: 1 different costs from 72 to 72
 freecell-strips:0-p25.sas: 1 different costs from 80 to 80
 freecell-strips:0-p26.sas: 1 different costs from 144 to 144
-freecell-strips:1-p14.sas: 1 different costs from 78 to 78
+freecell-strips:1-p13.sas: 1 different costs from 71 to 71
 freecell-strips:1-p17.sas: 1 different costs from 119 to 119
-freecell-strips:1-p18.sas: 1 different costs from 109 to 109
+freecell-strips:1-p22.sas: 1 different costs from 96 to 96
 freecell-strips:1-p24.sas: 1 different costs from 90 to 90
 freecell-strips:1-p28.sas: 1 different costs from 150 to 150
+freecell-strips:2-p08.sas: 1 different costs from 47 to 47
 freecell-strips:2-p13.sas: 1 different costs from 58 to 58
-freecell-strips:2-p15.sas: 1 different costs from 62 to 62
+freecell-strips:2-p14.sas: 1 different costs from 54 to 54
 freecell-strips:2-p16.sas: 1 different costs from 60 to 60
 freecell-strips:2-p18.sas: 1 different costs from 74 to 74
 freecell-strips:2-probfreecell-10-1.sas: 1 different costs from 57 to 57
@@ -353,6 +352,7 @@ freecell-strips:2-probfreecell-10-5.sas: 1 different costs from 60 to 60
 freecell-strips:2-probfreecell-11-1.sas: 1 different costs from 65 to 65
 freecell-strips:2-probfreecell-11-4.sas: 1 different costs from 66 to 66
 freecell-strips:2-probfreecell-12-1.sas: 1 different costs from 73 to 73
+freecell-strips:2-probfreecell-13-2.sas: 1 different costs from 75 to 75
 freecell-strips:2-probfreecell-13-3.sas: 1 different costs from 73 to 73
 freecell-strips:2-probfreecell-7-5.sas: 1 different costs from 40 to 40
 freecell-strips:2-probfreecell-8-5.sas: 1 different costs from 45 to 45
@@ -416,17 +416,18 @@ goldminer-strips:0-p139.sas: 1 different costs from 41 to 41
 grid-strips:0-p09.sas: 1 different costs from 40 to 40
 grid-strips:0-p18.sas: 1 different costs from 44 to 44
 grid-strips:0-p20.sas: 1 different costs from 50 to 50
+grid-strips:0-p22.sas: 1 different costs from 43 to 43
 grid-strips:0-p24.sas: 1 different costs from 45 to 45
 grid-strips:0-p25.sas: 1 different costs from 45 to 45
 grid-strips:1-p06.sas: 1 different costs from 68 to 68
+grid-strips:3-p043.sas: 1 different costs from 88 to 88
+grid-strips:3-p044.sas: 1 different costs from 88 to 88
 grid-strips:3-p061.sas: 1 different costs from 63 to 63
 grid-strips:3-p062.sas: 1 different costs from 63 to 63
-grid-strips:3-p063.sas: 1 different costs from 47 to 47
+grid-strips:3-p064.sas: 1 different costs from 47 to 47
 grid-strips:3-p073.sas: 1 different costs from 59 to 59
-grid-strips:3-p074.sas: 1 different costs from 59 to 59
 grid-strips:3-p077.sas: 1 different costs from 78 to 78
 grid-strips:3-p078.sas: 1 different costs from 78 to 78
-grid-strips:3-p080.sas: 1 different costs from 60 to 60
 grid-strips:3-p083.sas: 1 different costs from 83 to 83
 grid-strips:3-p084.sas: 1 different costs from 83 to 83
 grid-strips:3-p085.sas: 1 different costs from 82 to 82
@@ -438,41 +439,40 @@ grid-strips:3-p096.sas: 1 different costs from 71 to 71
 grid-strips:3-p101.sas: 1 different costs from 79 to 79
 grid-strips:3-p102.sas: 1 different costs from 79 to 79
 grid-strips:3-p103.sas: 1 different costs from 67 to 67
-grid-strips:3-p104.sas: 1 different costs from 67 to 67
 grid-strips:3-p105.sas: 1 different costs from 67 to 67
 grid-strips:3-p106.sas: 1 different costs from 67 to 67
 grid-strips:3-p107.sas: 1 different costs from 74 to 74
 grid-strips:3-p108.sas: 1 different costs from 74 to 74
-gripper-strips:0-p09.sas: 1 different costs from 47 to 47
-gripper-strips:0-p10.sas: 1 different costs from 51 to 51
-gripper-strips:0-p11.sas: 1 different costs from 53 to 53
-gripper-strips:0-p12.sas: 1 different costs from 57 to 57
 gripper-strips:0-p13.sas: 1 different costs from 59 to 59
 gripper-strips:0-p14.sas: 1 different costs from 63 to 63
-gripper-strips:0-p15.sas: 1 different costs from 65 to 65
 gripper-strips:0-p16.sas: 1 different costs from 69 to 69
 gripper-strips:0-p17.sas: 1 different costs from 71 to 71
-gripper-strips:0-p18.sas: 1 different costs from 75 to 75
-gripper-strips:0-p19.sas: 1 different costs from 77 to 77
 gripper-strips:0-p20.sas: 1 different costs from 81 to 81
 gripper-strips:0-p21.sas: 1 different costs from 83 to 83
-gripper-strips:0-p22.sas: 1 different costs from 87 to 87
-gripper-strips:0-p23.sas: 1 different costs from 89 to 89
 gripper-strips:0-p24.sas: 1 different costs from 93 to 93
-gripper-strips:0-p25.sas: 1 different costs from 95 to 95
 gripper-strips:0-p26.sas: 1 different costs from 99 to 99
-gripper-strips:0-p27.sas: 1 different costs from 101 to 101
-gripper-strips:0-p28.sas: 1 different costs from 105 to 105
-gripper-strips:0-p29.sas: 1 different costs from 107 to 107
 gripper-strips:0-p30.sas: 1 different costs from 111 to 111
-gripper-strips:1-p05.sas: 1 different costs from 119 to 119
 gripper-strips:1-p06.sas: 1 different costs from 135 to 135
-gripper-strips:1-p07.sas: 1 different costs from 149 to 149
-gripper-strips:1-p08.sas: 1 different costs from 165 to 165
-gripper-strips:1-p09.sas: 1 different costs from 179 to 179
-gripper-strips:1-p10.sas: 1 different costs from 195 to 195
-gripper-strips:2-prob18.sas: 1 different costs from 113 to 113
-gripper-strips:2-prob20.sas: 1 different costs from 125 to 125
+gripper-strips:1-p11.sas: 1 different costs from 209 to 209
+gripper-strips:1-p12.sas: 1 different costs from 225 to 225
+gripper-strips:1-p13.sas: 1 different costs from 239 to 239
+gripper-strips:1-p14.sas: 1 different costs from 255 to 255
+gripper-strips:1-p15.sas: 1 different costs from 269 to 269
+gripper-strips:1-p16.sas: 1 different costs from 285 to 285
+gripper-strips:1-p17.sas: 1 different costs from 299 to 299
+gripper-strips:1-p18.sas: 1 different costs from 315 to 315
+gripper-strips:1-p19.sas: 1 different costs from 329 to 329
+gripper-strips:1-p20.sas: 1 different costs from 345 to 345
+gripper-strips:1-p21.sas: 1 different costs from 359 to 359
+gripper-strips:1-p22.sas: 1 different costs from 375 to 375
+gripper-strips:1-p23.sas: 1 different costs from 389 to 389
+gripper-strips:1-p24.sas: 1 different costs from 405 to 405
+gripper-strips:1-p25.sas: 1 different costs from 419 to 419
+gripper-strips:1-p26.sas: 1 different costs from 435 to 435
+gripper-strips:1-p27.sas: 1 different costs from 449 to 449
+gripper-strips:1-p28.sas: 1 different costs from 465 to 465
+gripper-strips:1-p29.sas: 1 different costs from 479 to 479
+gripper-strips:1-p30.sas: 1 different costs from 495 to 495
 hanoi-strips:0-p001.sas: 1 different costs from 31 to 31
 hanoi-strips:0-p002.sas: 1 different costs from 63 to 63
 hanoi-strips:0-p003.sas: 1 different costs from 127 to 127
@@ -550,11 +550,11 @@ miconic-strips:0-p07.sas: 1 different costs from 52 to 52
 miconic-strips:0-p08.sas: 1 different costs from 60 to 60
 miconic-strips:0-p10.sas: 1 different costs from 69 to 69
 miconic-strips:0-p11.sas: 1 different costs from 74 to 74
-miconic-strips:0-p12.sas: 1 different costs from 79 to 79
 miconic-strips:0-p14.sas: 1 different costs from 90 to 90
+miconic-strips:0-p15.sas: 1 different costs from 96 to 96
 miconic-strips:0-p16.sas: 1 different costs from 101 to 101
-miconic-strips:0-p22.sas: 1 different costs from 133 to 133
 miconic-strips:0-p28.sas: 1 different costs from 160 to 160
+miconic-strips:1-p02.sas: 1 different costs from 62 to 62
 miconic-strips:1-p03.sas: 1 different costs from 75 to 75
 miconic-strips:1-p04.sas: 1 different costs from 88 to 88
 miconic-strips:1-p09.sas: 1 different costs from 149 to 149
@@ -566,16 +566,16 @@ miconic-strips:2-s20-0.sas: 1 different costs from 64 to 64
 miconic-strips:2-s23-1.sas: 1 different costs from 76 to 76
 miconic-strips:2-s23-2.sas: 1 different costs from 73 to 73
 miconic-strips:2-s23-3.sas: 1 different costs from 72 to 72
-miconic-strips:2-s23-4.sas: 1 different costs from 74 to 74
-miconic-strips:2-s25-0.sas: 1 different costs from 81 to 81
+miconic-strips:2-s24-0.sas: 1 different costs from 79 to 79
 miconic-strips:2-s25-2.sas: 1 different costs from 79 to 79
-miconic-strips:2-s25-3.sas: 1 different costs from 85 to 85
-miconic-strips:2-s26-0.sas: 1 different costs from 84 to 84
 miconic-strips:2-s26-3.sas: 1 different costs from 88 to 88
-miconic-strips:2-s26-4.sas: 1 different costs from 83 to 83
+miconic-strips:2-s28-3.sas: 1 different costs from 87 to 87
 miconic-strips:2-s28-4.sas: 1 different costs from 92 to 92
 miconic-strips:2-s29-0.sas: 1 different costs from 94 to 94
+miconic-strips:2-s29-1.sas: 1 different costs from 91 to 91
+miconic-strips:2-s30-0.sas: 1 different costs from 95 to 95
 miconic-strips:2-s30-1.sas: 1 different costs from 98 to 98
+miconic-strips:2-s30-4.sas: 1 different costs from 99 to 99
 movie-strips:0-prob01.sas: 1 different costs from 7 to 7
 movie-strips:0-prob02.sas: 1 different costs from 7 to 7
 movie-strips:0-prob03.sas: 1 different costs from 7 to 7
@@ -606,10 +606,9 @@ movie-strips:0-prob27.sas: 1 different costs from 7 to 7
 movie-strips:0-prob28.sas: 1 different costs from 7 to 7
 movie-strips:0-prob29.sas: 1 different costs from 7 to 7
 movie-strips:0-prob30.sas: 1 different costs from 7 to 7
-mprime-strips:0-p06.sas: 1 different costs from 20 to 20
-mprime-strips:0-p07.sas: 1 different costs from 15 to 15
 mprime-strips:0-p08.sas: 1 different costs from 16 to 16
 mprime-strips:0-p09.sas: 1 different costs from 26 to 26
+mprime-strips:0-p10.sas: 1 different costs from 20 to 20
 mprime-strips:0-p11.sas: 1 different costs from 18 to 18
 mprime-strips:0-p12.sas: 1 different costs from 26 to 26
 mprime-strips:0-p13.sas: 1 different costs from 22 to 22
@@ -634,6 +633,7 @@ mprime-strips:2-prob13.sas: 1 different costs from 15 to 15
 mprime-strips:2-prob14.sas: 1 different costs from 11 to 11
 mprime-strips:2-prob15.sas: 1 different costs from 6 to 6
 mprime-strips:2-prob20.sas: 1 different costs from 7 to 7
+mprime-strips:2-prob24.sas: 1 different costs from 8 to 8
 mprime-strips:2-prob30.sas: 1 different costs from 9 to 9
 mprime-strips:2-prob33.sas: 1 different costs from 12 to 12
 mystery-strips:0-prob01.sas: 1 different costs from 5 to 5
@@ -669,6 +669,7 @@ no-mprime-strips:0-prob11.sas: 1 different costs from 7 to 7
 no-mprime-strips:0-prob12.sas: 1 different costs from 6 to 6
 no-mprime-strips:0-prob14.sas: 1 different costs from 11 to 11
 no-mprime-strips:0-prob15.sas: 1 different costs from 6 to 6
+no-mprime-strips:0-prob16.sas: 1 different costs from 6 to 6
 no-mprime-strips:0-prob17.sas: 1 different costs from 4 to 4
 no-mprime-strips:0-prob19.sas: 1 different costs from 6 to 6
 no-mprime-strips:0-prob20.sas: 1 different costs from 7 to 7
@@ -676,12 +677,11 @@ no-mprime-strips:0-prob21.sas: 1 different costs from 6 to 6
 no-mprime-strips:0-prob23.sas: 1 different costs from 10 to 10
 no-mprime-strips:0-prob24.sas: 1 different costs from 8 to 8
 no-mprime-strips:0-prob25.sas: 1 different costs from 4 to 4
+no-mprime-strips:0-prob26.sas: 1 different costs from 6 to 6
 no-mprime-strips:0-prob27.sas: 1 different costs from 5 to 5
 no-mprime-strips:0-prob28.sas: 1 different costs from 7 to 7
-no-mprime-strips:0-prob29.sas: 1 different costs from 4 to 4
 no-mprime-strips:0-prob30.sas: 1 different costs from 9 to 9
 no-mprime-strips:0-prob31.sas: 1 different costs from 4 to 4
-no-mprime-strips:0-prob32.sas: 1 different costs from 7 to 7
 no-mprime-strips:0-prob33.sas: 1 different costs from 12 to 12
 no-mprime-strips:0-prob34.sas: 1 different costs from 4 to 4
 no-mprime-strips:0-prob35.sas: 1 different costs from 5 to 5
@@ -746,33 +746,33 @@ npuzzle-strips:0-p009.sas: 1 different costs from 48 to 48
 npuzzle-strips:0-p010.sas: 1 different costs from 51 to 51
 npuzzle-strips:0-p011.sas: 1 different costs from 46 to 46
 npuzzle-strips:0-p012.sas: 1 different costs from 63 to 63
-openstacks-strips:1-p25_1.sas: 1 different costs from 4 to 4
-openstacks-strips:1-p30_1.sas: 1 different costs from 4 to 4
+openstacks-strips:1-p30_2.sas: 1 different costs from 4 to 4
 openstacks-strips:1-p30_3.sas: 1 different costs from 12 to 12
 openstacks-strips:1-p35_1.sas: 1 different costs from 4 to 4
 openstacks-strips:1-p35_2.sas: 1 different costs from 5 to 5
 openstacks-strips:1-p35_3.sas: 1 different costs from 14 to 14
-openstacks-strips:1-p40_1.sas: 1 different costs from 3 to 3
-openstacks-strips:1-p40_2.sas: 1 different costs from 4 to 4
 openstacks-strips:1-p40_3.sas: 1 different costs from 15 to 15
+openstacks-strips:1-p45_1.sas: 1 different costs from 4 to 4
 openstacks-strips:1-p45_2.sas: 1 different costs from 5 to 5
 openstacks-strips:1-p45_3.sas: 1 different costs from 19 to 19
-openstacks-strips:1-p50_1.sas: 1 different costs from 4 to 4
-openstacks-strips:3-p19.sas: 1 different costs from 5 to 5
+openstacks-strips:1-p50_2.sas: 1 different costs from 5 to 5
+openstacks-strips:1-p50_3.sas: 1 different costs from 18 to 18
 openstacks-strips:4-p01.sas: 1 different costs from 6 to 6
 openstacks-strips:4-p02.sas: 1 different costs from 12 to 12
 openstacks-strips:4-p05.sas: 1 different costs from 11 to 11
+openstacks-strips:4-p07.sas: 1 different costs from 10 to 10
 openstacks-strips:5-p26.sas: 1 different costs from 5 to 5
 openstacks-strips:5-p27.sas: 1 different costs from 6 to 6
-openstacks-strips:5-p28.sas: 1 different costs from 4 to 4
+openstacks-strips:5-p29.sas: 1 different costs from 5 to 5
 openstacks-strips:5-p30.sas: 1 different costs from 4 to 4
 openstacks-strips:6-p16.sas: 1 different costs from 6 to 6
 openstacks-strips:6-p17.sas: 1 different costs from 6 to 6
 openstacks-strips:6-p18.sas: 1 different costs from 4 to 4
+openstacks-strips:6-p19.sas: 1 different costs from 8 to 8
 openstacks-strips:6-p23.sas: 1 different costs from 8 to 8
 openstacks-strips:7-p13.sas: 1 different costs from 96 to 96
 openstacks-strips:7-p14.sas: 1 different costs from 95 to 95
-openstacks-strips:7-p18.sas: 1 different costs from 178 to 178
+openstacks-strips:7-p17.sas: 1 different costs from 112 to 112
 openstacks-strips:7-p19.sas: 1 different costs from 109 to 109
 openstacks-strips:7-p24.sas: 1 different costs from 240 to 240
 openstacks-strips:7-p25.sas: 1 different costs from 230 to 230
@@ -780,18 +780,18 @@ organic-synthesis-split-strips:0-p01.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p02.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p03.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p04.sas: 1 different costs from 252 to 252
-organic-synthesis-split-strips:0-p05.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p06.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p07.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p08.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p09.sas: 1 different costs from 252 to 252
-organic-synthesis-split-strips:0-p11.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p13.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p14.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p15.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p16.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p17.sas: 1 different costs from 252 to 252
 organic-synthesis-split-strips:0-p18.sas: 1 different costs from 252 to 252
+organic-synthesis-split-strips:0-p19.sas: 1 different costs from 504 to 504
+organic-synthesis-split-strips:0-p20.sas: 1 different costs from 882 to 882
 organic-synthesis-split-strips:0-p21.sas: 1 different costs from 1008 to 1008
 organic-synthesis-split-strips:0-p22.sas: 1 different costs from 378 to 378
 organic-synthesis-split-strips:0-p23.sas: 1 different costs from 630 to 630
@@ -818,12 +818,13 @@ organic-synthesis-strips:1-p07.sas: 1 different costs from 2 to 2
 organic-synthesis-strips:1-p16.sas: 1 different costs from 8 to 8
 parcprinter-strips:0-p01.sas: 1 different costs from 143411 to 143411
 parcprinter-strips:0-p02.sas: 1 different costs from 169009 to 169009
-parcprinter-strips:0-p03.sas: 1 different costs from 807114 to 807114
 parcprinter-strips:0-p04.sas: 1 different costs from 182808 to 182808
-parcprinter-strips:0-p06.sas: 1 different costs from 693064 to 693064
-parcprinter-strips:0-p08.sas: 1 different costs from 751642 to 751642
+parcprinter-strips:0-p05.sas: 1 different costs from 510256 to 510256
 parcprinter-strips:0-p09.sas: 1 different costs from 1216462 to 1216462
-parcprinter-strips:0-p15.sas: 1 different costs from 1383121 to 1383121
+parcprinter-strips:0-p11.sas: 1 different costs from 1514199 to 1514199
+parcprinter-strips:0-p12.sas: 1 different costs from 1270874 to 1270874
+parcprinter-strips:0-p13.sas: 1 different costs from 1020512 to 1020512
+parcprinter-strips:0-p16.sas: 1 different costs from 1852217 to 1852217
 parcprinter-strips:0-p17.sas: 1 different costs from 1556448 to 1556448
 parcprinter-strips:0-p18.sas: 1 different costs from 2376643 to 2376643
 parcprinter-strips:0-p19.sas: 1 different costs from 2121255 to 2121255
@@ -838,7 +839,6 @@ parcprinter-strips:0-p27.sas: 1 different costs from 2330304 to 2330304
 parcprinter-strips:0-p28.sas: 1 different costs from 3160821 to 3160821
 parcprinter-strips:0-p29.sas: 1 different costs from 3119803 to 3119803
 parcprinter-strips:0-p30.sas: 1 different costs from 3526437 to 3526437
-parcprinter-strips:1-p01.sas: 1 different costs from 375821 to 375821
 parcprinter-strips:1-p10.sas: 1 different costs from 1695507 to 1695507
 parcprinter-strips:1-p13.sas: 1 different costs from 1713576 to 1713576
 parcprinter-strips:1-p15.sas: 1 different costs from 1891203 to 1891203
@@ -879,8 +879,7 @@ parking-strips:4-pfile05-020.sas: 1 different costs from 23 to 23
 pathways-strips:0-p01.sas: 1 different costs from 6 to 6
 pathways-strips:0-p03.sas: 1 different costs from 19 to 19
 pathways-strips:0-p04.sas: 1 different costs from 19 to 19
-pathways-strips:0-p06.sas: 1 different costs from 19 to 19
-pathways-strips:0-p07.sas: 1 different costs from 19 to 19
+pathways-strips:0-p05.sas: 1 different costs from 19 to 19
 pathways-strips:0-p08.sas: 1 different costs from 19 to 19
 pathways-strips:0-p09.sas: 1 different costs from 19 to 19
 pathways-strips:0-p10.sas: 1 different costs from 29 to 29
@@ -903,39 +902,40 @@ pathways-strips:0-p26.sas: 1 different costs from 44 to 44
 pathways-strips:0-p27.sas: 1 different costs from 39 to 39
 pathways-strips:0-p28.sas: 1 different costs from 44 to 44
 pathways-strips:1-p01.sas: 1 different costs from 6 to 6
+pathways-strips:1-p02.sas: 1 different costs from 12 to 12
 pathways-strips:1-p03.sas: 1 different costs from 18 to 18
 pathways-strips:1-p04.sas: 1 different costs from 17 to 17
 pathways-strips:1-p05.sas: 1 different costs from 30 to 30
+pegsol-strips:0-p01.sas: 1 different costs from 2 to 2
 pegsol-strips:0-p03.sas: 1 different costs from 6 to 6
 pegsol-strips:0-p06.sas: 1 different costs from 3 to 3
+pegsol-strips:0-p07.sas: 1 different costs from 4 to 4
 pegsol-strips:0-p08.sas: 1 different costs from 4 to 4
-pegsol-strips:0-p09.sas: 1 different costs from 5 to 5
+pegsol-strips:0-p10.sas: 1 different costs from 4 to 4
 pegsol-strips:0-p11.sas: 1 different costs from 5 to 5
-pegsol-strips:0-p13.sas: 1 different costs from 3 to 3
-pegsol-strips:0-p14.sas: 1 different costs from 5 to 5
 pegsol-strips:0-p15.sas: 1 different costs from 4 to 4
 pegsol-strips:0-p17.sas: 1 different costs from 4 to 4
 pegsol-strips:0-p18.sas: 1 different costs from 9 to 9
-pegsol-strips:0-p21.sas: 1 different costs from 7 to 7
-pegsol-strips:0-p22.sas: 1 different costs from 6 to 6
-pegsol-strips:0-p24.sas: 1 different costs from 8 to 8
+pegsol-strips:0-p19.sas: 1 different costs from 9 to 9
 pegsol-strips:0-p25.sas: 1 different costs from 8 to 8
 pegsol-strips:0-p27.sas: 1 different costs from 9 to 9
 pegsol-strips:0-p28.sas: 1 different costs from 11 to 11
 pegsol-strips:0-p29.sas: 1 different costs from 12 to 12
 pegsol-strips:0-p30.sas: 1 different costs from 18 to 18
+pegsol-strips:1-p03.sas: 1 different costs from 3 to 3
 pegsol-strips:1-p04.sas: 1 different costs from 7 to 7
 pegsol-strips:1-p05.sas: 1 different costs from 5 to 5
 pegsol-strips:1-p09.sas: 1 different costs from 7 to 7
-pegsol-strips:1-p14.sas: 1 different costs from 7 to 7
-pegsol-strips:1-p17.sas: 1 different costs from 12 to 12
+pegsol-strips:1-p18.sas: 1 different costs from 5 to 5
+pegsol-strips:1-p19.sas: 1 different costs from 6 to 6
 pegsol-strips:1-p21.sas: 1 different costs from 8 to 8
-pegsol-strips:1-p25.sas: 1 different costs from 7 to 7
-pegsol-strips:1-p26.sas: 1 different costs from 5 to 5
 pegsol-strips:2-p07.sas: 1 different costs from 7 to 7
-pegsol-strips:2-p11.sas: 1 different costs from 6 to 6
-pegsol-strips:3-p13.sas: 1 different costs from 9 to 9
+pegsol-strips:2-p13.sas: 1 different costs from 8 to 8
+pegsol-strips:3-p15.sas: 1 different costs from 7 to 7
 pegsol-strips:4-p05.sas: 1 different costs from 4 to 4
+pegsol-strips:4-p06.sas: 1 different costs from 4 to 4
+pegsol-strips:4-p08.sas: 1 different costs from 6 to 6
+pegsol-strips:4-p15.sas: 1 different costs from 8 to 8
 petri-net-alignment-strips:0-p01.sas: 1 different costs from 16 to 16
 petri-net-alignment-strips:0-p02.sas: 1 different costs from 35 to 35
 petri-net-alignment-strips:0-p03.sas: 1 different costs from 64 to 64
@@ -1002,6 +1002,9 @@ pipesworld-tankage-strips:0-p20.sas: 1 different costs from 14 to 14
 pipesworld-tankage-strips:0-p21.sas: 1 different costs from 30 to 30
 pipesworld-tankage-strips:0-p26.sas: 1 different costs from 14 to 14
 pipesworld-tankage-strips:1-p21.sas: 1 different costs from 39 to 39
+psr-small-strips:0-p01-s2-n1-l2-f50.sas: 1 different costs from 8 to 8
+psr-small-strips:0-p03-s7-n1-l3-f70.sas: 1 different costs from 11 to 11
+psr-small-strips:0-p04-s8-n1-l4-f10.sas: 1 different costs from 10 to 10
 psr-small-strips:0-p05-s9-n1-l4-f30.sas: 1 different costs from 11 to 11
 psr-small-strips:0-p06-s10-n1-l4-f50.sas: 1 different costs from 8 to 8
 psr-small-strips:0-p09-s13-n1-l5-f30.sas: 1 different costs from 8 to 8
@@ -1011,27 +1014,24 @@ psr-small-strips:0-p17-s30-n2-l5-f50.sas: 1 different costs from 9 to 9
 psr-small-strips:0-p18-s31-n2-l5-f70.sas: 1 different costs from 12 to 12
 psr-small-strips:0-p19-s33-n3-l2-f30.sas: 1 different costs from 25 to 25
 psr-small-strips:0-p20-s34-n3-l2-f50.sas: 1 different costs from 17 to 17
+psr-small-strips:0-p21-s35-n3-l2-f70.sas: 1 different costs from 10 to 10
+psr-small-strips:0-p22-s37-n3-l3-f30.sas: 1 different costs from 33 to 33
 psr-small-strips:0-p23-s38-n3-l3-f50.sas: 1 different costs from 12 to 12
-psr-small-strips:0-p24-s39-n3-l3-f70.sas: 1 different costs from 10 to 10
-psr-small-strips:0-p26-s41-n3-l4-f30.sas: 1 different costs from 17 to 17
 psr-small-strips:0-p27-s42-n3-l4-f50.sas: 1 different costs from 21 to 21
 psr-small-strips:0-p28-s43-n3-l4-f70.sas: 1 different costs from 14 to 14
-psr-small-strips:0-p29-s45-n3-l5-f30.sas: 1 different costs from 21 to 21
 psr-small-strips:0-p30-s46-n3-l5-f50.sas: 1 different costs from 22 to 22
-psr-small-strips:0-p33-s51-n4-l2-f70.sas: 1 different costs from 21 to 21
+psr-small-strips:0-p32-s50-n4-l2-f50.sas: 1 different costs from 24 to 24
 psr-small-strips:0-p34-s55-n4-l3-f70.sas: 1 different costs from 21 to 21
 psr-small-strips:0-p36-s65-n6-l2-f30.sas: 1 different costs from 22 to 22
 psr-small-strips:0-p37-s67-n6-l2-f70.sas: 1 different costs from 23 to 23
 psr-small-strips:0-p39-s79-n3-l3-f70.sas: 1 different costs from 23 to 23
+psr-small-strips:0-p40-s80-n3-l4-f10.sas: 1 different costs from 20 to 20
 psr-small-strips:0-p41-s81-n3-l4-f30.sas: 1 different costs from 10 to 10
 psr-small-strips:0-p42-s82-n3-l4-f50.sas: 1 different costs from 30 to 30
 psr-small-strips:0-p43-s83-n3-l4-f70.sas: 1 different costs from 20 to 20
 psr-small-strips:0-p44-s89-n4-l2-f30.sas: 1 different costs from 19 to 19
 psr-small-strips:0-p45-s94-n4-l3-f50.sas: 1 different costs from 20 to 20
-psr-small-strips:0-p47-s98-n5-l2-f50.sas: 1 different costs from 27 to 27
-psr-small-strips:0-p48-s101-n5-l3-f30.sas: 1 different costs from 37 to 37
 psr-small-strips:0-p49-s105-n6-l2-f30.sas: 1 different costs from 47 to 47
-psr-small-strips:0-p50-s107-n6-l2-f70.sas: 1 different costs from 23 to 23
 rovers-strips:0-p04.sas: 1 different costs from 57 to 57
 rovers-strips:0-p05.sas: 1 different costs from 67 to 67
 rovers-strips:0-p06.sas: 1 different costs from 61 to 61
@@ -1067,18 +1067,18 @@ satellite-strips:0-p08.sas: 1 different costs from 47 to 47
 satellite-strips:0-p09.sas: 1 different costs from 50 to 50
 satellite-strips:0-p10.sas: 1 different costs from 65 to 65
 satellite-strips:0-p11.sas: 1 different costs from 63 to 63
-satellite-strips:0-p12.sas: 1 different costs from 54 to 54
 satellite-strips:0-p13.sas: 1 different costs from 60 to 60
 satellite-strips:0-p14.sas: 1 different costs from 64 to 64
 satellite-strips:0-p15.sas: 1 different costs from 75 to 75
-satellite-strips:0-p16.sas: 1 different costs from 60 to 60
 satellite-strips:0-p17.sas: 1 different costs from 83 to 83
 satellite-strips:0-p18.sas: 1 different costs from 85 to 85
 satellite-strips:0-p19.sas: 1 different costs from 90 to 90
+satellite-strips:0-p20.sas: 1 different costs from 74 to 74
 satellite-strips:0-p21.sas: 1 different costs from 92 to 92
 satellite-strips:0-p22.sas: 1 different costs from 83 to 83
 satellite-strips:0-p23.sas: 1 different costs from 85 to 85
 satellite-strips:0-p25.sas: 1 different costs from 69 to 69
+satellite-strips:0-p30.sas: 1 different costs from 76 to 76
 satellite-strips:1-p03.sas: 1 different costs from 18 to 18
 satellite-strips:1-p04.sas: 1 different costs from 25 to 25
 satellite-strips:1-p05.sas: 1 different costs from 29 to 29
@@ -1145,6 +1145,7 @@ snake-strips:3-p01.sas: 1 different costs from 39 to 39
 snake-strips:3-p02.sas: 1 different costs from 46 to 46
 snake-strips:3-p05.sas: 1 different costs from 31 to 31
 snake-strips:3-p06.sas: 1 different costs from 42 to 42
+sokoban-strips:0-p01.sas: 1 different costs from 26 to 26
 sokoban-strips:0-p07.sas: 1 different costs from 68 to 68
 sokoban-strips:0-p08.sas: 1 different costs from 14 to 14
 sokoban-strips:0-p09.sas: 1 different costs from 23 to 23
@@ -1161,50 +1162,49 @@ sokoban-strips:0-p26.sas: 1 different costs from 60 to 60
 sokoban-strips:0-p27.sas: 1 different costs from 47 to 47
 sokoban-strips:0-p28.sas: 1 different costs from 24 to 24
 sokoban-strips:0-p29.sas: 1 different costs from 43 to 43
-sokoban-strips:1-p04.sas: 1 different costs from 34 to 34
-sokoban-strips:1-p05.sas: 1 different costs from 27 to 27
-sokoban-strips:1-p08.sas: 1 different costs from 40 to 40
 sokoban-strips:1-p12.sas: 1 different costs from 12 to 12
 sokoban-strips:1-p14.sas: 1 different costs from 20 to 20
+sokoban-strips:1-p15.sas: 1 different costs from 10 to 10
 sokoban-strips:1-p18.sas: 1 different costs from 54 to 54
 sokoban-strips:1-p19.sas: 1 different costs from 65 to 65
+sokoban-strips:1-p21.sas: 1 different costs from 16 to 16
 sokoban-strips:1-p23.sas: 1 different costs from 110 to 110
-sokoban-strips:2-p07.sas: 1 different costs from 30 to 30
+sokoban-strips:2-p01.sas: 1 different costs from 9 to 9
+sokoban-strips:2-p15.sas: 1 different costs from 49 to 49
 sokoban-strips:2-p16.sas: 1 different costs from 76 to 76
 sokoban-strips:3-p04.sas: 1 different costs from 33 to 33
 sokoban-strips:3-p05.sas: 1 different costs from 50 to 50
-sokoban-strips:4-p03.sas: 1 different costs from 10 to 10
 sokoban-strips:5-p21.sas: 1 different costs from 51 to 51
-spanner-strips:0-p007.sas: 1 different costs from 38 to 38
-spanner-strips:0-p009.sas: 1 different costs from 48 to 48
-spanner-strips:0-p012.sas: 1 different costs from 63 to 63
-spanner-strips:0-p013.sas: 1 different costs from 40 to 40
-spanner-strips:0-p015.sas: 1 different costs from 50 to 50
-spanner-strips:0-p018.sas: 1 different costs from 65 to 65
-spanner-strips:0-p022.sas: 1 different costs from 57 to 57
-spanner-strips:0-p027.sas: 1 different costs from 48 to 48
-spanner-strips:0-p030.sas: 1 different costs from 63 to 63
-spanner-strips:0-p031.sas: 1 different costs from 40 to 40
-spanner-strips:0-p035.sas: 1 different costs from 60 to 60
-spanner-strips:0-p036.sas: 1 different costs from 65 to 65
-spanner-strips:0-p037.sas: 1 different costs from 42 to 42
-spanner-strips:0-p040.sas: 1 different costs from 57 to 57
+spanner-strips:0-p008.sas: 1 different costs from 43 to 43
+spanner-strips:0-p014.sas: 1 different costs from 45 to 45
+spanner-strips:0-p016.sas: 1 different costs from 55 to 55
+spanner-strips:0-p019.sas: 1 different costs from 42 to 42
+spanner-strips:0-p021.sas: 1 different costs from 52 to 52
+spanner-strips:0-p025.sas: 1 different costs from 38 to 38
+spanner-strips:0-p028.sas: 1 different costs from 53 to 53
+spanner-strips:0-p038.sas: 1 different costs from 47 to 47
 spanner-strips:0-p042.sas: 1 different costs from 67 to 67
-spanner-strips:0-p043.sas: 1 different costs from 44 to 44
-spanner-strips:0-p049.sas: 1 different costs from 38 to 38
+spanner-strips:0-p046.sas: 1 different costs from 59 to 59
+spanner-strips:0-p048.sas: 1 different costs from 69 to 69
 spanner-strips:0-p056.sas: 1 different costs from 45 to 45
-spanner-strips:0-p057.sas: 1 different costs from 50 to 50
-spanner-strips:0-p058.sas: 1 different costs from 55 to 55
-spanner-strips:0-p059.sas: 1 different costs from 60 to 60
-spanner-strips:0-p063.sas: 1 different costs from 52 to 52
-spanner-strips:0-p067.sas: 1 different costs from 44 to 44
-spanner-strips:0-p070.sas: 1 different costs from 59 to 59
+spanner-strips:0-p062.sas: 1 different costs from 47 to 47
+spanner-strips:0-p068.sas: 1 different costs from 49 to 49
+spanner-strips:0-p072.sas: 1 different costs from 69 to 69
 spanner-strips:0-p085.sas: 1 different costs from 38 to 38
-spanner-strips:0-p087.sas: 1 different costs from 48 to 48
+spanner-strips:0-p088.sas: 1 different costs from 53 to 53
 spanner-strips:0-p089.sas: 1 different costs from 58 to 58
 spanner-strips:0-p091.sas: 1 different costs from 40 to 40
-spanner-strips:0-p092.sas: 1 different costs from 45 to 45
 spanner-strips:0-p095.sas: 1 different costs from 60 to 60
+spanner-strips:0-p096.sas: 1 different costs from 65 to 65
+spanner-strips:0-p109.sas: 1 different costs from 46 to 46
+spanner-strips:0-p111.sas: 1 different costs from 56 to 56
+spanner-strips:0-p113.sas: 1 different costs from 66 to 66
+spanner-strips:0-p117.sas: 1 different costs from 58 to 58
+spanner-strips:0-p118.sas: 1 different costs from 63 to 63
+spanner-strips:0-p122.sas: 1 different costs from 55 to 55
+spanner-strips:0-p124.sas: 1 different costs from 65 to 65
+spanner-strips:0-p128.sas: 1 different costs from 57 to 57
+spanner-strips:0-p130.sas: 1 different costs from 67 to 67
 spider-strips:0-p01.sas: 1 different costs from 16 to 16
 spider-strips:0-p02.sas: 1 different costs from 23 to 23
 spider-strips:0-p03.sas: 1 different costs from 22 to 22
@@ -1232,9 +1232,8 @@ spider-strips:1-p09.sas: 1 different costs from 33 to 33
 spider-strips:1-p14.sas: 1 different costs from 23 to 23
 spider-strips:1-p15.sas: 1 different costs from 26 to 26
 spider-strips:1-p17.sas: 1 different costs from 33 to 33
-storage-strips:0-p02.sas: 1 different costs from 11 to 11
+storage-strips:0-p01.sas: 1 different costs from 9 to 9
 storage-strips:0-p03.sas: 1 different costs from 13 to 13
-storage-strips:0-p04.sas: 1 different costs from 14 to 14
 storage-strips:0-p06.sas: 1 different costs from 18 to 18
 storage-strips:0-p07.sas: 1 different costs from 20 to 20
 storage-strips:0-p08.sas: 1 different costs from 23 to 23
@@ -1243,25 +1242,26 @@ storage-strips:0-p10.sas: 1 different costs from 27 to 27
 storage-strips:0-p11.sas: 1 different costs from 28 to 28
 storage-strips:0-p12.sas: 1 different costs from 30 to 30
 storage-strips:0-p13.sas: 1 different costs from 32 to 32
+storage-strips:0-p14.sas: 1 different costs from 34 to 34
+storage-strips:0-p15.sas: 1 different costs from 36 to 36
+storage-strips:0-p16.sas: 1 different costs from 38 to 38
+storage-strips:0-p17.sas: 1 different costs from 40 to 40
+storage-strips:0-p18.sas: 1 different costs from 42 to 42
+storage-strips:0-p19.sas: 1 different costs from 44 to 44
+storage-strips:0-p20.sas: 1 different costs from 46 to 46
 storage-strips:0-p22.sas: 1 different costs from 25 to 25
 storage-strips:0-p23.sas: 1 different costs from 27 to 27
+storage-strips:0-p27.sas: 1 different costs from 34 to 34
 storage-strips:0-p28.sas: 1 different costs from 35 to 35
 storage-strips:1-p01.sas: 1 different costs from 15 to 15
 storage-strips:1-p02.sas: 1 different costs from 15 to 15
 storage-strips:1-p03.sas: 1 different costs from 17 to 17
 storage-strips:2-p01.sas: 1 different costs from 3 to 3
-storage-strips:2-p02.sas: 1 different costs from 3 to 3
-storage-strips:2-p03.sas: 1 different costs from 3 to 3
-storage-strips:2-p04.sas: 1 different costs from 8 to 8
-storage-strips:2-p05.sas: 1 different costs from 8 to 8
-storage-strips:2-p06.sas: 1 different costs from 8 to 8
 storage-strips:2-p07.sas: 1 different costs from 14 to 14
-storage-strips:2-p09.sas: 1 different costs from 11 to 11
-storage-strips:2-p10.sas: 1 different costs from 18 to 18
-storage-strips:2-p11.sas: 1 different costs from 17 to 17
 storage-strips:2-p14.sas: 1 different costs from 19 to 19
 storage-strips:2-p15.sas: 1 different costs from 18 to 18
 storage-strips:2-p16.sas: 1 different costs from 21 to 21
+storage-strips:2-p17.sas: 1 different costs from 26 to 26
 termes-strips:0-p01.sas: 1 different costs from 36 to 36
 termes-strips:0-p02.sas: 1 different costs from 54 to 54
 termes-strips:0-p03.sas: 1 different costs from 46 to 46
@@ -1289,7 +1289,8 @@ termes-strips:3-p03.sas: 1 different costs from 130 to 130
 termes-strips:3-p04.sas: 1 different costs from 122 to 122
 tetris-strips:0-p03.sas: 1 different costs from 4 to 4
 tetris-strips:0-p06.sas: 1 different costs from 37 to 37
-tetris-strips:0-p11.sas: 1 different costs from 16 to 16
+tetris-strips:0-p07.sas: 1 different costs from 55 to 55
+tetris-strips:0-p10.sas: 1 different costs from 11 to 11
 tetris-strips:0-p14.sas: 1 different costs from 13 to 13
 tetris-strips:0-p17.sas: 1 different costs from 11 to 11
 tetris-strips:0-p19.sas: 1 different costs from 40 to 40
@@ -1298,23 +1299,22 @@ tetris-strips:0-p21.sas: 1 different costs from 24 to 24
 tetris-strips:0-p22.sas: 1 different costs from 33 to 33
 tetris-strips:0-p23.sas: 1 different costs from 19 to 19
 tetris-strips:0-p24.sas: 1 different costs from 43 to 43
-tetris-strips:0-p26.sas: 1 different costs from 23 to 23
 tetris-strips:0-p27.sas: 1 different costs from 49 to 49
 tetris-strips:0-p28.sas: 1 different costs from 29 to 29
+tetris-strips:1-p02.sas: 1 different costs from 0 to 0
 tetris-strips:1-p03.sas: 1 different costs from 5 to 5
 tetris-strips:1-p04.sas: 1 different costs from 20 to 20
+tetris-strips:1-p05.sas: 1 different costs from 18 to 18
 tetris-strips:1-p11.sas: 1 different costs from 44 to 44
 tetris-strips:1-p12.sas: 1 different costs from 49 to 49
-tetris-strips:1-p29.sas: 1 different costs from 37 to 37
+tetris-strips:1-p25.sas: 1 different costs from 21 to 21
 tetris-strips:2-p01-6.sas: 1 different costs from 30 to 30
 tetris-strips:2-p01-8.sas: 1 different costs from 36 to 36
-tetris-strips:2-p02-4.sas: 1 different costs from 10 to 10
-tetris-strips:2-p02-8.sas: 1 different costs from 39 to 39
+tetris-strips:2-p02-6.sas: 1 different costs from 30 to 30
+tetris-strips:2-p03-6.sas: 1 different costs from 21 to 21
 tetris-strips:2-p03-8.sas: 1 different costs from 48 to 48
-tetris-strips:2-p04-6.sas: 1 different costs from 27 to 27
 tetris-strips:2-p04-8.sas: 1 different costs from 56 to 56
 tetris-strips:2-p05-10.sas: 1 different costs from 66 to 66
-tetris-strips:2-p05-6.sas: 1 different costs from 19 to 19
 tetris-strips:2-p05-8.sas: 1 different costs from 60 to 60
 tetris-strips:3-p020.sas: 1 different costs from 44 to 44
 thoughtful-strips:0-p01.sas: 1 different costs from 25 to 25
@@ -1329,6 +1329,7 @@ thoughtful-strips:0-p14.sas: 1 different costs from 92 to 92
 thoughtful-strips:0-p15.sas: 1 different costs from 105 to 105
 thoughtful-strips:0-p17.sas: 1 different costs from 88 to 88
 tidybot-strips:0-p07.sas: 1 different costs from 30 to 30
+tidybot-strips:0-p08.sas: 1 different costs from 38 to 38
 tidybot-strips:0-p09.sas: 1 different costs from 25 to 25
 tidybot-strips:0-p10.sas: 1 different costs from 40 to 40
 tidybot-strips:0-p11.sas: 1 different costs from 50 to 50
@@ -1343,28 +1344,29 @@ tidybot-strips:0-p22.sas: 1 different costs from 36 to 36
 tidybot-strips:0-p23.sas: 1 different costs from 41 to 41
 tidybot-strips:0-p24.sas: 1 different costs from 63 to 63
 tidybot-strips:0-p25.sas: 1 different costs from 40 to 40
-tidybot-strips:1-p06.sas: 1 different costs from 37 to 37
+tidybot-strips:1-p03.sas: 1 different costs from 37 to 37
 tidybot-strips:1-p07.sas: 1 different costs from 49 to 49
 tidybot-strips:1-p08.sas: 1 different costs from 34 to 34
 tidybot-strips:1-p10.sas: 1 different costs from 38 to 38
-tidybot-strips:2-p02.sas: 1 different costs from 35 to 35
 tidybot-strips:2-p06.sas: 1 different costs from 63 to 63
 tidybot-strips:2-p09.sas: 1 different costs from 35 to 35
 tidybot-strips:2-p12.sas: 1 different costs from 35 to 35
 tidybot-strips:2-p16.sas: 1 different costs from 40 to 40
-tidybot-strips:2-p17.sas: 1 different costs from 40 to 40
 tidybot-strips:2-p18.sas: 1 different costs from 44 to 44
 tidybot-strips:2-p20.sas: 1 different costs from 46 to 46
 tidybot-strips:4-p11.sas: 1 different costs from 46 to 46
 tidybot-strips:4-p12.sas: 1 different costs from 36 to 36
+tidybot-strips:4-p14.sas: 1 different costs from 42 to 42
 tidybot-strips:4-p15.sas: 1 different costs from 43 to 43
 tpp-strips:0-p09.sas: 1 different costs from 167 to 167
+tpp-strips:0-p10.sas: 1 different costs from 173 to 173
 tpp-strips:0-p13.sas: 1 different costs from 290 to 290
 tpp-strips:0-p14.sas: 1 different costs from 290 to 290
 tpp-strips:0-p15.sas: 1 different costs from 293 to 293
 tpp-strips:0-p16.sas: 1 different costs from 326 to 326
 tpp-strips:0-p17.sas: 1 different costs from 410 to 410
 tpp-strips:0-p18.sas: 1 different costs from 389 to 389
+tpp-strips:0-p19.sas: 1 different costs from 470 to 470
 tpp-strips:0-p20.sas: 1 different costs from 596 to 596
 tpp-strips:0-p21.sas: 1 different costs from 641 to 641
 tpp-strips:0-p23.sas: 1 different costs from 821 to 821
@@ -1383,8 +1385,6 @@ tpp-strips:1-p09.sas: 1 different costs from 145 to 145
 tpp-strips:1-p10.sas: 1 different costs from 145 to 145
 tpp-strips:2-p16.sas: 1 different costs from 89 to 89
 tpp-strips:2-p17.sas: 1 different costs from 76 to 76
-tpp-strips:2-p18.sas: 1 different costs from 72 to 72
-tpp-strips:2-p19.sas: 1 different costs from 100 to 100
 tpp-strips:2-p20.sas: 1 different costs from 115 to 115
 tpp-strips:2-p22.sas: 1 different costs from 87 to 87
 tpp-strips:2-p23.sas: 1 different costs from 111 to 111
@@ -1416,7 +1416,7 @@ transport-strips:4-p17.sas: 1 different costs from 332 to 332
 transport-strips:4-p18.sas: 1 different costs from 941 to 941
 transport-strips:4-p19.sas: 1 different costs from 970 to 970
 transport-strips:6-p07.sas: 1 different costs from 417 to 417
-transport-strips:7-p01.sas: 1 different costs from 54 to 54
+transport-strips:6-p21.sas: 1 different costs from 478 to 478
 transport-strips:7-p12.sas: 1 different costs from 795 to 795
 trucks-strips:0-p01.sas: 1 different costs from 13 to 13
 trucks-strips:0-p02.sas: 1 different costs from 17 to 17
@@ -1439,6 +1439,8 @@ trucks-strips:0-p19.sas: 1 different costs from 43 to 43
 trucks-strips:0-p20.sas: 1 different costs from 47 to 47
 visitall-strips:0-p02.sas: 1 different costs from 31 to 31
 visitall-strips:0-p04.sas: 1 different costs from 31 to 31
+visitall-strips:0-p05.sas: 1 different costs from 33 to 33
+visitall-strips:0-p07.sas: 1 different costs from 31 to 31
 visitall-strips:0-p08.sas: 1 different costs from 37 to 37
 visitall-strips:0-p09.sas: 1 different costs from 42 to 42
 visitall-strips:0-p10.sas: 1 different costs from 43 to 43
@@ -1453,14 +1455,12 @@ visitall-strips:0-p23.sas: 1 different costs from 43 to 43
 visitall-strips:0-p24.sas: 1 different costs from 45 to 45
 visitall-strips:0-p28.sas: 1 different costs from 53 to 53
 visitall-strips:1-p01.sas: 1 different costs from 44 to 44
-visitall-strips:2-p-05-7.sas: 1 different costs from 34 to 34
 visitall-strips:2-p-05-8.sas: 1 different costs from 43 to 43
 visitall-strips:2-p-05-9.sas: 1 different costs from 54 to 54
 visitall-strips:2-p-1-10.sas: 1 different costs from 99 to 99
 visitall-strips:2-p-1-11.sas: 1 different costs from 120 to 120
 visitall-strips:2-p-1-12.sas: 1 different costs from 143 to 143
 visitall-strips:2-p-1-13.sas: 1 different costs from 168 to 168
-visitall-strips:2-p-1-6.sas: 1 different costs from 35 to 35
 visitall-strips:2-p-1-7.sas: 1 different costs from 48 to 48
 visitall-strips:2-p-1-8.sas: 1 different costs from 63 to 63
 visitall-strips:2-p-1-9.sas: 1 different costs from 80 to 80
@@ -1497,6 +1497,7 @@ woodworking-strips:5-p17.sas: 1 different costs from 915 to 915
 woodworking-strips:5-p25.sas: 1 different costs from 590 to 590
 woodworking-strips:5-p26.sas: 1 different costs from 940 to 940
 woodworking-strips:5-p27.sas: 1 different costs from 740 to 740
+zenotravel-strips:0-p03.sas: 1 different costs from 10 to 10
 zenotravel-strips:0-p04.sas: 1 different costs from 30 to 30
 zenotravel-strips:0-p07.sas: 1 different costs from 26 to 26
 zenotravel-strips:0-p08.sas: 1 different costs from 24 to 24
@@ -1520,7 +1521,6 @@ zenotravel-strips:0-p27.sas: 1 different costs from 22 to 22
 zenotravel-strips:0-p28.sas: 1 different costs from 32 to 32
 zenotravel-strips:0-p29.sas: 1 different costs from 38 to 38
 zenotravel-strips:1-p01.sas: 1 different costs from 26 to 26
-zenotravel-strips:2-p07.sas: 1 different costs from 15 to 15
 zenotravel-strips:2-p09.sas: 1 different costs from 21 to 21
 zenotravel-strips:2-p10.sas: 1 different costs from 22 to 22
 zenotravel-strips:2-p11.sas: 1 different costs from 14 to 14
@@ -1528,45 +1528,52 @@ zenotravel-strips:2-p12.sas: 1 different costs from 21 to 21
 zenotravel-strips:2-p13.sas: 1 different costs from 26 to 26
 zenotravel-strips:2-p14.sas: 1 different costs from 30 to 30
 1529 problems
-16 configs
-24464 results
+19 configs
+29051 results
 1529 problems solved by someone
+863 problems solved by decstar:A*-oss-sss-LMc
 347 problems solved by decstar:ds
-415 problems solved by decstar:ds-sss-oss
+424 problems solved by decstar:ds-sss-oss
 181 problems solved by decstar:fork-optimized
-826 problems solved by dofri:max_cluster
-578 problems solved by dofri:percent_sa
-957 problems solved by dofri:pho_offline
-979 problems solved by dofri:pho_online
-533 problems solved by dofri:range_sa
-821 problems solved by dofri:tuple
-1153 problems solved by odin:sys-stcp-cartesian
-478 problems solved by scorpion:astar-blind
-552 problems solved by scorpion:astar-hmax
-765 problems solved by scorpion:bjolp-scp
-1165 problems solved by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-1166 problems solved by scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-946 problems solved by symk:sym-bd
+813 problems solved by dofri:max_cluster
+565 problems solved by dofri:percent_sa
+940 problems solved by dofri:pho_offline
+962 problems solved by dofri:pho_online
+519 problems solved by dofri:range_sa
+808 problems solved by dofri:tuple
+1123 problems solved by odin:sys-stcp-cartesian
+461 problems solved by scorpion:astar-blind
+536 problems solved by scorpion:astar-hmax
+748 problems solved by scorpion:bjolp-scp
+804 problems solved by scorpion:bjolp-scp-fast
+1149 problems solved by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+1054 problems solved by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
+1150 problems solved by scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+913 problems solved by symk:sym-bd
+863.00 score by decstar:A*-oss-sss-LMc
 347.00 score by decstar:ds
-415.00 score by decstar:ds-sss-oss
+424.00 score by decstar:ds-sss-oss
 181.00 score by decstar:fork-optimized
-826.00 score by dofri:max_cluster
-578.00 score by dofri:percent_sa
-957.00 score by dofri:pho_offline
-979.00 score by dofri:pho_online
-533.00 score by dofri:range_sa
-821.00 score by dofri:tuple
-1153.00 score by odin:sys-stcp-cartesian
-478.00 score by scorpion:astar-blind
-552.00 score by scorpion:astar-hmax
-765.00 score by scorpion:bjolp-scp
-1165.00 score by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-1166.00 score by scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-946.00 score by symk:sym-bd
-Max problems solved by single config: 1166
-Max score by single config: 1166.0
+813.00 score by dofri:max_cluster
+565.00 score by dofri:percent_sa
+940.00 score by dofri:pho_offline
+962.00 score by dofri:pho_online
+519.00 score by dofri:range_sa
+808.00 score by dofri:tuple
+1123.00 score by odin:sys-stcp-cartesian
+461.00 score by scorpion:astar-blind
+536.00 score by scorpion:astar-hmax
+748.00 score by scorpion:bjolp-scp
+804.00 score by scorpion:bjolp-scp-fast
+1149.00 score by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+1054.00 score by scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
+1150.00 score by scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+913.00 score by symk:sym-bd
+Max problems solved by single config: 1150
+Max score by single config: 1150.0
 Computing portfolio using IPC scores...
 portfolio for 0.00 seconds solves 0 problems with score 0.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
       0.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1580,11 +1587,14 @@ portfolio for 0.00 seconds solves 0 problems with score 0.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
       0.00 seconds for symk:sym-bd
 
-portfolio for 90.00 seconds solves 671 problems with score 671.00:
+portfolio for 90.00 seconds solves 660 problems with score 660.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
       0.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1598,11 +1608,14 @@ portfolio for 90.00 seconds solves 671 problems with score 671.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
      90.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
       0.00 seconds for symk:sym-bd
 
-portfolio for 180.00 seconds solves 879 problems with score 879.00:
+portfolio for 180.00 seconds solves 852 problems with score 852.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
       0.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1616,11 +1629,14 @@ portfolio for 180.00 seconds solves 879 problems with score 879.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
      90.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
      90.00 seconds for symk:sym-bd
 
-portfolio for 270.00 seconds solves 1033 problems with score 1033.00:
+portfolio for 270.00 seconds solves 1006 problems with score 1006.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
       0.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1634,11 +1650,14 @@ portfolio for 270.00 seconds solves 1033 problems with score 1033.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     180.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
      90.00 seconds for symk:sym-bd
 
-portfolio for 360.00 seconds solves 1099 problems with score 1099.00:
+portfolio for 360.00 seconds solves 1072 problems with score 1072.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
       0.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1652,11 +1671,14 @@ portfolio for 360.00 seconds solves 1099 problems with score 1099.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     270.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
      90.00 seconds for symk:sym-bd
 
-portfolio for 450.00 seconds solves 1140 problems with score 1140.00:
+portfolio for 450.00 seconds solves 1113 problems with score 1113.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1670,11 +1692,14 @@ portfolio for 450.00 seconds solves 1140 problems with score 1140.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     270.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
      90.00 seconds for symk:sym-bd
 
-portfolio for 540.00 seconds solves 1167 problems with score 1167.00:
+portfolio for 540.00 seconds solves 1140 problems with score 1140.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1688,11 +1713,14 @@ portfolio for 540.00 seconds solves 1167 problems with score 1167.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
      90.00 seconds for symk:sym-bd
 
-portfolio for 630.00 seconds solves 1194 problems with score 1194.00:
+portfolio for 630.00 seconds solves 1166 problems with score 1166.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1706,11 +1734,14 @@ portfolio for 630.00 seconds solves 1194 problems with score 1194.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     180.00 seconds for symk:sym-bd
 
-portfolio for 720.00 seconds solves 1223 problems with score 1223.00:
+portfolio for 720.00 seconds solves 1193 problems with score 1193.00:
+      0.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1724,11 +1755,14 @@ portfolio for 720.00 seconds solves 1223 problems with score 1223.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     270.00 seconds for symk:sym-bd
 
-portfolio for 810.00 seconds solves 1244 problems with score 1244.00:
+portfolio for 810.00 seconds solves 1215 problems with score 1215.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1742,11 +1776,35 @@ portfolio for 810.00 seconds solves 1244 problems with score 1244.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
+    360.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+    270.00 seconds for symk:sym-bd
+
+portfolio for 900.00 seconds solves 1235 problems with score 1235.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
+      0.00 seconds for decstar:ds
+     90.00 seconds for decstar:ds-sss-oss
+      0.00 seconds for decstar:fork-optimized
+      0.00 seconds for dofri:max_cluster
+      0.00 seconds for dofri:percent_sa
+      0.00 seconds for dofri:pho_offline
+      0.00 seconds for dofri:pho_online
+      0.00 seconds for dofri:range_sa
+      0.00 seconds for dofri:tuple
+      0.00 seconds for odin:sys-stcp-cartesian
+      0.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-hmax
+      0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     450.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     270.00 seconds for symk:sym-bd
 
-portfolio for 900.00 seconds solves 1267 problems with score 1267.00:
+portfolio for 990.00 seconds solves 1256 problems with score 1256.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1760,11 +1818,14 @@ portfolio for 900.00 seconds solves 1267 problems with score 1267.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     540.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     270.00 seconds for symk:sym-bd
 
-portfolio for 990.00 seconds solves 1278 problems with score 1278.00:
+portfolio for 1080.00 seconds solves 1268 problems with score 1268.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1778,11 +1839,14 @@ portfolio for 990.00 seconds solves 1278 problems with score 1278.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     540.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     360.00 seconds for symk:sym-bd
 
-portfolio for 1080.00 seconds solves 1288 problems with score 1288.00:
+portfolio for 1170.00 seconds solves 1278 problems with score 1278.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1796,11 +1860,14 @@ portfolio for 1080.00 seconds solves 1288 problems with score 1288.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     630.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     360.00 seconds for symk:sym-bd
 
-portfolio for 1170.00 seconds solves 1300 problems with score 1300.00:
+portfolio for 1260.00 seconds solves 1291 problems with score 1291.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1814,11 +1881,14 @@ portfolio for 1170.00 seconds solves 1300 problems with score 1300.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     360.00 seconds for symk:sym-bd
 
-portfolio for 1260.00 seconds solves 1309 problems with score 1309.00:
+portfolio for 1350.00 seconds solves 1300 problems with score 1300.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1832,11 +1902,14 @@ portfolio for 1260.00 seconds solves 1309 problems with score 1309.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     450.00 seconds for symk:sym-bd
 
-portfolio for 1350.00 seconds solves 1319 problems with score 1319.00:
+portfolio for 1440.00 seconds solves 1309 problems with score 1309.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1850,11 +1923,14 @@ portfolio for 1350.00 seconds solves 1319 problems with score 1319.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     540.00 seconds for symk:sym-bd
 
-portfolio for 1440.00 seconds solves 1327 problems with score 1327.00:
+portfolio for 1530.00 seconds solves 1317 problems with score 1317.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1868,11 +1944,14 @@ portfolio for 1440.00 seconds solves 1327 problems with score 1327.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     630.00 seconds for symk:sym-bd
 
-portfolio for 1530.00 seconds solves 1341 problems with score 1341.00:
+portfolio for 1620.00 seconds solves 1331 problems with score 1331.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1886,11 +1965,14 @@ portfolio for 1530.00 seconds solves 1341 problems with score 1341.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     720.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     720.00 seconds for symk:sym-bd
 
-portfolio for 1620.00 seconds solves 1346 problems with score 1346.00:
+portfolio for 1710.00 seconds solves 1336 problems with score 1336.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1904,11 +1986,14 @@ portfolio for 1620.00 seconds solves 1346 problems with score 1346.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     810.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     720.00 seconds for symk:sym-bd
 
-portfolio for 1710.00 seconds solves 1360 problems with score 1360.00:
+portfolio for 1800.00 seconds solves 1350 problems with score 1350.00:
+     90.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      90.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1922,32 +2007,17 @@ portfolio for 1710.00 seconds solves 1360 problems with score 1360.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
     900.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     720.00 seconds for symk:sym-bd
 
-portfolio for 1800.00 seconds solves 1375 problems with score 1375.00:
-      0.00 seconds for decstar:ds
-     90.00 seconds for decstar:ds-sss-oss
-      0.00 seconds for decstar:fork-optimized
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-      0.00 seconds for odin:sys-stcp-cartesian
-      0.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-      0.00 seconds for scorpion:bjolp-scp
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    990.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    720.00 seconds for symk:sym-bd
-
-Time for computing portfolio: 0.13790894799999998s
+Time for computing portfolio: 0.16249972099999987s
 
 Reducing portfolio...
-portfolio for 1782.00 seconds solves 1375 problems with score 1375.00:
+portfolio for 1708.00 seconds solves 1350 problems with score 1350.00:
+     15.00 seconds for decstar:A*-oss-sss-LMc
       0.00 seconds for decstar:ds
      79.00 seconds for decstar:ds-sss-oss
       0.00 seconds for decstar:fork-optimized
@@ -1961,24 +2031,28 @@ portfolio for 1782.00 seconds solves 1375 problems with score 1375.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:bjolp-scp
+      0.00 seconds for scorpion:bjolp-scp-fast
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch
-    987.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast
+    898.00 seconds for scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
     716.00 seconds for symk:sym-bd
 
 Sort by decreasing coverage
 """
-Coverage: 1375
+Coverage: 1350
 Granularity: 90s
-Runtime: 1782s
-Score: 1375.0
+Runtime: 1708s
+Score: 1350.0
 """
 
 TRACK = "opt"
 CONFIGS = [
     # scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-    (987, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative)), cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions=1M, max_time=60, pick_flawed_abstract_state=first_on_shortest_path, pick_split=max_refined, tiebreak_split=min_cg, search_strategy=incremental)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))']),
+    (898, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative)), cartesian(subtasks=[landmarks(order=random), goals(order=random)], max_states=infinity, max_transitions=1M, max_time=60, pick_flawed_abstract_state=first_on_shortest_path, pick_split=max_refined, tiebreak_split=min_cg, search_strategy=incremental)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))']),
     # symk:sym-bd
     (716, ['symk', '--search', 'sym-bd(silent=true)']),
+    # decstar:A*-oss-sss-LMc
+    (15, ['decstar', '--search', 'astar(lmcut, pruning=stubborn_sets_ec(min_pruning_ratio=0.25), symmetry=symmetry_state_pruning)']),
     # decstar:ds-sss-oss
     (79, ['decstar', '--decoupling', 'lp_general(factoring_time_limit=30, memory_limit=7000, add_cg_sccs=true, strategy=mm_approx, min_flexibility=0.8)', '--search', 'astar(lmcut, pruning=stubborn_sets_decoupled(min_pruning_ratio=0.25, special_case_optimizations=true, use_single_var_ifork_optimization=true), symmetry=symmetry_state_pruning(lex_prices=true, lex_num_states=false, lex_goal_cost=false))']),
 ]
@@ -1992,7 +2066,7 @@ Unsolved problems:
    agricola-strips:2-p13.sas           {symk:sym-bd: 928.08}
    agricola-strips:2-p14.sas           {symk:sym-bd: 1286.60}
    agricola-strips:2-p16.sas           {symk:sym-bd: 1702.15}
-   airport-strips:0-p15.sas            {dofri:max_cluster: 177.35, dofri:percent_sa: 190.75, dofri:pho_offline: 386.68, dofri:pho_online: 155.86, dofri:range_sa: 196.82, dofri:tuple: 166.52, scorpion:bjolp-scp: 2.06}
+   airport-strips:0-p15.sas            {dofri:max_cluster: 177.35, dofri:percent_sa: 190.75, dofri:pho_offline: 386.68, dofri:pho_online: 155.86, dofri:range_sa: 196.82, dofri:tuple: 166.52, scorpion:bjolp-scp: 2.06, scorpion:bjolp-scp-fast: 1.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 105.11}
    airport-strips:0-p25.sas            {dofri:pho_online: 134.30}
    airport-strips:0-p29.sas            {dofri:max_cluster: 259.02, dofri:percent_sa: 364.41, dofri:pho_online: 217.49, dofri:range_sa: 368.66, dofri:tuple: 312.88}
    barman-strips:3-p536-2.sas          {symk:sym-bd: 1215.67}
@@ -2001,63 +2075,71 @@ Unsolved problems:
    barman-strips:5-pfile03-012.sas     {symk:sym-bd: 1656.52}
    barman-strips:7-p016.sas            {symk:sym-bd: 1532.54}
    barman-strips:7-p030.sas            {symk:sym-bd: 1306.79}
-   childsnack-strips:0-p26.sas         {decstar:ds-sss-oss: 148.93}
+   blocksworld-strips:0-p11.sas        {decstar:A*-oss-sss-LMc: 1531.33}
+   childsnack-strips:0-p26.sas         {decstar:A*-oss-sss-LMc: 724.76, decstar:ds-sss-oss: 148.93}
    childsnack-strips:0-p27.sas         {decstar:ds-sss-oss: 1269.39}
-   childsnack-strips:2-child-snack_pfile04-2.sas {decstar:ds-sss-oss: 713.97}
-   childsnack-strips:2-child-snack_pfile04.sas {decstar:ds-sss-oss: 611.79}
+   childsnack-strips:2-child-snack_pfile04-2.sas {decstar:A*-oss-sss-LMc: 1745.71, decstar:ds-sss-oss: 713.97}
+   childsnack-strips:2-child-snack_pfile04.sas {decstar:A*-oss-sss-LMc: 1668.83, decstar:ds-sss-oss: 611.79}
    data-network-strips:0-p23.sas       {symk:sym-bd: 1277.95}
    data-network-strips:2-p19.sas       {decstar:ds: 812.98, decstar:ds-sss-oss: 857.59}
-   depots-strips:0-p19.sas             {odin:sys-stcp-cartesian: 1349.18, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1464.17, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1183.31}
-   driverlog-strips:0-p17.sas          {scorpion:bjolp-scp: 77.47}
-   driverlog-strips:0-p30.sas          {scorpion:bjolp-scp: 9.43}
+   depots-strips:0-p19.sas             {odin:sys-stcp-cartesian: 1421.43, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1464.17, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1183.31}
+   driverlog-strips:0-p17.sas          {scorpion:bjolp-scp: 77.47, scorpion:bjolp-scp-fast: 68.71, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 194.31}
+   driverlog-strips:0-p30.sas          {scorpion:bjolp-scp: 9.43, scorpion:bjolp-scp-fast: 8.38, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 97.14}
    elevators-strips:0-p06.sas          {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1222.40}
-   elevators-strips:1-p02.sas          {odin:sys-stcp-cartesian: 1399.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1556.10, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1534.73}
-   ferry-strips:0-p033.sas             {odin:sys-stcp-cartesian: 635.27, scorpion:bjolp-scp: 1017.56, symk:sym-bd: 1449.92}
-   ferry-strips:0-p044.sas             {odin:sys-stcp-cartesian: 466.67}
-   ferry-strips:0-p054.sas             {odin:sys-stcp-cartesian: 303.96, scorpion:bjolp-scp: 170.91, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1184.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1480.83, symk:sym-bd: 1165.51}
-   ferry-strips:0-p055.sas             {odin:sys-stcp-cartesian: 1558.29, scorpion:bjolp-scp: 1332.10}
-   ferry-strips:0-p066.sas             {odin:sys-stcp-cartesian: 621.63, scorpion:bjolp-scp: 458.88}
-   ferry-strips:0-p087.sas             {odin:sys-stcp-cartesian: 1027.58, scorpion:bjolp-scp: 766.46}
-   ferry-strips:0-p088.sas             {odin:sys-stcp-cartesian: 1693.69, scorpion:bjolp-scp: 1483.28}
-   ferry-strips:0-p099.sas             {odin:sys-stcp-cartesian: 386.89, scorpion:bjolp-scp: 143.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 899.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1038.11}
-   ferry-strips:0-p110.sas             {odin:sys-stcp-cartesian: 899.33, scorpion:bjolp-scp: 1013.15}
-   floortile-strips:0-p14.sas          {decstar:ds-sss-oss: 550.62, scorpion:astar-hmax: 1560.47, symk:sym-bd: 1432.37}
+   elevators-strips:1-p02.sas          {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1556.10, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1534.73}
+   ferry-strips:0-p033.sas             {odin:sys-stcp-cartesian: 674.62, scorpion:bjolp-scp: 1017.56, scorpion:bjolp-scp-fast: 1009.26, symk:sym-bd: 1449.92}
+   ferry-strips:0-p044.sas             {odin:sys-stcp-cartesian: 595.60}
+   ferry-strips:0-p054.sas             {decstar:A*-oss-sss-LMc: 702.90, odin:sys-stcp-cartesian: 291.55, scorpion:bjolp-scp: 170.91, scorpion:bjolp-scp-fast: 127.84, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1184.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1283.72, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1480.83, symk:sym-bd: 1165.51}
+   ferry-strips:0-p055.sas             {scorpion:bjolp-scp: 1332.10, scorpion:bjolp-scp-fast: 957.38}
+   ferry-strips:0-p066.sas             {decstar:A*-oss-sss-LMc: 1067.03, odin:sys-stcp-cartesian: 537.64, scorpion:bjolp-scp: 458.88, scorpion:bjolp-scp-fast: 421.37}
+   ferry-strips:0-p086.sas             {decstar:A*-oss-sss-LMc: 924.94, odin:sys-stcp-cartesian: 285.41, scorpion:bjolp-scp: 113.96, scorpion:bjolp-scp-fast: 79.78, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 848.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 685.59, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 948.89}
+   ferry-strips:0-p087.sas             {odin:sys-stcp-cartesian: 1183.67, scorpion:bjolp-scp: 766.46, scorpion:bjolp-scp-fast: 590.34}
+   ferry-strips:0-p088.sas             {odin:sys-stcp-cartesian: 1684.79, scorpion:bjolp-scp: 1483.28, scorpion:bjolp-scp-fast: 1101.85}
+   ferry-strips:0-p099.sas             {odin:sys-stcp-cartesian: 388.10, scorpion:bjolp-scp: 143.45, scorpion:bjolp-scp-fast: 123.78, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 899.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 819.27, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1038.11}
+   ferry-strips:0-p110.sas             {odin:sys-stcp-cartesian: 1757.28, scorpion:bjolp-scp: 1013.15, scorpion:bjolp-scp-fast: 826.42}
+   floortile-strips:0-p14.sas          {decstar:A*-oss-sss-LMc: 630.49, decstar:ds-sss-oss: 550.62, scorpion:astar-hmax: 1560.47, symk:sym-bd: 1432.37}
    floortile-strips:0-p15.sas          {decstar:ds-sss-oss: 1635.11}
-   floortile-strips:0-p16.sas          {decstar:ds-sss-oss: 1220.80}
+   floortile-strips:0-p16.sas          {decstar:A*-oss-sss-LMc: 1572.34, decstar:ds-sss-oss: 1220.80}
    floortile-strips:0-p20.sas          {decstar:ds-sss-oss: 1502.49, scorpion:astar-hmax: 1159.67, symk:sym-bd: 1415.14}
-   floortile-strips:3-p04-6-5-2.sas    {decstar:ds: 1328.72, decstar:ds-sss-oss: 448.77, odin:sys-stcp-cartesian: 1614.07, scorpion:astar-hmax: 429.76, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1243.07, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1435.03, symk:sym-bd: 727.12}
+   floortile-strips:3-p04-6-5-2.sas    {decstar:A*-oss-sss-LMc: 559.28, decstar:ds: 1328.72, decstar:ds-sss-oss: 448.77, odin:sys-stcp-cartesian: 1450.42, scorpion:astar-hmax: 429.76, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1243.07, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1778.44, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1435.03, symk:sym-bd: 727.12}
    freecell-strips:0-p19.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1740.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1747.93}
-   freecell-strips:0-p24.sas           {dofri:pho_offline: 1263.59, dofri:pho_online: 1492.03, odin:sys-stcp-cartesian: 1437.93, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1091.02, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1630.48}
-   freecell-strips:0-p25.sas           {dofri:pho_online: 1551.39, odin:sys-stcp-cartesian: 1638.06, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1504.11, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1150.69}
+   freecell-strips:0-p24.sas           {dofri:pho_offline: 1263.59, dofri:pho_online: 1492.03, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1091.02, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1630.48}
+   freecell-strips:0-p25.sas           {dofri:pho_online: 1551.39, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1504.11, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1150.69}
    freecell-strips:0-p26.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1492.19, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1702.70}
    freecell-strips:1-p24.sas           {dofri:pho_offline: 1794.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1222.47}
-   freecell-strips:2-probfreecell-10-4.sas {dofri:pho_offline: 1232.46, odin:sys-stcp-cartesian: 970.00, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1709.83, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1738.51}
+   freecell-strips:2-probfreecell-10-4.sas {dofri:pho_offline: 1232.46, odin:sys-stcp-cartesian: 976.99, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1709.83, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1738.51}
+   freecell-strips:2-probfreecell-10-5.sas {dofri:pho_offline: 1035.61, dofri:pho_online: 1101.68, odin:sys-stcp-cartesian: 1453.85, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1139.84, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 941.19}
    freecell-strips:2-probfreecell-11-4.sas {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1741.08}
    ged-strips:0-p17.sas                {symk:sym-bd: 848.58}
    ged-strips:0-p28.sas                {symk:sym-bd: 882.25}
-   goldminer-strips:0-p044.sas         {odin:sys-stcp-cartesian: 1411.36, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1279.73, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1135.79}
+   goldminer-strips:0-p023.sas         {dofri:pho_offline: 1342.99, dofri:pho_online: 1367.89, odin:sys-stcp-cartesian: 837.40, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 809.78, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1151.58, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 963.90}
+   goldminer-strips:0-p044.sas         {odin:sys-stcp-cartesian: 1484.62, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1279.73, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1135.79}
+   goldminer-strips:0-p057.sas         {dofri:max_cluster: 1568.52, dofri:pho_online: 1457.56, dofri:tuple: 1601.80, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1256.49, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 986.76}
+   goldminer-strips:0-p136.sas         {dofri:max_cluster: 1212.92, dofri:pho_offline: 924.10, dofri:pho_online: 1175.22, dofri:tuple: 1384.51, odin:sys-stcp-cartesian: 1019.80, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 954.23, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1652.56, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 963.99}
+   grid-strips:0-p24.sas               {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 588.67, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1269.34, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 926.41}
    grid-strips:1-p06.sas               {decstar:ds: 1755.81, decstar:ds-sss-oss: 1654.27}
-   grid-strips:3-p078.sas              {odin:sys-stcp-cartesian: 1170.38, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 912.98, symk:sym-bd: 824.60}
-   grid-strips:3-p085.sas              {odin:sys-stcp-cartesian: 1181.84, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 705.48, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.74, symk:sym-bd: 1376.24}
-   grid-strips:3-p086.sas              {odin:sys-stcp-cartesian: 1181.07, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 693.43, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1244.33, symk:sym-bd: 1383.43}
-   gripper-strips:1-p09.sas            {symk:sym-bd: 805.92}
-   gripper-strips:1-p10.sas            {symk:sym-bd: 1674.14}
+   grid-strips:3-p078.sas              {odin:sys-stcp-cartesian: 1178.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 912.98, symk:sym-bd: 824.60}
+   grid-strips:3-p085.sas              {odin:sys-stcp-cartesian: 1052.49, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 705.48, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.74, symk:sym-bd: 1376.24}
+   grid-strips:3-p086.sas              {odin:sys-stcp-cartesian: 998.92, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 693.43, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1244.33, symk:sym-bd: 1383.43}
    hanoi-strips:0-p013.sas             {symk:sym-bd: 741.54}
    hiking-strips:0-p22.sas             {symk:sym-bd: 910.84}
    hiking-strips:0-p23.sas             {symk:sym-bd: 1406.88}
    hiking-strips:0-p24.sas             {symk:sym-bd: 1612.68}
    hiking-strips:1-p05.sas             {symk:sym-bd: 1042.92}
-   hiking-strips:2-testing-3-4-4.sas   {decstar:ds-sss-oss: 576.87, symk:sym-bd: 935.67}
-   hiking-strips:2-testing-5-6-3.sas   {decstar:ds-sss-oss: 312.88}
-   logistics-strips:2-prob04.sas       {odin:sys-stcp-cartesian: 1118.96, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1098.31}
-   logistics-strips:2-prob08.sas       {odin:sys-stcp-cartesian: 175.80, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1325.13}
+   hiking-strips:2-testing-3-4-4.sas   {decstar:A*-oss-sss-LMc: 1431.71, decstar:ds-sss-oss: 576.87, symk:sym-bd: 935.67}
+   hiking-strips:2-testing-5-6-3.sas   {decstar:A*-oss-sss-LMc: 1120.90, decstar:ds-sss-oss: 312.88}
+   logistics-strips:2-prob04.sas       {odin:sys-stcp-cartesian: 290.34, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1098.31, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 442.56}
+   logistics-strips:2-prob08.sas       {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1325.13}
    miconic-strips:1-p16.sas            {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1162.06}
-   miconic-strips:1-p24.sas            {decstar:fork-optimized: 950.11, dofri:max_cluster: 1559.35, dofri:pho_online: 330.81, dofri:tuple: 1559.25, scorpion:bjolp-scp: 142.15}
+   miconic-strips:1-p24.sas            {decstar:fork-optimized: 950.11, dofri:max_cluster: 1559.35, dofri:pho_online: 330.81, dofri:tuple: 1559.25, scorpion:bjolp-scp: 142.15, scorpion:bjolp-scp-fast: 100.95, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 292.48}
+   miconic-strips:2-s25-2.sas          {dofri:pho_offline: 1771.28, dofri:pho_online: 1596.03, odin:sys-stcp-cartesian: 1483.21, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 866.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 911.24, symk:sym-bd: 1215.65}
+   mprime-strips:0-p16.sas             {odin:sys-stcp-cartesian: 1179.82, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1303.76, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 918.64}
    mprime-strips:0-p18.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1500.11, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1087.17}
+   mprime-strips:0-p19.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1612.58, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 962.44}
    mprime-strips:0-p24.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1354.91}
-   mprime-strips:0-p26.sas             {odin:sys-stcp-cartesian: 1299.67, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1334.29, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.67}
+   mprime-strips:0-p26.sas             {odin:sys-stcp-cartesian: 1407.39, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1334.29, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1061.67}
    mprime-strips:1-p02.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1643.34, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1715.41}
-   no-mprime-strips:0-prob23.sas       {dofri:max_cluster: 661.18, dofri:percent_sa: 717.22, dofri:pho_offline: 704.16, dofri:pho_online: 571.91, dofri:range_sa: 681.68, dofri:tuple: 614.39, odin:sys-stcp-cartesian: 437.32, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 362.74}
+   no-mprime-strips:0-prob23.sas       {dofri:max_cluster: 661.18, dofri:percent_sa: 717.22, dofri:pho_offline: 704.16, dofri:pho_online: 571.91, dofri:range_sa: 681.68, dofri:tuple: 614.39, odin:sys-stcp-cartesian: 431.62, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 362.74, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1792.84}
    nomystery-strips:0-p17.sas          {decstar:ds: 597.07, decstar:ds-sss-oss: 602.47, decstar:fork-optimized: 74.03}
    nomystery-strips:0-p18.sas          {decstar:ds: 82.44, decstar:ds-sss-oss: 93.21, decstar:fork-optimized: 27.40, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1631.90, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1136.57}
    nomystery-strips:0-p19.sas          {decstar:ds: 433.27, decstar:ds-sss-oss: 469.98, decstar:fork-optimized: 71.19}
@@ -2073,51 +2155,67 @@ Unsolved problems:
    openstacks-strips:4-p05.sas         {symk:sym-bd: 1656.59}
    openstacks-strips:7-p24.sas         {symk:sym-bd: 1737.15}
    organic-synthesis-split-strips:0-p13.sas {scorpion:astar-hmax: 9.04}
-   organic-synthesis-split-strips:0-p15.sas {decstar:ds: 149.99, decstar:ds-sss-oss: 227.94, scorpion:astar-hmax: 21.36}
-   organic-synthesis-split-strips:0-p17.sas {decstar:ds: 655.57, decstar:ds-sss-oss: 642.86, scorpion:astar-hmax: 25.87}
-   organic-synthesis-split-strips:0-p18.sas {decstar:ds: 1478.82, decstar:ds-sss-oss: 1066.57, scorpion:astar-hmax: 401.67}
-   organic-synthesis-split-strips:0-p21.sas {decstar:ds-sss-oss: 1101.81}
+   organic-synthesis-split-strips:0-p15.sas {decstar:A*-oss-sss-LMc: 202.28, decstar:ds: 149.99, decstar:ds-sss-oss: 227.94, scorpion:astar-hmax: 21.36}
+   organic-synthesis-split-strips:0-p17.sas {decstar:A*-oss-sss-LMc: 423.74, decstar:ds: 655.57, decstar:ds-sss-oss: 642.86, scorpion:astar-hmax: 25.87}
+   organic-synthesis-split-strips:0-p18.sas {decstar:A*-oss-sss-LMc: 589.48, decstar:ds: 1478.82, decstar:ds-sss-oss: 1066.57, scorpion:astar-hmax: 401.67}
+   organic-synthesis-split-strips:0-p21.sas {decstar:A*-oss-sss-LMc: 398.06, decstar:ds-sss-oss: 1101.81}
    organic-synthesis-split-strips:0-p22.sas {scorpion:astar-hmax: 159.35}
-   organic-synthesis-split-strips:0-p23.sas {decstar:ds-sss-oss: 648.60, scorpion:astar-hmax: 304.11}
+   organic-synthesis-split-strips:0-p23.sas {decstar:A*-oss-sss-LMc: 504.32, decstar:ds-sss-oss: 648.60, scorpion:astar-hmax: 304.11}
    organic-synthesis-split-strips:0-p24.sas {scorpion:astar-hmax: 969.67}
    organic-synthesis-split-strips:0-p27.sas {scorpion:astar-hmax: 1426.65}
    pathways-strips:0-p16.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1425.12}
-   pathways-strips:0-p18.sas           {odin:sys-stcp-cartesian: 1499.89, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1521.58, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1498.69}
-   pathways-strips:0-p22.sas           {odin:sys-stcp-cartesian: 848.15, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 668.17}
-   pathways-strips:0-p23.sas           {odin:sys-stcp-cartesian: 980.41}
+   pathways-strips:0-p18.sas           {odin:sys-stcp-cartesian: 1683.59, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1521.58, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1498.69}
+   pathways-strips:0-p22.sas           {odin:sys-stcp-cartesian: 1149.21, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 668.17, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 890.54}
+   pathways-strips:0-p23.sas           {odin:sys-stcp-cartesian: 1286.05}
    pathways-strips:0-p24.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1231.84}
-   pathways-strips:0-p28.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1555.10}
-   pipesworld-notankage-strips:0-p27.sas {odin:sys-stcp-cartesian: 927.25, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 764.37}
-   pipesworld-tankage-strips:0-p21.sas {odin:sys-stcp-cartesian: 1295.83, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1154.09, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1210.95}
+   pathways-strips:0-p28.sas           {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1555.10, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1205.59}
+   pipesworld-notankage-strips:0-p27.sas {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 764.37}
+   pipesworld-tankage-strips:0-p21.sas {odin:sys-stcp-cartesian: 1300.98, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1154.09, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1210.95}
    rovers-strips:0-p10.sas             {symk:sym-bd: 1096.66}
    rovers-strips:0-p17.sas             {symk:sym-bd: 1530.88}
    rovers-strips:0-p30.sas             {symk:sym-bd: 1090.13}
    satellite-strips:0-p18.sas          {symk:sym-bd: 1040.45}
    satellite-strips:0-p19.sas          {symk:sym-bd: 1275.74}
-   satellite-strips:0-p21.sas          {decstar:ds-sss-oss: 1425.99, symk:sym-bd: 1727.84}
+   satellite-strips:0-p21.sas          {decstar:A*-oss-sss-LMc: 1101.57, decstar:ds-sss-oss: 1425.99, symk:sym-bd: 1727.84}
    satellite-strips:1-p06.sas          {decstar:ds-sss-oss: 664.88}
-   satellite-strips:2-p13-pfile13.sas  {decstar:ds-sss-oss: 1145.13}
+   satellite-strips:2-p13-pfile13.sas  {decstar:A*-oss-sss-LMc: 109.56, decstar:ds-sss-oss: 1145.13}
    satellite-strips:2-p14-pfile14.sas  {decstar:ds-sss-oss: 547.66}
    scanalyzer-strips:0-p23.sas         {dofri:max_cluster: 1145.25, dofri:percent_sa: 1286.35, dofri:pho_offline: 357.67, dofri:pho_online: 150.50, dofri:range_sa: 1302.55, dofri:tuple: 1246.01}
    scanalyzer-strips:2-p20.sas         {dofri:pho_offline: 470.53, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 550.42}
-   snake-strips:2-p08.sas              {dofri:pho_offline: 1791.58, dofri:pho_online: 1765.05, odin:sys-stcp-cartesian: 1588.73}
-   snake-strips:2-p12.sas              {dofri:pho_offline: 1268.85, dofri:pho_online: 1167.84, odin:sys-stcp-cartesian: 959.68, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1229.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1166.76}
-   sokoban-strips:0-p11.sas            {dofri:pho_offline: 1220.42, dofri:pho_online: 1734.85, odin:sys-stcp-cartesian: 1528.74, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1179.94, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1192.32}
-   sokoban-strips:0-p13.sas            {dofri:max_cluster: 1420.69, dofri:pho_offline: 1532.98, dofri:pho_online: 1364.02, dofri:tuple: 1490.95, odin:sys-stcp-cartesian: 1079.03, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1081.86, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1152.62}
+   snake-strips:2-p08.sas              {dofri:pho_offline: 1791.58, dofri:pho_online: 1765.05, odin:sys-stcp-cartesian: 1759.15}
+   snake-strips:2-p12.sas              {dofri:pho_offline: 1268.85, dofri:pho_online: 1167.84, odin:sys-stcp-cartesian: 1034.65, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1229.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1166.76}
+   snake-strips:3-p02.sas              {dofri:max_cluster: 1663.71, dofri:pho_offline: 1160.60, dofri:pho_online: 795.31, dofri:tuple: 1287.72, odin:sys-stcp-cartesian: 623.32, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 823.62, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 964.49}
+   sokoban-strips:0-p11.sas            {dofri:pho_offline: 1220.42, dofri:pho_online: 1734.85, odin:sys-stcp-cartesian: 1558.90, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1179.94, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1530.28, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1192.32}
+   sokoban-strips:0-p13.sas            {decstar:A*-oss-sss-LMc: 873.28, dofri:max_cluster: 1420.69, dofri:pho_offline: 1532.98, dofri:pho_online: 1364.02, dofri:tuple: 1490.95, odin:sys-stcp-cartesian: 1111.43, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1081.86, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1152.62}
+   sokoban-strips:1-p18.sas            {decstar:A*-oss-sss-LMc: 608.11, dofri:max_cluster: 1405.68, dofri:pho_offline: 919.74, dofri:pho_online: 1164.23, dofri:tuple: 1300.10, odin:sys-stcp-cartesian: 980.56, scorpion:astar-blind: 602.23, scorpion:astar-hmax: 1688.89, scorpion:bjolp-scp: 1060.41, scorpion:bjolp-scp-fast: 1200.91, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 872.03, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1579.19, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 975.84, symk:sym-bd: 1391.11}
+   sokoban-strips:1-p21.sas            {decstar:A*-oss-sss-LMc: 1097.61}
    spider-strips:0-p06.sas             {dofri:pho_offline: 1305.31, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1034.27, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1237.33}
-   storage-strips:0-p13.sas            {dofri:pho_offline: 892.21, dofri:pho_online: 1286.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 890.44, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1013.77}
+   storage-strips:0-p13.sas            {decstar:A*-oss-sss-LMc: 100.52, dofri:pho_offline: 892.21, dofri:pho_online: 1286.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 890.44, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1013.77}
+   storage-strips:0-p14.sas            {decstar:A*-oss-sss-LMc: 151.37}
+   storage-strips:0-p15.sas            {decstar:A*-oss-sss-LMc: 198.50}
+   storage-strips:0-p16.sas            {decstar:A*-oss-sss-LMc: 293.46}
+   storage-strips:0-p17.sas            {decstar:A*-oss-sss-LMc: 383.35}
+   storage-strips:0-p18.sas            {decstar:A*-oss-sss-LMc: 564.07}
+   storage-strips:0-p19.sas            {decstar:A*-oss-sss-LMc: 1008.92}
+   storage-strips:0-p20.sas            {decstar:A*-oss-sss-LMc: 1279.97}
+   storage-strips:0-p27.sas            {decstar:A*-oss-sss-LMc: 507.00}
+   storage-strips:2-p17.sas            {decstar:A*-oss-sss-LMc: 648.32}
    termes-strips:0-p17.sas             {symk:sym-bd: 948.46}
    termes-strips:0-p18.sas             {symk:sym-bd: 891.27}
    termes-strips:3-p03.sas             {symk:sym-bd: 1477.75}
    termes-strips:3-p04.sas             {symk:sym-bd: 935.07}
+   tetris-strips:0-p07.sas             {decstar:A*-oss-sss-LMc: 995.89}
    tetris-strips:0-p20.sas             {dofri:max_cluster: 601.13, dofri:pho_offline: 414.49, dofri:pho_online: 296.50, dofri:tuple: 1034.10}
    tetris-strips:0-p27.sas             {dofri:pho_offline: 591.37, dofri:pho_online: 534.50}
    tetris-strips:1-p12.sas             {dofri:pho_offline: 508.91, dofri:pho_online: 434.73}
-   thoughtful-strips:0-p09.sas         {odin:sys-stcp-cartesian: 1702.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1208.78}
-   thoughtful-strips:0-p15.sas         {odin:sys-stcp-cartesian: 653.29, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 604.87, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1042.58}
+   tetris-strips:2-p05-8.sas           {decstar:A*-oss-sss-LMc: 1715.49, dofri:max_cluster: 1254.01, dofri:pho_offline: 789.02, dofri:pho_online: 1007.89, dofri:tuple: 1430.76, odin:sys-stcp-cartesian: 1110.42, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 946.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1468.89, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 926.84}
+   thoughtful-strips:0-p07.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 687.01, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 909.78}
+   thoughtful-strips:0-p09.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1208.78}
+   thoughtful-strips:0-p14.sas         {odin:sys-stcp-cartesian: 813.90, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 521.61, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 963.28}
+   thoughtful-strips:0-p15.sas         {odin:sys-stcp-cartesian: 604.77, scorpion:bjolp-scp-fast: 1213.13, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 604.87, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1560.90, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1042.58}
    thoughtful-strips:0-p17.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1264.80}
-   tidybot-strips:0-p17.sas            {dofri:max_cluster: 467.19, dofri:percent_sa: 1080.07, dofri:pho_offline: 591.76, dofri:pho_online: 445.67, dofri:range_sa: 1395.94, dofri:tuple: 497.25, odin:sys-stcp-cartesian: 1103.12, scorpion:bjolp-scp: 1445.49, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1162.23, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1655.02}
-   tidybot-strips:0-p22.sas            {dofri:max_cluster: 391.00, dofri:percent_sa: 691.40, dofri:pho_offline: 558.93, dofri:pho_online: 356.56, dofri:range_sa: 896.93, dofri:tuple: 392.02, odin:sys-stcp-cartesian: 1467.31, scorpion:bjolp-scp: 1368.70, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1497.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1461.15}
+   tidybot-strips:0-p17.sas            {dofri:max_cluster: 467.19, dofri:percent_sa: 1080.07, dofri:pho_offline: 591.76, dofri:pho_online: 445.67, dofri:range_sa: 1395.94, dofri:tuple: 497.25, odin:sys-stcp-cartesian: 1218.47, scorpion:bjolp-scp: 1445.49, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1162.23, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1701.13, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1655.02}
+   tidybot-strips:0-p22.sas            {dofri:max_cluster: 391.00, dofri:percent_sa: 691.40, dofri:pho_offline: 558.93, dofri:pho_online: 356.56, dofri:range_sa: 896.93, dofri:tuple: 392.02, odin:sys-stcp-cartesian: 1433.02, scorpion:bjolp-scp: 1368.70, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1497.16, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1461.15}
    tidybot-strips:0-p25.sas            {dofri:max_cluster: 615.60, dofri:percent_sa: 1080.35, dofri:pho_offline: 689.06, dofri:pho_online: 562.95, dofri:range_sa: 1401.74, dofri:tuple: 619.66}
    tpp-strips:0-p23.sas                {decstar:ds: 22.89, decstar:ds-sss-oss: 94.88}
    tpp-strips:0-p25.sas                {decstar:ds: 88.34}
@@ -2129,20 +2227,22 @@ Unsolved problems:
    tpp-strips:1-p09.sas                {decstar:ds-sss-oss: 373.17}
    tpp-strips:1-p10.sas                {decstar:ds-sss-oss: 265.39}
    tpp-strips:2-p23.sas                {decstar:ds-sss-oss: 647.64}
-   transport-strips:0-p09.sas          {dofri:pho_offline: 799.62, dofri:pho_online: 998.45, odin:sys-stcp-cartesian: 890.47, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 799.42}
-   transport-strips:2-p09.sas          {dofri:pho_offline: 1074.56, dofri:pho_online: 1133.31, odin:sys-stcp-cartesian: 1057.70, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1109.53}
-   transport-strips:6-p07.sas          {odin:sys-stcp-cartesian: 705.05, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 724.29}
-   trucks-strips:0-p20.sas             {odin:sys-stcp-cartesian: 1681.60, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1261.92, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1634.73}
+   transport-strips:0-p03.sas          {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 939.99}
+   transport-strips:0-p09.sas          {dofri:pho_offline: 799.62, dofri:pho_online: 998.45, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 799.42}
+   transport-strips:2-p09.sas          {dofri:pho_offline: 1074.56, dofri:pho_online: 1133.31, odin:sys-stcp-cartesian: 1105.79, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1109.53}
+   transport-strips:6-p07.sas          {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 724.29}
+   trucks-strips:0-p20.sas             {scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 1261.92, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1634.73}
    visitall-strips:2-p-05-9.sas        {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1190.61, symk:sym-bd: 1004.48}
    visitall-strips:4-problem10-half.sas {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1392.62}
-   woodworking-strips:0-p25.sas        {odin:sys-stcp-cartesian: 1010.74, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 968.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1035.12}
-   woodworking-strips:0-p29.sas        {odin:sys-stcp-cartesian: 1400.07}
+   woodworking-strips:0-p25.sas        {odin:sys-stcp-cartesian: 1176.30, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch: 968.54, scorpion:sys-scp-interesting_non_negative-60s-cartesian-batch-bjolp-fast: 1793.71, scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1035.12}
+   woodworking-strips:0-p29.sas        {odin:sys-stcp-cartesian: 1723.87}
    zenotravel-strips:1-p01.sas         {scorpion:sys-scp-interesting_non_negative-60s-cartesian-single: 1420.32}
-(154 problems)
+(179 problems)
 
 Marginal contributions:
-    33 problems / 33.00 score from decstar:ds-sss-oss
-   428 problems / 428.00 score from scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
-   216 problems / 216.00 score from symk:sym-bd
+    21 problems / 21.00 score from decstar:A*-oss-sss-LMc
+    29 problems / 29.00 score from decstar:ds-sss-oss
+   400 problems / 400.00 score from scorpion:sys-scp-interesting_non_negative-60s-cartesian-single
+   180 problems / 180.00 score from symk:sym-bd
 
-Final score: 1375.0    Configs: 3    Min time: 79    Max time: 987
+Final score: 1350.0    Configs: 4    Min time: 15    Max time: 898

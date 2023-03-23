@@ -45,7 +45,7 @@ for expname in [
     "2023-03-06-B-blind-hmax-adl-30m",
     "2023-03-07-B-symk-adl-30m",
     "2023-03-17-dofri-adl",
-    #"2023-03-17-C-odin-adl",  # Finds suboptimal plans.
+    "2023-03-17-C-odin-adl",  # Suboptimality fixed now.
 ]:
     project.fetch_algorithms(exp, expname, filters=[project.strip_properties])
 

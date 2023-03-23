@@ -31,11 +31,15 @@ exp.add_step(
 
 for expname in [
     "2023-02-23-B-scorpion-strips",
+    #"2023-02-23-D-scorpion-plus-bjolp-strips",  # Oudated: uses slow lmcount implementation.
+    "2023-02-23-E-bjolp-fast-strips",
+
     "2023-03-04-B-odin-strips-30m",
     "2023-03-05-B-decstar-strips",
     "2023-03-06-A-blind-hmax-strips-30m",
     "2023-03-06-C-dofri-strips",
     "2023-03-07-A-symk-strips-30m",
+    "2023-03-22-astar-oss-sss-lmcut",
 ]:
     project.fetch_algorithms(exp, expname, filters=[project.strip_properties])
 
