@@ -11,12 +11,13 @@ Stage: build
 %post
     ## Install all dependencies.
     apt-get update
-    apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake default-jre-headless zlib1g-dev
+    apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake default-jre-headless zlib1g-dev autotools-dev bison ca-certificates flex gdb libboost-all-dev
 
     ## Clear local build directories.
     rm -rf /planners/*/builds
 
     ## Build CPLEX
+    chmod +x ./cplex.bin
     ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
 
     export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
@@ -41,7 +42,7 @@ Stage: build
     cd ..
 
     ## Build planners.
-    for planner in odin scorpion symk; do
+    for planner in odin scorpion symk powerlifted; do
         cd /planners/${planner}
         pypy3 build.py
     done
@@ -50,6 +51,7 @@ Stage: build
     strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
     strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
     strip --strip-all /planners/symk/builds/release/bin/downward /planners/symk/builds/release/bin/preprocess
+    strip --strip-all /planners/powerlifted/builds/release/search/search
 
 # Stage 2: Run the planner
 Bootstrap: docker
@@ -60,10 +62,11 @@ Stage: run
     dispatch.py
     plan.py
     driver
+
+%files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/coin/
 
-%files from build
     /planners/odin/driver
     /planners/odin/fast-downward.py
     /planners/odin/builds/release/bin
@@ -75,6 +78,11 @@ Stage: run
     /planners/symk/driver
     /planners/symk/fast-downward.py
     /planners/symk/builds/release/bin
+
+    /planners/powerlifted/driver
+    /planners/powerlifted/powerlifted.py
+    /planners/powerlifted/builds/release/search
+    /planners/powerlifted/builds/release/translator
 
 %post
     apt-get update
@@ -115,7 +123,7 @@ Stage: run
         --transform-task-options h2_time_limit,180 \
         --alias seq-opt-ragnarok \
         --plan-file "$PLANFILE" \
-        "$DOMAINFILE" "$PROBLEMFILE" || echo "TODO: run lifted blind search"
+        "$DOMAINFILE" "$PROBLEMFILE" || (pypy3 /planners/powerlifted/powerlifted.py -d "${DOMAINFILE}" -i "${PROBLEMFILE}" -s "bfs" -e "blind" -g "automatic" --state "sparse" --time-limit "1800" && mv plan "${PLANFILE}")
 
 %labels
 Name        Ragnarok
