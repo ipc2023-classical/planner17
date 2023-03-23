@@ -59,4 +59,6 @@ exp.add_report(
 exp.add_step("compress-properties", project.compress, properties_hardest)
 # project.add_absolute_report(exp, attributes=ATTRIBUTES, name=f"{exp.name}-hardest")
 
+project.add_scatter_plot_reports(exp, [("scorpion:sys-scp-interesting_non_negative-60s-cartesian-single", "symk:sym-bd")], attributes=["memory"])
+
 exp.run_steps()
