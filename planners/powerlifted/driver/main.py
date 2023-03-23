@@ -5,8 +5,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-from build import build, PROJECT_ROOT
-
 from . import arguments, portfolio_runner
 from .utils import get_elapsed_time
 from .single_search_runner import run_single_search
@@ -87,12 +85,13 @@ def set_extra_options(options):
 
 
 def main():
-
     options = arguments.parse_options()
 
+    PROJECT_ROOT = "/planners/powerlifted"
     build_dir = os.path.join(PROJECT_ROOT, 'builds', 'debug' if options.debug else 'release')
 
     if options.build:
+        from build import build
         build(options.debug, options.cxx_compiler)
 
     # Create build path
