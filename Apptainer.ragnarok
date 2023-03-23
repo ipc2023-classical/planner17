@@ -42,13 +42,12 @@ Stage: build
     cd ..
 
     ## Build planners.
-    for planner in odin scorpion symk powerlifted; do
+    for planner in scorpion symk powerlifted; do
         cd /planners/${planner}
         pypy3 build.py
     done
 
     ## Strip binaries (shell globs don't work).
-    strip --strip-all /planners/odin/builds/release/bin/downward /planners/odin/builds/release/bin/preprocess-h2
     strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
     strip --strip-all /planners/symk/builds/release/bin/downward /planners/symk/builds/release/bin/preprocess
     strip --strip-all /planners/powerlifted/builds/release/search/search
@@ -66,10 +65,6 @@ Stage: run
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/coin/
-
-    /planners/odin/driver
-    /planners/odin/fast-downward.py
-    /planners/odin/builds/release/bin
 
     /planners/scorpion/driver
     /planners/scorpion/fast-downward.py
@@ -97,25 +92,6 @@ Stage: run
     PROBLEMFILE="$2"
     PLANFILE="$3"
 
-    pypy3 /planners/odin/fast-downward.py \
-        --plan-file "$PLANFILE" \
-        "$DOMAINFILE" \
-        "$PROBLEMFILE" \
-        --search "astar(stcp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders(), max_num_transitions=100000),pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
-
-    pypy3 /planners/scorpion/fast-downward.py \
-        --plan-file "$PLANFILE" \
-        "$DOMAINFILE" \
-        "$PROBLEMFILE" \
-        --search "astar(scp_online([projections(sys_scp(max_time=100, max_time_per_restart=10)),cartesian()],saturator=perimstar, max_time=1000, interval=10K, orders=greedy_orders()), pruning=limited_pruning(pruning=atom_centric_stubborn_sets(), min_required_pruning_ratio=0.2))"
-
-    pypy3 /planners/symk/fast-downward.py \
-        --overall-memory-limit "8G" \
-        --plan-file "$PLANFILE" \
-        "$DOMAINFILE" \
-        "$PROBLEMFILE" \
-        --search "sym-bd(silent=true)"
-
     # Limit memory to 7.5 GiB to enable switching away from components that run out of memory.
     pypy3 /plan.py \
         --overall-memory-limit 7680M \
@@ -130,7 +106,7 @@ Stage: run
 %labels
 Name        Ragnarok
 Description Sequential portfolio of optimal planners developed at Linköping University
-Authors     TODO, Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>
+Authors     Dominik Drexler <dominik.drexler@liu.se>, Daniel Gnad <daniel.gnad@liu.se>, Paul Höft <paul.hoft@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>, David Speck <david.speck@liu.se>, Simon Ståhlberg <simon.stahlberg@liu.se>
 License     GPL 3
 Tracks      optimal
 SupportsDerivedPredicates                       yes
