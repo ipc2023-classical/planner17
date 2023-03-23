@@ -5,7 +5,7 @@ Stage: build
 
 %files
     planners /planners
-    $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
+    /home/simon/git/work/IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
     Osi-0.108.6.tgz
 
 %post
@@ -59,9 +59,9 @@ From: ubuntu:22.04
 Stage: run
 
 %files
-    dispatch.py
-    plan.py
-    driver
+    dispatch.py /dispatch.py
+    plan.py /plan.py
+    driver /driver
 
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
@@ -115,7 +115,7 @@ Stage: run
         --search "sym-bd(silent=true)"
 
     # Limit memory to 7.5 GiB to enable switching away from components that run out of memory.
-    pypy3 plan.py \
+    pypy3 /plan.py \
         --overall-memory-limit 7680M \
         --overall-time-limit 30m \
         --translate-time-limit 15m \
