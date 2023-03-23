@@ -5,8 +5,8 @@ Stage: build
 
 %files
     planners /planners
-    $IPC_THIRD_PARTY/ILOG_COS_20.10_LINUX_X86_64.bin ILOG_COS_20.10_LINUX_X86_64.bin
-    $IPC_THIRD_PARTY/Osi-0.107.9.tgz Osi-0.107.9.tgz
+    $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
+    Osi-0.108.6.tgz
 
 %post
     ## Install all dependencies.
@@ -17,13 +17,13 @@ Stage: build
     rm -rf /planners/*/builds
 
     ## Build CPLEX
-    ./ILOG_COS_20.10_LINUX_X86_64.bin -DLICENSE_ACCEPTED=TRUE -i silent
+    ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
 
-    export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio201/cplex/
+    export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
 
     ##Build OSI
-    tar xvzf Osi-0.107.9.tgz
-    cd Osi-0.107.9
+    tar xvzf Osi-0.108.6.tgz
+    cd Osi-0.108.6
     export DOWNWARD_COIN_ROOT=/opt/coin/
 
     ./configure CC="gcc"  CFLAGS="-pthread -Wno-long-long" \
@@ -60,7 +60,7 @@ Stage: run
     dispatch.py
     plan.py
     driver
-    /opt/ibm/ILOG/CPLEX_Studio201/cplex/
+    /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/coin/
 
 %files from build
