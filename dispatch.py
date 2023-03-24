@@ -29,7 +29,7 @@ def main():
     print(f"Search configuration: {config}")
     print(f"Plan file: {planfile}")
 
-    cmd = [sys.executable, str(REPO / "planners" / planner / "fast-downward.py"), "output.sas"] + config
+    cmd = [sys.executable, str(REPO / "planners" / planner / "fast-downward.py"), "--plan-file", planfile, "output.sas"] + config
     p = subprocess.run(cmd)
     return p.returncode
 
