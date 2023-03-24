@@ -33,10 +33,21 @@ function test_image {
     cp ${BENCHMARKS_DIR}/${problem} ${PROBLEM}
 
     ./${IMAGE} ${DOMAIN} ${PROBLEM} ${PLANFILE}
+    validate ${DOMAIN} ${PROBLEM} ${PLANFILE}
 }
 
-echo "Testing image at ${IMAGE} with STRIPS task:"
+printf "\n\n**********************************************************************\n\n\n"
+echo "Testing image at ${IMAGE} with STRIPS task (no decoupling):"
 test_image miconic-strips/{domain-,}2-s1-0.pddl
 
+printf "\n\n**********************************************************************\n\n\n"
+echo "Testing image at ${IMAGE} with STRIPS task (with decoupling):"
+test_image nomystery-strips/{domain-,}0-p01.pddl
+
+printf "\n\n**********************************************************************\n\n\n"
 echo "Testing image at ${IMAGE} with conditional effects task:"
 test_image briefcaseworld-adl/{domain-,}0-p002.pddl
+
+printf "\n\n**********************************************************************\n\n\n"
+echo "Testing image at ${IMAGE} with axioms effects task:"
+test_image miconic-fulladl-adl/{domain-,}0-f1-1.pddl
