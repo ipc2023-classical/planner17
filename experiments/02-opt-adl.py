@@ -42,10 +42,11 @@ exp.add_step(
 
 for expname in [
     "2023-02-23-C-scorpion-adl",
+    "2023-02-23-G-scorpion-adl-long",
     "2023-03-06-B-blind-hmax-adl-30m",
     "2023-03-07-B-symk-adl-30m",
     "2023-03-17-dofri-adl",
-    "2023-03-17-C-odin-adl",  # Suboptimality fixed now.
+    #"2023-03-17-C-odin-adl",  # Still suboptimal.
 ]:
     project.fetch_algorithms(exp, expname, filters=[project.strip_properties])
 

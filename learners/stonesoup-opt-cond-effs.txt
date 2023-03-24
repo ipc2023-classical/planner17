@@ -1,4 +1,3 @@
-briefcaseworld-adl:0-p001.sas: 1 different costs from 0 to 0
 briefcaseworld-adl:0-p002.sas: 1 different costs from 5 to 5
 briefcaseworld-adl:0-p003.sas: 1 different costs from 9 to 9
 briefcaseworld-adl:0-p004.sas: 1 different costs from 10 to 10
@@ -6,6 +5,15 @@ briefcaseworld-adl:0-p005.sas: 1 different costs from 12 to 12
 briefcaseworld-adl:0-p006.sas: 1 different costs from 17 to 17
 briefcaseworld-adl:0-p007.sas: 1 different costs from 17 to 17
 briefcaseworld-adl:0-p008.sas: 1 different costs from 24 to 24
+briefcaseworld-adl:0-p009.sas: 1 different costs from 29 to 29
+briefcaseworld-adl:0-p010.sas: 1 different costs from 26 to 26
+briefcaseworld-adl:0-p011.sas: 1 different costs from 30 to 30
+briefcaseworld-adl:0-p015.sas: 1 different costs from 38 to 38
+briefcaseworld-adl:0-p016.sas: 1 different costs from 35 to 35
+briefcaseworld-adl:0-p017.sas: 1 different costs from 51 to 51
+briefcaseworld-adl:0-p018.sas: 1 different costs from 49 to 49
+briefcaseworld-adl:0-p019.sas: 1 different costs from 48 to 48
+briefcaseworld-adl:0-p020.sas: 1 different costs from 57 to 57
 briefcaseworld-adl:1-p01.sas: 1 different costs from 0 to 0
 briefcaseworld-adl:1-p02.sas: 1 different costs from 5 to 5
 briefcaseworld-adl:1-p03.sas: 1 different costs from 4 to 4
@@ -15,6 +23,11 @@ briefcaseworld-adl:1-p06.sas: 1 different costs from 15 to 15
 briefcaseworld-adl:1-p07.sas: 1 different costs from 21 to 21
 briefcaseworld-adl:1-p08.sas: 1 different costs from 21 to 21
 briefcaseworld-adl:1-p09.sas: 1 different costs from 23 to 23
+briefcaseworld-adl:1-p10.sas: 1 different costs from 28 to 28
+briefcaseworld-adl:1-p11.sas: 1 different costs from 30 to 30
+briefcaseworld-adl:1-p12.sas: 1 different costs from 28 to 28
+briefcaseworld-adl:1-p15.sas: 1 different costs from 39 to 39
+briefcaseworld-adl:1-p21.sas: 1 different costs from 54 to 54
 caldera-adl:0-p01.sas: 1 different costs from 7 to 7
 caldera-adl:0-p02.sas: 1 different costs from 7 to 7
 caldera-adl:0-p03.sas: 1 different costs from 7 to 7
@@ -50,7 +63,6 @@ caldera-split-adl:1-p05.sas: 1 different costs from 114 to 114
 caldera-split-adl:1-p06.sas: 1 different costs from 120 to 120
 cavediving-adl:0-testing05A_easy.sas: 1 different costs from 94 to 94
 cavediving-adl:0-testing06A_easy.sas: 1 different costs from 95 to 95
-cavediving-adl:0-testing07_easy.sas: 1 different costs from 131 to 131
 cavediving-adl:0-testing08_easy.sas: 1 different costs from 90 to 90
 cavediving-adl:0-testing18A_easy.sas: 1 different costs from 131 to 131
 cavediving-adl:0-testing18_easy.sas: 1 different costs from 131 to 131
@@ -58,10 +70,12 @@ cavediving-adl:0-testing20A_easy.sas: 1 different costs from 98 to 98
 cavediving-adl:1-p-2_2-2-0.45.sas: 1 different costs from 82 to 82
 cavediving-adl:1-p-2_2-2-0.5.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-2_2-2-0.6.sas: 1 different costs from 86 to 86
+cavediving-adl:1-p-2_2_2-2-0.4.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-2_2_2-2-0.45.sas: 1 different costs from 86 to 86
 cavediving-adl:1-p-2_2_2-2-0.5.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-2_2_2-2-0.55.sas: 1 different costs from 83 to 83
 cavediving-adl:1-p-2_2_2-2-0.6.sas: 1 different costs from 82 to 82
+cavediving-adl:1-p-2_2_2_2-2-0.4.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-2_2_2_2-2-0.45.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-2_2_2_2-2-0.5.sas: 1 different costs from 91 to 91
 cavediving-adl:1-p-2_2_2_2-2-0.6.sas: 1 different costs from 89 to 89
@@ -70,7 +84,6 @@ cavediving-adl:1-p-3_2-2-0.55.sas: 1 different costs from 83 to 83
 cavediving-adl:1-p-3_2-2-0.6.sas: 1 different costs from 82 to 82
 cavediving-adl:1-p-3_2_2-2-0.4.sas: 1 different costs from 88 to 88
 cavediving-adl:1-p-3_2_2-2-0.45.sas: 1 different costs from 131 to 131
-cavediving-adl:1-p-3_2_2-2-0.5.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-3_2_2-2-0.55.sas: 1 different costs from 131 to 131
 cavediving-adl:1-p-3_2_2-2-0.6.sas: 1 different costs from 81 to 81
 cavediving-adl:1-p-3_3_2-2-0.4.sas: 1 different costs from 131 to 131
@@ -78,6 +91,7 @@ cavediving-adl:1-p-3_3_2-2-0.45.sas: 1 different costs from 87 to 87
 cavediving-adl:1-p-3_3_2-2-0.5.sas: 1 different costs from 87 to 87
 cavediving-adl:1-p-3_3_2-2-0.55.sas: 1 different costs from 83 to 83
 cavediving-adl:1-p-3_3_2-2-0.6.sas: 1 different costs from 86 to 86
+citycar-adl:0-p3-3-2-2-1.sas: 1 different costs from 70 to 70
 citycar-adl:0-p3-3-2-2-2.sas: 1 different costs from 92 to 92
 citycar-adl:0-p3-3-3-3-2.sas: 1 different costs from 76 to 76
 citycar-adl:2-p001.sas: 1 different costs from 98 to 98
@@ -93,7 +107,6 @@ citycar-adl:2-p034.sas: 1 different costs from 68 to 68
 citycar-adl:2-p035.sas: 1 different costs from 88 to 88
 citycar-adl:2-p036.sas: 1 different costs from 88 to 88
 citycar-adl:2-p056.sas: 1 different costs from 78 to 78
-citycar-adl:2-p145.sas: 1 different costs from 70 to 70
 citycar-adl:2-p146.sas: 1 different costs from 110 to 110
 citycar-adl:2-p147.sas: 1 different costs from 92 to 92
 citycar-adl:2-p148.sas: 1 different costs from 88 to 88
@@ -126,35 +139,35 @@ gedp-ds2ndp-adl:0-d-7-5.sas: 1 different costs from 4 to 4
 gedp-ds2ndp-adl:0-d-7-6.sas: 1 different costs from 4 to 4
 gedp-ds2ndp-adl:0-d-8-1.sas: 1 different costs from 4 to 4
 miconic-simpleadl-adl:0-s18-3.sas: 1 different costs from 48 to 48
-miconic-simpleadl-adl:0-s18-4.sas: 1 different costs from 42 to 42
 miconic-simpleadl-adl:0-s19-1.sas: 1 different costs from 54 to 54
-miconic-simpleadl-adl:0-s19-4.sas: 1 different costs from 50 to 50
-miconic-simpleadl-adl:0-s20-0.sas: 1 different costs from 48 to 48
-miconic-simpleadl-adl:0-s20-2.sas: 1 different costs from 46 to 46
+miconic-simpleadl-adl:0-s20-1.sas: 1 different costs from 53 to 53
 miconic-simpleadl-adl:0-s20-4.sas: 1 different costs from 50 to 50
 miconic-simpleadl-adl:0-s21-0.sas: 1 different costs from 56 to 56
-miconic-simpleadl-adl:0-s22-0.sas: 1 different costs from 58 to 58
-miconic-simpleadl-adl:0-s22-1.sas: 1 different costs from 53 to 53
-miconic-simpleadl-adl:0-s22-3.sas: 1 different costs from 64 to 64
-miconic-simpleadl-adl:0-s23-1.sas: 1 different costs from 60 to 60
+miconic-simpleadl-adl:0-s21-1.sas: 1 different costs from 55 to 55
+miconic-simpleadl-adl:0-s21-2.sas: 1 different costs from 55 to 55
+miconic-simpleadl-adl:0-s23-2.sas: 1 different costs from 54 to 54
 miconic-simpleadl-adl:0-s23-3.sas: 1 different costs from 52 to 52
-miconic-simpleadl-adl:0-s24-0.sas: 1 different costs from 62 to 62
+miconic-simpleadl-adl:0-s23-4.sas: 1 different costs from 56 to 56
 miconic-simpleadl-adl:0-s24-1.sas: 1 different costs from 60 to 60
 miconic-simpleadl-adl:0-s24-2.sas: 1 different costs from 60 to 60
 miconic-simpleadl-adl:0-s24-3.sas: 1 different costs from 64 to 64
 miconic-simpleadl-adl:0-s24-4.sas: 1 different costs from 60 to 60
-miconic-simpleadl-adl:0-s25-2.sas: 1 different costs from 59 to 59
-miconic-simpleadl-adl:0-s25-3.sas: 1 different costs from 70 to 70
-miconic-simpleadl-adl:0-s26-0.sas: 1 different costs from 64 to 64
-miconic-simpleadl-adl:0-s26-2.sas: 1 different costs from 76 to 76
-miconic-simpleadl-adl:0-s26-3.sas: 1 different costs from 72 to 72
+miconic-simpleadl-adl:0-s26-1.sas: 1 different costs from 64 to 64
 miconic-simpleadl-adl:0-s26-4.sas: 1 different costs from 62 to 62
+miconic-simpleadl-adl:0-s27-0.sas: 1 different costs from 70 to 70
+miconic-simpleadl-adl:0-s27-1.sas: 1 different costs from 75 to 75
 miconic-simpleadl-adl:0-s27-2.sas: 1 different costs from 67 to 67
+miconic-simpleadl-adl:0-s27-3.sas: 1 different costs from 70 to 70
 miconic-simpleadl-adl:0-s28-0.sas: 1 different costs from 78 to 78
+miconic-simpleadl-adl:0-s28-1.sas: 1 different costs from 76 to 76
+miconic-simpleadl-adl:0-s28-4.sas: 1 different costs from 72 to 72
+miconic-simpleadl-adl:0-s29-1.sas: 1 different costs from 67 to 67
 miconic-simpleadl-adl:0-s29-3.sas: 1 different costs from 78 to 78
 miconic-simpleadl-adl:0-s29-4.sas: 1 different costs from 82 to 82
 miconic-simpleadl-adl:0-s30-0.sas: 1 different costs from 71 to 71
 miconic-simpleadl-adl:0-s30-1.sas: 1 different costs from 77 to 77
+miconic-simpleadl-adl:0-s30-3.sas: 1 different costs from 84 to 84
+miconic-simpleadl-adl:0-s30-4.sas: 1 different costs from 79 to 79
 nurikabe-adl:0-p01.sas: 1 different costs from 7 to 7
 nurikabe-adl:0-p02.sas: 1 different costs from 9 to 9
 nurikabe-adl:0-p03.sas: 1 different costs from 11 to 11
@@ -183,9 +196,12 @@ settlers-adl:0-p03.sas: 1 different costs from 90 to 90
 settlers-adl:0-p04.sas: 1 different costs from 115 to 115
 settlers-adl:0-p05.sas: 1 different costs from 170 to 170
 settlers-adl:0-p06.sas: 1 different costs from 125 to 125
+settlers-adl:0-p08.sas: 1 different costs from 200 to 200
 settlers-adl:0-p11.sas: 1 different costs from 60 to 60
 settlers-adl:0-p12.sas: 1 different costs from 70 to 70
 settlers-adl:0-p13.sas: 1 different costs from 125 to 125
+settlers-adl:0-p14.sas: 1 different costs from 145 to 145
+settlers-adl:0-p16.sas: 1 different costs from 185 to 185
 t0-coins-adl:0-coins_p-01.sas: 1 different costs from 12 to 12
 t0-coins-adl:0-coins_p-03.sas: 1 different costs from 13 to 13
 t0-coins-adl:0-coins_p-05.sas: 1 different costs from 13 to 13
@@ -200,6 +216,7 @@ t0-coins-adl:0-coins_p-13.sas: 1 different costs from 75 to 75
 t0-coins-adl:0-coins_p-14.sas: 1 different costs from 80 to 80
 t0-coins-adl:0-coins_p-15.sas: 1 different costs from 73 to 73
 t0-coins-adl:0-coins_p-17.sas: 1 different costs from 98 to 98
+t0-coins-adl:0-coins_p-20.sas: 1 different costs from 88 to 88
 t0-comm-adl:0-comm_c-01.sas: 1 different costs from 15 to 15
 t0-comm-adl:0-comm_c-02.sas: 1 different costs from 23 to 23
 t0-comm-adl:0-comm_c-03.sas: 1 different costs from 31 to 31
@@ -216,8 +233,11 @@ t0-comm-adl:0-comm_c-13.sas: 1 different costs from 111 to 111
 t0-comm-adl:0-comm_c-14.sas: 1 different costs from 119 to 119
 t0-comm-adl:0-comm_c-15.sas: 1 different costs from 127 to 127
 t0-grid-dispose-adl:0-family-grid-new_dispose-4-1.sas: 1 different costs from 34 to 34
+t0-grid-dispose-adl:0-family-grid-new_dispose-4-2.sas: 1 different costs from 52 to 52
+t0-grid-dispose-adl:0-family-grid-new_dispose-4-3.sas: 1 different costs from 70 to 70
 t0-sortnet-adl:0-sortnet_03.sas: 1 different costs from 9 to 9
 t0-sortnet-adl:0-sortnet_04.sas: 1 different costs from 14 to 14
+t0-sortnet-adl:0-sortnet_05.sas: 1 different costs from 18 to 18
 t0-sortnet-alt-adl:0-sort-num_s-2.sas: 1 different costs from 1 to 1
 t0-sortnet-alt-adl:0-sort-num_s-3.sas: 1 different costs from 3 to 3
 t0-sortnet-alt-adl:0-sort-num_s-4.sas: 1 different costs from 6 to 6
@@ -231,34 +251,40 @@ t0-uts-adl:0-uts_l-04.sas: 1 different costs from 25 to 25
 t0-uts-adl:0-uts_l-05.sas: 1 different costs from 31 to 31
 t0-uts-adl:0-uts_r-03.sas: 1 different costs from 19 to 19
 t0-uts-adl:0-uts_r-04.sas: 1 different costs from 25 to 25
-233 problems
-11 configs
-2563 results
-233 problems solved by someone
-87 problems solved by dofri:max_cluster
-86 problems solved by dofri:percent_sa
-87 problems solved by dofri:pho_offline
-79 problems solved by dofri:pho_online
-86 problems solved by dofri:range_sa
-87 problems solved by dofri:tuple
-133 problems solved by scorpion:astar-blind
-147 problems solved by scorpion:astar-hmax
-88 problems solved by scorpion:sys-scp-interesting_general-60s
-88 problems solved by scorpion:sys-scp-interesting_non_negative-60s
-217 problems solved by symk:sym-bd
-87.00 score by dofri:max_cluster
-86.00 score by dofri:percent_sa
-87.00 score by dofri:pho_offline
-79.00 score by dofri:pho_online
-86.00 score by dofri:range_sa
-87.00 score by dofri:tuple
-133.00 score by scorpion:astar-blind
-147.00 score by scorpion:astar-hmax
-88.00 score by scorpion:sys-scp-interesting_general-60s
-88.00 score by scorpion:sys-scp-interesting_non_negative-60s
-217.00 score by symk:sym-bd
-Max problems solved by single config: 217
-Max score by single config: 217.0
+253 problems
+14 configs
+3542 results
+253 problems solved by someone
+86 problems solved by dofri:max_cluster
+85 problems solved by dofri:percent_sa
+86 problems solved by dofri:pho_offline
+78 problems solved by dofri:pho_online
+85 problems solved by dofri:range_sa
+86 problems solved by dofri:tuple
+132 problems solved by scorpion:astar-blind
+146 problems solved by scorpion:astar-hmax
+177 problems solved by scorpion:sys-scp-interesting_general-60s
+192 problems solved by scorpion:sys-scp-interesting_non_negative-100s
+192 problems solved by scorpion:sys-scp-interesting_non_negative-200s
+192 problems solved by scorpion:sys-scp-interesting_non_negative-300s
+195 problems solved by scorpion:sys-scp-interesting_non_negative-60s
+216 problems solved by symk:sym-bd
+86.00 score by dofri:max_cluster
+85.00 score by dofri:percent_sa
+86.00 score by dofri:pho_offline
+78.00 score by dofri:pho_online
+85.00 score by dofri:range_sa
+86.00 score by dofri:tuple
+132.00 score by scorpion:astar-blind
+146.00 score by scorpion:astar-hmax
+177.00 score by scorpion:sys-scp-interesting_general-60s
+192.00 score by scorpion:sys-scp-interesting_non_negative-100s
+192.00 score by scorpion:sys-scp-interesting_non_negative-200s
+192.00 score by scorpion:sys-scp-interesting_non_negative-300s
+195.00 score by scorpion:sys-scp-interesting_non_negative-60s
+216.00 score by symk:sym-bd
+Max problems solved by single config: 216
+Max score by single config: 216.0
 Computing portfolio using IPC scores...
 portfolio for 0.00 seconds solves 0 problems with score 0.00:
       0.00 seconds for dofri:max_cluster
@@ -270,10 +296,13 @@ portfolio for 0.00 seconds solves 0 problems with score 0.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
       0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
       0.00 seconds for symk:sym-bd
 
-portfolio for 140.00 seconds solves 168 problems with score 168.00:
+portfolio for 140.00 seconds solves 178 problems with score 178.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
@@ -283,10 +312,29 @@ portfolio for 140.00 seconds solves 168 problems with score 168.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    140.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for symk:sym-bd
+
+portfolio for 280.00 seconds solves 205 problems with score 205.00:
+      0.00 seconds for dofri:max_cluster
+      0.00 seconds for dofri:percent_sa
+      0.00 seconds for dofri:pho_offline
+      0.00 seconds for dofri:pho_online
+      0.00 seconds for dofri:range_sa
+      0.00 seconds for dofri:tuple
+      0.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-hmax
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    140.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     140.00 seconds for symk:sym-bd
 
-portfolio for 280.00 seconds solves 182 problems with score 182.00:
+portfolio for 420.00 seconds solves 212 problems with score 212.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
@@ -296,10 +344,13 @@ portfolio for 280.00 seconds solves 182 problems with score 182.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    140.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     280.00 seconds for symk:sym-bd
 
-portfolio for 420.00 seconds solves 196 problems with score 196.00:
+portfolio for 560.00 seconds solves 223 problems with score 223.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
@@ -309,10 +360,13 @@ portfolio for 420.00 seconds solves 196 problems with score 196.00:
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
       0.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    140.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     420.00 seconds for symk:sym-bd
 
-portfolio for 560.00 seconds solves 207 problems with score 207.00:
+portfolio for 700.00 seconds solves 227 problems with score 227.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
@@ -321,146 +375,158 @@ portfolio for 560.00 seconds solves 207 problems with score 207.00:
       0.00 seconds for dofri:tuple
       0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    140.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
-    420.00 seconds for symk:sym-bd
-
-portfolio for 700.00 seconds solves 211 problems with score 211.00:
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-    140.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
-    420.00 seconds for symk:sym-bd
-
-portfolio for 840.00 seconds solves 215 problems with score 215.00:
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-    140.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    140.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     560.00 seconds for symk:sym-bd
 
-portfolio for 980.00 seconds solves 217 problems with score 217.00:
+portfolio for 840.00 seconds solves 230 problems with score 230.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    280.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     560.00 seconds for symk:sym-bd
 
-portfolio for 1120.00 seconds solves 219 problems with score 219.00:
+portfolio for 980.00 seconds solves 236 problems with score 236.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    420.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+    560.00 seconds for symk:sym-bd
+
+portfolio for 1120.00 seconds solves 238 problems with score 238.00:
+      0.00 seconds for dofri:max_cluster
+      0.00 seconds for dofri:percent_sa
+      0.00 seconds for dofri:pho_offline
+      0.00 seconds for dofri:pho_online
+      0.00 seconds for dofri:range_sa
+      0.00 seconds for dofri:tuple
+      0.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-hmax
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    560.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+    560.00 seconds for symk:sym-bd
+
+portfolio for 1260.00 seconds solves 240 problems with score 240.00:
+      0.00 seconds for dofri:max_cluster
+      0.00 seconds for dofri:percent_sa
+      0.00 seconds for dofri:pho_offline
+      0.00 seconds for dofri:pho_online
+      0.00 seconds for dofri:range_sa
+      0.00 seconds for dofri:tuple
+      0.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-hmax
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    560.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     700.00 seconds for symk:sym-bd
 
-portfolio for 1260.00 seconds solves 221 problems with score 221.00:
+portfolio for 1400.00 seconds solves 242 problems with score 242.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    560.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     840.00 seconds for symk:sym-bd
 
-portfolio for 1400.00 seconds solves 222 problems with score 222.00:
+portfolio for 1540.00 seconds solves 243 problems with score 243.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    560.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
     980.00 seconds for symk:sym-bd
 
-portfolio for 1540.00 seconds solves 223 problems with score 223.00:
+portfolio for 1680.00 seconds solves 244 problems with score 244.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    560.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
    1120.00 seconds for symk:sym-bd
 
-portfolio for 1680.00 seconds solves 224 problems with score 224.00:
-      0.00 seconds for dofri:max_cluster
-      0.00 seconds for dofri:percent_sa
-      0.00 seconds for dofri:pho_offline
-      0.00 seconds for dofri:pho_online
-      0.00 seconds for dofri:range_sa
-      0.00 seconds for dofri:tuple
-    140.00 seconds for scorpion:astar-blind
-      0.00 seconds for scorpion:astar-hmax
-    280.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
-   1260.00 seconds for symk:sym-bd
-
-Time for computing portfolio: 0.013832331000000142s
+Time for computing portfolio: 0.02541112499999998s
 
 Reducing portfolio...
-portfolio for 1518.00 seconds solves 224 problems with score 224.00:
+portfolio for 1547.00 seconds solves 244 problems with score 244.00:
       0.00 seconds for dofri:max_cluster
       0.00 seconds for dofri:percent_sa
       0.00 seconds for dofri:pho_offline
       0.00 seconds for dofri:pho_online
       0.00 seconds for dofri:range_sa
       0.00 seconds for dofri:tuple
-      5.00 seconds for scorpion:astar-blind
+      0.00 seconds for scorpion:astar-blind
       0.00 seconds for scorpion:astar-hmax
-    262.00 seconds for scorpion:sys-scp-interesting_general-60s
-      0.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
-   1251.00 seconds for symk:sym-bd
+      0.00 seconds for scorpion:sys-scp-interesting_general-60s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-100s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-200s
+      0.00 seconds for scorpion:sys-scp-interesting_non_negative-300s
+    547.00 seconds for scorpion:sys-scp-interesting_non_negative-60s
+   1000.00 seconds for symk:sym-bd
 
 Sort by decreasing coverage
 """
-Coverage: 224
+Coverage: 244
 Granularity: 140s
-Runtime: 1518s
-Score: 224.0
+Runtime: 1547s
+Score: 244.0
 """
 
 TRACK = "opt"
 CONFIGS = [
     # symk:sym-bd
-    (1251, ['symk', '--search', 'sym-bd(silent=true)']),
-    # scorpion:astar-blind
-    (5, ['scorpion', '--search', 'astar(blind())']),
-    # scorpion:sys-scp-interesting_general-60s
-    (262, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_general), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
+    (1000, ['symk', '--search', 'sym-bd(silent=true)']),
+    # scorpion:sys-scp-interesting_non_negative-60s
+    (547, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative, create_complete_transition_system=true), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
 ]
 
 Unsolved problems:
@@ -468,16 +534,15 @@ Unsolved problems:
    citycar-adl:2-p163.sas              {symk:sym-bd: 1309.81}
    citycar-adl:2-p168.sas              {symk:sym-bd: 1455.62}
    flashfill-adl:0-p17.sas             {scorpion:astar-hmax: 903.01}
-   nurikabe-adl:0-p13.sas              {scorpion:sys-scp-interesting_general-60s: 1011.30, scorpion:sys-scp-interesting_non_negative-60s: 640.56}
-   nurikabe-adl:0-p14.sas              {scorpion:sys-scp-interesting_non_negative-60s: 1675.70}
-   nurikabe-adl:1-p08.sas              {scorpion:sys-scp-interesting_non_negative-60s: 482.30}
-   settlers-adl:0-p05.sas              {scorpion:astar-hmax: 1511.38, symk:sym-bd: 1655.29}
+   settlers-adl:0-p08.sas              {scorpion:sys-scp-interesting_non_negative-200s: 942.64, scorpion:sys-scp-interesting_non_negative-300s: 1078.24}
+   settlers-adl:0-p16.sas              {scorpion:sys-scp-interesting_non_negative-300s: 963.14}
+   t0-coins-adl:0-coins_p-20.sas       {scorpion:sys-scp-interesting_general-60s: 1320.14, scorpion:sys-scp-interesting_non_negative-100s: 1238.68, scorpion:sys-scp-interesting_non_negative-200s: 1458.27, scorpion:sys-scp-interesting_non_negative-300s: 1713.09, scorpion:sys-scp-interesting_non_negative-60s: 1102.64}
    t0-comm-adl:0-comm_c-13.sas         {symk:sym-bd: 1392.01}
+   t0-sortnet-adl:0-sortnet_05.sas     {scorpion:sys-scp-interesting_non_negative-200s: 999.18, scorpion:sys-scp-interesting_non_negative-300s: 1197.69}
 (9 problems)
 
 Marginal contributions:
-     4 problems / 4.00 score from scorpion:astar-blind
-    10 problems / 10.00 score from scorpion:sys-scp-interesting_general-60s
-   119 problems / 119.00 score from symk:sym-bd
+    36 problems / 36.00 score from scorpion:sys-scp-interesting_non_negative-60s
+    51 problems / 51.00 score from symk:sym-bd
 
-Final score: 224.0    Configs: 3    Min time: 5    Max time: 1251
+Final score: 244.0    Configs: 2    Min time: 547    Max time: 1000

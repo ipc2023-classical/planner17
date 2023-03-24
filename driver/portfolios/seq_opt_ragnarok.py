@@ -13,12 +13,12 @@ CONFIGS_STRIPS =  [
 ]
 
 CONFIGS_COND_EFFS = [
+    # scorpion:sys-scp-interesting_non_negative-60s
+    (547, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative, create_complete_transition_system=true), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
     # symk:sym-bd
-    (1251, ['symk', '--search', 'sym-bd(silent=true)']),
+    (1000, ['symk', '--search', 'sym-bd(silent=true)']),
     # scorpion:astar-blind
-    (5, ['scorpion', '--search', 'astar(blind())']),
-    # scorpion:sys-scp-interesting_general-60s
-    (262, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_general), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
+    (1, ['scorpion', '--search', 'astar(blind())']),
 ]
 
 CONFIGS_AXIOMS = [
