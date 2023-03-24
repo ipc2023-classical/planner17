@@ -19,7 +19,8 @@ From: ubuntu:18.04
             git \
             python \
             python3 \
-            libboost-all-dev=1.65.1.0ubuntu1 \
+            libboost-dev \
+            libboost-program-options-dev
 
 
     ##### PLANNER INSTALLATION #####

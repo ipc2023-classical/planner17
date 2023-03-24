@@ -57,7 +57,7 @@ void print_plan(const std::vector<LiftedOperatorId>& plan, const Task &task) {
         const ActionSchema &action = task.get_action_schema_by_index(a.get_index());
         total_plan_cost += action.get_cost();
         total_plan_length += 1;
-        plan_file << total_plan_length << ": (" << action.get_name() << " ";
+        plan_file << "(" << action.get_name() << " ";
         for (const int obj : a.get_instantiation()) {
             plan_file << task.objects[obj].get_name() << " ";
         }
