@@ -17,8 +17,6 @@ CONFIGS_COND_EFFS = [
     (547, ['scorpion', '--search', 'astar(scp_online([projections(sys_scp(max_time=60, max_time_per_restart=6, max_pdb_size=2M, max_collection_size=20M, pattern_type=interesting_non_negative, create_complete_transition_system=true), create_complete_transition_system=true)], saturator=perimstar, max_time=60, max_size=1M, interval=10K, orders=greedy_orders()))']),
     # symk:sym-bd
     (1000, ['symk', '--search', 'sym-bd(silent=true)']),
-    # scorpion:astar-blind
-    (1, ['scorpion', '--search', 'astar(blind())']),
 ]
 
 CONFIGS_AXIOMS = [
