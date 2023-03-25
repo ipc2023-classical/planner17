@@ -45,7 +45,6 @@ def get_pddl_features(task):
             elif in_op:
                 parts = line.split()
                 if len(parts) >= 6 and all(p.lstrip('-').isdigit() for p in parts):
-                    print(f"Task has at least one conditional effect: {line}")
                     has_conditional_effects = True
     return has_axioms, has_conditional_effects
 
