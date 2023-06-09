@@ -57,9 +57,9 @@ Stage: build
     done
 
     ## Strip binaries (shell globs don't work).
-    strip --strip-all /planners/decstar/builds/release64/bin/downward /planners/decstar/builds/release64/bin/preprocess-h2
+    strip --strip-all /planners/decstar/builds/release64/bin/downward
     strip --strip-all /planners/scorpion/builds/release/bin/downward /planners/scorpion/builds/release/bin/preprocess-h2
-    strip --strip-all /planners/symk/builds/release/bin/downward /planners/symk/builds/release/bin/preprocess
+    strip --strip-all /planners/symk/builds/release/bin/downward
     strip --strip-all /planners/powerlifted/builds/release/search/search
 
 # Stage 2: Run the planner
@@ -68,18 +68,15 @@ From: ubuntu:22.04
 Stage: run
 
 %files
-    dispatch.py /dispatch.py
-    plan.py /plan.py
-    driver /driver
+    plan.py
+    driver
 
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/ibm/ILOG/CPLEX_Studio2211/concert/
     /opt/coin/
 
-    /planners/decstar/driver
-    /planners/decstar/fast-downward.py
-    /planners/decstar/builds/release64/bin
+    /planners/decstar/builds/release64/bin/downward /planners/decstar/builds/release/bin/downward
     /planners/decstar/third-party/bliss-0.73/
 
     /planners/scorpion/driver
@@ -88,9 +85,7 @@ Stage: run
     # /driver/run_components.py points to the src directory.
     /planners/scorpion/src/translate
 
-    /planners/symk/driver
-    /planners/symk/fast-downward.py
-    /planners/symk/builds/release/bin
+    /planners/symk/builds/release/bin/downward
 
     /planners/powerlifted/driver
     /planners/powerlifted/powerlifted.py
