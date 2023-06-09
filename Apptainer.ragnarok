@@ -109,8 +109,9 @@ Stage: run
     PLANFILE="$3"
 
     # Limit memory to 7.5 GiB to enable switching away from components that run out of memory.
+    # Go even further down to 6G because of the apptainer overhead.
     pypy3 /plan.py \
-        --overall-memory-limit 7680M \
+        --overall-memory-limit 6G \
         --overall-time-limit 30m \
         --translate-time-limit 15m \
         --transform-task /planners/scorpion/builds/release/bin/preprocess-h2 \
