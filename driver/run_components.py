@@ -142,7 +142,7 @@ def run_search(args):
         args.search_time_limit, args.overall_time_limit)
     memory_limit = limits.get_memory_limit(
         args.search_memory_limit, args.overall_memory_limit)
-    executable = str(REPO / "dispatch.py")
+    executable = None
 
     plan_manager = PlanManager(
         args.plan_file,
