@@ -325,6 +325,7 @@ def print_action_schemas(task, object_index, predicate_index, type_index):
         action.effects.sort(key=lambda x: int(x.literal.negated), reverse=True)
         for eff in action.effects:
             assert isinstance(eff, pddl.Effect)
+            assert isinstance(eff.condition, pddl.conditions.Truth), "Conditional effects are not supported"
             args_list = []
             for x in eff.literal.args:
                 if x in parameter_index:
