@@ -5,8 +5,22 @@ Stage: build
 
 %files
     planners /planners
-    $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
-    Osi-0.108.6.tgz
+
+%setup
+    CPLEX_FILE="$IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin"
+    if [ -f "$CPLEX_FILE" ]; then
+        cp "$CPLEX_FILE" ${APPTAINER_ROOTFS}/cplex.bin
+    else
+        echo
+        echo "ERROR: you need to provide a CPLEX installer to run the IPC version of Ragnarok. \
+Without CPLEX, the decoupled-search component (DecStar-1) is not working. \
+If you want to run Ragnarok without that component, you can remove the \"exit 1\" \
+command in line 22 of the Apptainer.ragnarok file. The planner will then build and run \
+without DecStar-1. If you want to use a different CPLEX version, you can change the file \
+name in line 10. Note, though, that not all versions will work."
+        echo
+        exit 1
+    fi
 
 %post
     ## Install all dependencies.
@@ -16,31 +30,18 @@ Stage: build
     ## Clear local build directories.
     rm -rf /planners/*/builds
 
-    ## Build CPLEX
-    chmod +x ./cplex.bin
-    ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
+    if [ -f "cplex.bin" ]; then
+        ## Build CPLEX
+        chmod +x ./cplex.bin
+        ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
 
-    export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
-    export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
-
-    ##Build OSI
-    tar xvzf Osi-0.108.6.tgz
-    cd Osi-0.108.6
-    export DOWNWARD_COIN_ROOT=/opt/coin/
-
-    ./configure CC="gcc"  CFLAGS="-pthread -Wno-long-long" \
-            CXX="g++" CXXFLAGS="-pthread -Wno-long-long" \
-            LDFLAGS="-L$DOWNWARD_CPLEX_ROOT/lib/x86-64_linux/static_pic" \
-            --without-lapack --enable-static=yes \
-            --prefix="$DOWNWARD_COIN_ROOT" \
-            --disable-bzlib  \
-            --with-cplex-incdir=$DOWNWARD_CPLEX_ROOT/include/ilcplex \
-            --with-cplex-lib="-lcplex -lm -ldl"
-
-    make
-    make install
-
-    cd ..
+        export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+        export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
+    else
+        # create empty dirs so copying the folders in stage 2 does not fail
+        mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+        mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/concert/
+    fi
 
     ## Build bliss
     cd planners/decstar/third-party/bliss-0.73
@@ -74,7 +75,6 @@ Stage: run
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/ibm/ILOG/CPLEX_Studio2211/concert/
-    /opt/coin/
 
     /planners/decstar/builds/release64/bin/downward /planners/decstar/builds/release/bin/downward
     /planners/decstar/third-party/bliss-0.73/
