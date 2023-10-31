@@ -7,11 +7,12 @@ Stage: build
     planners /planners
 
 %setup
+    #!/bin/bash
     CPLEX_FILE="$IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin"
     if [ -f "$CPLEX_FILE" ]; then
         cp "$CPLEX_FILE" ${APPTAINER_ROOTFS}/cplex.bin
     else
-        if [[ -z "$DISABLE_DECSTAR_ONE" || "$DISABLE_DECSTAR_ONE" -ne 1 ]]; then
+        if [ -z "$DISABLE_DECSTAR_ONE" ]; then
             echo
             echo "ERROR: you need to provide a CPLEX installer to run the IPC version of Ragnarok. \
 Please see the instructions on the IPC 2023 webpage on how to build the planner with CPLEX (https://ipc2023-classical.github.io/). \
@@ -25,6 +26,8 @@ The planner will then build and run without DecStar-1."
     fi
 
 %post
+    #!/bin/bash
+
     ## Install all dependencies.
     apt-get update
     apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake default-jre-headless zlib1g-dev autotools-dev bison ca-certificates flex gdb libboost-dev libboost-program-options-dev
@@ -40,7 +43,7 @@ The planner will then build and run without DecStar-1."
         export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
         export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
     else
-        # create empty dirs so copying the folders in stage 2 does not fail
+        # Create empty dirs so copying the folders in stage 2 does not fail.
         mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
         mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/concert/
     fi
@@ -95,12 +98,16 @@ Stage: run
     /planners/powerlifted/builds/release/translator
 
 %post
+    #!/bin/bash
+
     apt-get update
     apt-get -y install --no-install-recommends pypy3 libboost-dev libboost-program-options-dev
     apt-get clean
     rm -rf /var/lib/apt/lists/*
 
 %runscript
+    #!/bin/bash
+
     DOMAINFILE="$1"
     PROBLEMFILE="$2"
     PLANFILE="$3"
