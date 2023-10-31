@@ -11,15 +11,17 @@ Stage: build
     if [ -f "$CPLEX_FILE" ]; then
         cp "$CPLEX_FILE" ${APPTAINER_ROOTFS}/cplex.bin
     else
-        echo
-        echo "ERROR: you need to provide a CPLEX installer to run the IPC version of Ragnarok. \
+        if [[ -z "$DISABLE_DECSTAR_ONE" || "$DISABLE_DECSTAR_ONE" -ne 1 ]]; then
+            echo
+            echo "ERROR: you need to provide a CPLEX installer to run the IPC version of Ragnarok. \
+Please see the instructions on the IPC 2023 webpage on how to build the planner with CPLEX (https://ipc2023-classical.github.io/). \
 Without CPLEX, the decoupled-search component (DecStar-1) is not working. \
-If you want to run Ragnarok without that component, you can remove the \"exit 1\" \
-command in line 22 of the Apptainer.ragnarok file. The planner will then build and run \
-without DecStar-1. If you want to use a different CPLEX version, you can change the file \
-name in line 10. Note, though, that not all versions will work."
-        echo
-        exit 1
+If you want to run Ragnarok without that component, you can define an environment variable as follows: \
+export DISABLE_DECSTAR_ONE=1; \
+The planner will then build and run without DecStar-1."
+            echo
+            exit 1
+        fi
     fi
 
 %post
