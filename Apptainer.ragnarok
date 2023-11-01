@@ -5,10 +5,29 @@ Stage: build
 
 %files
     planners /planners
-    $IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin cplex.bin
-    Osi-0.108.6.tgz
+
+%setup
+    #!/bin/bash
+    CPLEX_FILE="$IPC_THIRD_PARTY/cplex_studio2211.linux_x86_64.bin"
+    if [ -f "$CPLEX_FILE" ]; then
+        cp "$CPLEX_FILE" ${APPTAINER_ROOTFS}/cplex.bin
+    else
+        if [ -z "$DISABLE_DECSTAR_ONE" ]; then
+            echo
+            echo "ERROR: you need to provide a CPLEX installer to run the IPC version of Ragnarok. \
+Please see the instructions on the IPC 2023 webpage on how to build the planner with CPLEX (https://ipc2023-classical.github.io/). \
+Without CPLEX, the decoupled-search component (DecStar-1) is not working. \
+If you want to run Ragnarok without that component, you can define an environment variable as follows: \
+export DISABLE_DECSTAR_ONE=1; \
+The planner will then build and run without DecStar-1."
+            echo
+            exit 1
+        fi
+    fi
 
 %post
+    #!/bin/bash
+
     ## Install all dependencies.
     apt-get update
     apt-get -y install --no-install-recommends cmake g++ make pypy3 autoconf automake default-jre-headless zlib1g-dev autotools-dev bison ca-certificates flex gdb libboost-dev libboost-program-options-dev
@@ -16,31 +35,18 @@ Stage: build
     ## Clear local build directories.
     rm -rf /planners/*/builds
 
-    ## Build CPLEX
-    chmod +x ./cplex.bin
-    ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
+    if [ -f "cplex.bin" ]; then
+        ## Build CPLEX
+        chmod +x ./cplex.bin
+        ./cplex.bin -DLICENSE_ACCEPTED=TRUE -i silent
 
-    export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
-    export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
-
-    ##Build OSI
-    tar xvzf Osi-0.108.6.tgz
-    cd Osi-0.108.6
-    export DOWNWARD_COIN_ROOT=/opt/coin/
-
-    ./configure CC="gcc"  CFLAGS="-pthread -Wno-long-long" \
-            CXX="g++" CXXFLAGS="-pthread -Wno-long-long" \
-            LDFLAGS="-L$DOWNWARD_CPLEX_ROOT/lib/x86-64_linux/static_pic" \
-            --without-lapack --enable-static=yes \
-            --prefix="$DOWNWARD_COIN_ROOT" \
-            --disable-bzlib  \
-            --with-cplex-incdir=$DOWNWARD_CPLEX_ROOT/include/ilcplex \
-            --with-cplex-lib="-lcplex -lm -ldl"
-
-    make
-    make install
-
-    cd ..
+        export DOWNWARD_CPLEX_ROOT=/opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+        export DOWNWARD_CPLEX_CONCERT64=/opt/ibm/ILOG/CPLEX_Studio2211/concert/
+    else
+        # Create empty dirs so copying the folders in stage 2 does not fail.
+        mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
+        mkdir -p /opt/ibm/ILOG/CPLEX_Studio2211/concert/
+    fi
 
     ## Build bliss
     cd planners/decstar/third-party/bliss-0.73
@@ -74,7 +80,6 @@ Stage: run
 %files from build
     /opt/ibm/ILOG/CPLEX_Studio2211/cplex/
     /opt/ibm/ILOG/CPLEX_Studio2211/concert/
-    /opt/coin/
 
     /planners/decstar/builds/release64/bin/downward /planners/decstar/builds/release/bin/downward
     /planners/decstar/third-party/bliss-0.73/
@@ -93,12 +98,16 @@ Stage: run
     /planners/powerlifted/builds/release/translator
 
 %post
+    #!/bin/bash
+
     apt-get update
     apt-get -y install --no-install-recommends pypy3 libboost-dev libboost-program-options-dev
     apt-get clean
     rm -rf /var/lib/apt/lists/*
 
 %runscript
+    #!/bin/bash
+
     DOMAINFILE="$1"
     PROBLEMFILE="$2"
     PLANFILE="$3"
